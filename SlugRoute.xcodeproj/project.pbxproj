@@ -26,7 +26,7 @@
 		DA608BC61B6C258600B22EF0 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA608BC21B6C258600B22EF0 /* TwitterCore.framework */; };
 		DA6ADB3D1B6C6E6F00BD3E8B /* TwitterLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6ADB3C1B6C6E6F00BD3E8B /* TwitterLoginViewController.swift */; };
 		DA6ADB451B6C83E900BD3E8B /* InstagramLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6ADB441B6C83E900BD3E8B /* InstagramLoginViewController.swift */; };
-		DAA5E4AA1B6D6D4F0066BD56 /* SocialNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA5E4A91B6D6D4F0066BD56 /* SocialNavigationController.swift */; };
+		DAA5E4AE1B6D71390066BD56 /* SocialNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA5E4AD1B6D71390066BD56 /* SocialNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +65,7 @@
 		DA608BC21B6C258600B22EF0 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = SOURCE_ROOT; };
 		DA6ADB3C1B6C6E6F00BD3E8B /* TwitterLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterLoginViewController.swift; sourceTree = "<group>"; };
 		DA6ADB441B6C83E900BD3E8B /* InstagramLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramLoginViewController.swift; sourceTree = "<group>"; };
-		DAA5E4A91B6D6D4F0066BD56 /* SocialNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocialNavigationController.swift; path = ../../.Trash/SocialNavigationController.swift; sourceTree = "<group>"; };
+		DAA5E4AD1B6D71390066BD56 /* SocialNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +129,6 @@
 				B84152ED1B13CAE10075E885 /* LaunchScreen.xib */,
 				B84152E01B13CAE10075E885 /* Supporting Files */,
 				B84153041B13CE8F0075E885 /* EventsNavigationController.swift */,
-				DAA5E4A91B6D6D4F0066BD56 /* SocialNavigationController.swift */,
 				DA608BBF1B6C258600B22EF0 /* Fabric.framework */,
 				DA608BC01B6C258600B22EF0 /* TwitterKit.framework */,
 				DA608BC11B6C258600B22EF0 /* TwitterKitResources.bundle */,
@@ -141,6 +140,7 @@
 				B84153061B13CEAC0075E885 /* EventsViewController.swift */,
 				B841530A1B13D0690075E885 /* Event.swift */,
 				DA5EB4501B6CBF4700991145 /* SocialViewController.swift */,
+				DAA5E4AD1B6D71390066BD56 /* SocialNavigationController.swift */,
 			);
 			path = SlugRoute;
 			sourceTree = "<group>";
@@ -345,7 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAA5E4AA1B6D6D4F0066BD56 /* SocialNavigationController.swift in Sources */,
+				DAA5E4AE1B6D71390066BD56 /* SocialNavigationController.swift in Sources */,
 				B84153051B13CE8F0075E885 /* EventsNavigationController.swift in Sources */,
 				B84153091B13CEF40075E885 /* EventTableCell.swift in Sources */,
 				B84152E31B13CAE10075E885 /* AppDelegate.swift in Sources */,
