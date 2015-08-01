@@ -12,8 +12,7 @@ import TwitterKit
 
 class TwitterLoginViewController: UIViewController {
     
-    @IBAction func BackToSocial(sender: UIButton) {
-    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let logInButton = TWTRLogInButton { (session, error) in

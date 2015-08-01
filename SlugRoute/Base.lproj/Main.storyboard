@@ -19,7 +19,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="DbG-wH-6Nh" kind="relationship" relationship="viewControllers" id="4Cs-Td-deo"/>
-                        <segue destination="HFf-KR-bHr" kind="relationship" relationship="viewControllers" id="Jck-eH-s4M"/>
+                        <segue destination="nIh-qK-fjT" kind="relationship" relationship="viewControllers" id="c1x-zy-1Ht"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -37,18 +37,6 @@
                     <view key="view" contentMode="scaleToFill" id="OBA-2P-o3n">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nu8-Fu-YKx">
-                                <rect key="frame" x="137" y="69" width="46" height="30"/>
-                                <state key="normal" title="Social">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="BackToSocial:" destination="FqH-Dq-hXr" eventType="touchUpInside" id="8qb-HG-5f2"/>
-                                    <segue destination="HFf-KR-bHr" kind="show" id="Yoq-2S-I5e"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="4O1-zd-v46"/>
@@ -57,13 +45,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sQz-fH-Dh0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1191" y="-1382"/>
+            <point key="canvasLocation" x="1647" y="-1110"/>
         </scene>
-        <!--Social-->
+        <!--Social View Controller-->
         <scene sceneID="2Ya-FD-4ar">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="E0i-tA-hNL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController title="Social" id="HFf-KR-bHr" customClass="SocialViewController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Social View Controller" id="HFf-KR-bHr" customClass="SocialViewController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xSV-Qd-T6w"/>
                         <viewControllerLayoutGuide type="bottom" id="Gku-0O-r0n"/>
@@ -79,7 +66,7 @@
                                 </state>
                                 <connections>
                                     <action selector="ToInstagramLogin:" destination="HFf-KR-bHr" eventType="touchUpInside" id="yUw-gn-mYS"/>
-                                    <segue destination="FqH-Dq-hXr" kind="show" id="nul-Zm-hov"/>
+                                    <segue destination="FqH-Dq-hXr" kind="show" id="Fma-Xs-Zi4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdC-M8-NIQ">
@@ -89,27 +76,18 @@
                                 </state>
                                 <connections>
                                     <action selector="ToTwitterLogin:" destination="HFf-KR-bHr" eventType="touchUpInside" id="WpO-9A-TtI"/>
-                                    <segue destination="VQC-43-S8I" kind="show" id="5vK-ye-Iru"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIt-JN-rLe">
-                                <rect key="frame" x="133" y="48" width="54" height="39"/>
-                                <state key="normal" title="Events">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="ToEvents:" destination="HFf-KR-bHr" eventType="touchUpInside" id="4NE-AE-Vw7"/>
-                                    <segue destination="49e-Tb-3d3" kind="show" id="EOi-f3-s0M"/>
+                                    <segue destination="VQC-43-S8I" kind="show" id="Yww-Vi-HiR"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="eiw-kM-0ZM"/>
+                    <navigationItem key="navigationItem" id="55q-hV-3Lb"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E0i-tA-hNL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="792" y="-698"/>
+            <point key="canvasLocation" x="1191" y="-698"/>
         </scene>
         <!--Twitter-->
         <scene sceneID="kyU-Cm-f8Z">
@@ -122,18 +100,6 @@
                     <view key="view" contentMode="scaleToFill" id="W3e-ch-WYv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nx-hc-JFu">
-                                <rect key="frame" x="137" y="64" width="46" height="30"/>
-                                <state key="normal" title="Social">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="BackToSocial:" destination="VQC-43-S8I" eventType="touchUpInside" id="FRd-AK-IRD"/>
-                                    <segue destination="HFf-KR-bHr" kind="show" id="bXb-cc-sJA"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="SPG-9l-kgQ"/>
@@ -143,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4hJ-F5-mMU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1191" y="-698"/>
+            <point key="canvasLocation" x="1647" y="-410"/>
         </scene>
         <!--Events-->
         <scene sceneID="6Tz-eY-vXp">
@@ -265,8 +231,25 @@
             </objects>
             <point key="canvasLocation" x="1191" y="0.0"/>
         </scene>
+        <!--Social-->
+        <scene sceneID="7FR-5y-gRT">
+            <objects>
+                <navigationController title="Social" automaticallyAdjustsScrollViewInsets="NO" id="nIh-qK-fjT" customClass="SocialNavigationController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="eiw-kM-0ZM"/>
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="G7Q-8i-Beo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HFf-KR-bHr" kind="relationship" relationship="rootViewController" id="kel-TC-tGg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cKr-ig-gS8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="792" y="-698"/>
+        </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Yoq-2S-I5e"/>
-    </inferredMetricsTieBreakers>
 </document>

@@ -12,8 +12,7 @@ import TwitterKit
 
 class SocialViewController: UIViewController {
     
-    @IBAction func ToEvents(sender: UIButton) {
-    }
+
     @IBAction func ToInstagramLogin(sender: UIButton) {
     }
 

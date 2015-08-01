@@ -12,8 +12,7 @@ import TwitterKit
 
 class InstagramLoginViewController: UIViewController {
     
-    @IBAction func BackToSocial(sender: UIButton) {
-    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
