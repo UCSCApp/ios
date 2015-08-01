@@ -27,6 +27,7 @@
 		DA6ADB3D1B6C6E6F00BD3E8B /* TwitterLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6ADB3C1B6C6E6F00BD3E8B /* TwitterLoginViewController.swift */; };
 		DA6ADB451B6C83E900BD3E8B /* InstagramLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6ADB441B6C83E900BD3E8B /* InstagramLoginViewController.swift */; };
 		DAA5E4AE1B6D71390066BD56 /* SocialNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA5E4AD1B6D71390066BD56 /* SocialNavigationController.swift */; };
+		DAA5E4B01B6D73320066BD56 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA5E4AF1B6D73320066BD56 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		DA6ADB3C1B6C6E6F00BD3E8B /* TwitterLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterLoginViewController.swift; sourceTree = "<group>"; };
 		DA6ADB441B6C83E900BD3E8B /* InstagramLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramLoginViewController.swift; sourceTree = "<group>"; };
 		DAA5E4AD1B6D71390066BD56 /* SocialNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialNavigationController.swift; sourceTree = "<group>"; };
+		DAA5E4AF1B6D73320066BD56 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				B841530A1B13D0690075E885 /* Event.swift */,
 				DA5EB4501B6CBF4700991145 /* SocialViewController.swift */,
 				DAA5E4AD1B6D71390066BD56 /* SocialNavigationController.swift */,
+				DAA5E4AF1B6D73320066BD56 /* TabBarController.swift */,
 			);
 			path = SlugRoute;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 			files = (
 				DAA5E4AE1B6D71390066BD56 /* SocialNavigationController.swift in Sources */,
 				B84153051B13CE8F0075E885 /* EventsNavigationController.swift in Sources */,
+				DAA5E4B01B6D73320066BD56 /* TabBarController.swift in Sources */,
 				B84153091B13CEF40075E885 /* EventTableCell.swift in Sources */,
 				B84152E31B13CAE10075E885 /* AppDelegate.swift in Sources */,
 				DA6ADB3D1B6C6E6F00BD3E8B /* TwitterLoginViewController.swift in Sources */,

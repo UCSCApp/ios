@@ -1,5 +1,5 @@
 //
-//  SocialViewController.swift
+//  TabBarController.swift
 //  SlugRoute
 //
 //  Created by Karol josef Bustamante on 8/1/15.
@@ -8,18 +8,16 @@
 
 import Foundation
 import UIKit
-import TwitterKit
 
-class SocialViewController: UIViewController {
+class TabBarController: UITabBarController {
     
-
-    @IBAction func ToInstagramLogin(sender: UIButton) {
-    }
-
-    @IBAction func ToTwitterLogin(sender: UIButton) {
-    }
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad();
+        let tabItems = self.tabBar.items as! [UITabBarItem]
+        let tabItem0 = tabItems[0] as UITabBarItem
+        let tabItem1 = tabItems[1] as UITabBarItem
+        tabItem0.title = "Events"
+        tabItem1.title = "Social"
     }
     
     
