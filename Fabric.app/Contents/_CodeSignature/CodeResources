@@ -520,7 +520,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zPmEcceWTRcf5ajato7zjc8Idko=
+			PX83kg9DTypnipg+li8zneltgyk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -830,11 +830,20 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/CLSAsyncOperation.framework</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			572boIiDfDud69B2zauwaMkn1YU=
+			</data>
+			<key>requirement</key>
+			<string>identifier "com.twitter.CLSAsyncOperation" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = L8VKXC2S77</string>
+		</dict>
 		<key>Frameworks/Pledge.framework</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			9tIB4DMIbUIj8yLTMscAWDRgTU0=
+			dMrYsTXthzyM0woEGVUTobBVfXQ=
 			</data>
 			<key>requirement</key>
 			<string>identifier "com.crashlytics.Pledge" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = L8VKXC2S77</string>
@@ -843,7 +852,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			5+bBuorXcV7VtOVDefTC2a6ZWEY=
+			XhzYJQl2HAvHG06RKGHX9Oz+bbw=
 			</data>
 			<key>requirement</key>
 			<string>identifier "com.squareup.SocketRocket" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = L8VKXC2S77</string>
@@ -1373,7 +1382,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zPmEcceWTRcf5ajato7zjc8Idko=
+			PX83kg9DTypnipg+li8zneltgyk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1684,7 +1693,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			I830EelcUmmNclMcdjeOSzrG+iU=
+			3b+GfqNtTqHTRn0kSsNQZKwnP7o=
 			</data>
 			<key>requirement</key>
 			<string>anchor apple generic and identifier "com.crashlytics.mac.CSYMGenerator" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = L8VKXC2S77)</string>

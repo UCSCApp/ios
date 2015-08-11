@@ -20,11 +20,12 @@
                     <connections>
                         <segue destination="DbG-wH-6Nh" kind="relationship" relationship="viewControllers" id="4Cs-Td-deo"/>
                         <segue destination="nIh-qK-fjT" kind="relationship" relationship="viewControllers" id="c1x-zy-1Ht"/>
+                        <segue destination="dVP-ei-kRe" kind="relationship" relationship="viewControllers" id="FeO-jr-y0N"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="402" y="-426"/>
+            <point key="canvasLocation" x="180" y="-242"/>
         </scene>
         <!--Instagram-->
         <scene sceneID="2Au-Bn-TFd">
@@ -127,6 +128,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lkj-qY-KoG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="792" y="0.0"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="BtD-Eh-giP">
+            <objects>
+                <navigationController title="Map" id="dVP-ei-kRe" customClass="MapNavigationController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="uiL-SO-Ojs"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Ix-kY-Kam">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zmO-06-NVk" kind="relationship" relationship="rootViewController" id="KRF-9Z-hhf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E4u-7L-TUL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="781" y="676"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="RFW-lz-hd7">
+            <objects>
+                <viewController title="Map View Controller" id="zmO-06-NVk" customClass="MapViewController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="54a-6J-pxK"/>
+                        <viewControllerLayoutGuide type="bottom" id="F9G-u8-tIR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aWF-7u-Ec6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="Copyright" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bn8-ib-5yc">
+                                <rect key="frame" x="139" y="72" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nBt-9y-hz2"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="copyright" destination="bn8-ib-5yc" id="aue-2O-dkD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PyG-Zk-Ran" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1191" y="676"/>
         </scene>
         <!--Events View Controller-->
         <scene sceneID="vEB-E4-Nuu">

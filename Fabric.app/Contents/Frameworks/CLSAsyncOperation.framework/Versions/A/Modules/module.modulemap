@@ -1,0 +1,6 @@
+framework module CLSAsyncOperation {
+  umbrella header "CLSAsyncOperation.h"
+
+  export *
+  module * { export * }
+}
