@@ -16,17 +16,23 @@ class MapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var camera = GMSCameraPosition.cameraWithLatitude(-33.86,
-            longitude: 151.20, zoom: 6)
+        
+        var camera = GMSCameraPosition.cameraWithLatitude(36.99578157522153,
+            longitude: -122.058908423001, zoom: 14)
         var mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
         mapView.myLocationEnabled = true
         self.view = mapView
         
-        var marker = GMSMarker()
-        marker.position = CLLocationCoordinate2DMake(-33.86, 151.20)
-        marker.title = "Sydney"
-        marker.snippet = "Australia"
-        marker.map = mapView
+        var McHenrymarker = GMSMarker()
+        McHenrymarker.position = CLLocationCoordinate2DMake(36.99578157522153, -122.058908423001)
+        McHenrymarker.title = "McHenry Library"
+        McHenrymarker.snippet = "UCSC"
+        McHenrymarker.map = mapView
+        var SciEngmarker = GMSMarker()
+        SciEngmarker.position = CLLocationCoordinate2DMake(36.99904411574191,-122.06070818525006)
+        SciEngmarker.title = "S&E Library"
+        SciEngmarker.snippet = "UCSC"
+        SciEngmarker.map = mapView
         copyright.text = GMSServices.openSourceLicenseInfo()
     }
 }
