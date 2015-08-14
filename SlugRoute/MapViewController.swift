@@ -33,6 +33,7 @@ class MapViewController: UIViewController {
         SciEngmarker.title = "S&E Library"
         SciEngmarker.snippet = "UCSC"
         SciEngmarker.map = mapView
+        //Must be somewhere in the view! License Info.
         copyright.text = GMSServices.openSourceLicenseInfo()
     }
 }

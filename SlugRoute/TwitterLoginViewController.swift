@@ -17,6 +17,9 @@ class TwitterLoginViewController: UIViewController {
         super.viewDidLoad()
         let logInButton = TWTRLogInButton { (session, error) in
             // play with Twitter session
+            let vc = TwitterSearchTimelineViewController()
+            
+            self.presentViewController(vc, animated: true, completion: nil)
         }
         logInButton.center = self.view.center
         self.view.addSubview(logInButton)
