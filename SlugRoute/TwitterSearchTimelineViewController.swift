@@ -11,8 +11,13 @@ import UIKit
 import TwitterKit
 
 class TwitterSearchTimelineViewController: TWTRTimelineViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+        swipeRight.direction = UISwipeGestureRecognizerDirection.Right
+        self.view.addGestureRecognizer(swipeRight)
         
         Twitter.sharedInstance().logInGuestWithCompletion { session, error in
             if let validSession = session {
@@ -22,14 +27,25 @@ class TwitterSearchTimelineViewController: TWTRTimelineViewController {
                 println("error: \(error.localizedDescription)")
             }
         }
-        /*
-        let backButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.Plain, target: self, action: "goBack")
-        navigationItem.leftBarButtonItem = backButton
-        */
+
     }
-    /*
-    func goBack(){
-        dismissViewControllerAnimated(true, completion: nil)
+    
+    func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+        
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            
+            switch swipeGesture.direction {
+            case UISwipeGestureRecognizerDirection.Right:
+                println("Swiped right")
+                let storyboard : UIStoryboard = UIStoryboard(name:"Main", bundle: nil)
+                let vc : SocialViewController = storyboard.instantiateViewControllerWithIdentifier("socialView") as! SocialViewController
+                
+                self.presentViewController(vc, animated: true, completion: nil)
+            default:
+                break
+            }
+        }
     }
-    */
+    
+
 }

@@ -10,14 +10,13 @@
 		42C07D62A7DFF48856C27FF9 /* Pods_SlugRoute.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88152EAC8DA08C7A7BFC6E6D /* Pods_SlugRoute.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		64A903C20085C7B4592C5361 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C2CD37949B3FD61EB249C21 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B84152E31B13CAE10075E885 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84152E21B13CAE10075E885 /* AppDelegate.swift */; };
-		B84152EA1B13CAE10075E885 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84152E81B13CAE10075E885 /* Main.storyboard */; };
 		B84152EC1B13CAE10075E885 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B84152EB1B13CAE10075E885 /* Images.xcassets */; };
-		B84152EF1B13CAE10075E885 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B84152ED1B13CAE10075E885 /* LaunchScreen.xib */; };
 		B84152FB1B13CAE10075E885 /* SlugRouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84152FA1B13CAE10075E885 /* SlugRouteTests.swift */; };
 		B84153051B13CE8F0075E885 /* EventsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84153041B13CE8F0075E885 /* EventsNavigationController.swift */; };
 		B84153071B13CEAC0075E885 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84153061B13CEAC0075E885 /* EventsViewController.swift */; };
 		B84153091B13CEF40075E885 /* EventTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84153081B13CEF40075E885 /* EventTableCell.swift */; };
 		B841530B1B13D0690075E885 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B841530A1B13D0690075E885 /* Event.swift */; };
+		DA0295221B7F333A0018FF48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84152E81B13CAE10075E885 /* Main.storyboard */; };
 		DA4CA12E1B73458900DA6A94 /* MapNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CA12D1B73458900DA6A94 /* MapNavigationController.swift */; };
 		DA4CA1301B73462600DA6A94 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CA12F1B73462600DA6A94 /* MapViewController.swift */; };
 		DA4CA1561B740A3C00DA6A94 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4CA1551B740A3C00DA6A94 /* AVFoundation.framework */; };
@@ -332,9 +331,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA0295221B7F333A0018FF48 /* Main.storyboard in Resources */,
 				DA608BC51B6C258600B22EF0 /* TwitterKitResources.bundle in Resources */,
-				B84152EA1B13CAE10075E885 /* Main.storyboard in Resources */,
-				B84152EF1B13CAE10075E885 /* LaunchScreen.xib in Resources */,
 				B84152EC1B13CAE10075E885 /* Images.xcassets in Resources */,
 				DA4FD79C1B79702D00F05253 /* GoogleMaps.bundle in Resources */,
 			);

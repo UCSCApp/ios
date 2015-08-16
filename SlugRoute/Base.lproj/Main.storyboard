@@ -51,7 +51,7 @@
         <!--Social View Controller-->
         <scene sceneID="2Ya-FD-4ar">
             <objects>
-                <viewController title="Social View Controller" id="HFf-KR-bHr" customClass="SocialViewController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="socialView" title="Social View Controller" id="HFf-KR-bHr" customClass="SocialViewController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xSV-Qd-T6w"/>
                         <viewControllerLayoutGuide type="bottom" id="Gku-0O-r0n"/>
