@@ -41,6 +41,8 @@
 		DA608BC61B6C258600B22EF0 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA608BC21B6C258600B22EF0 /* TwitterCore.framework */; };
 		DA6ADB3D1B6C6E6F00BD3E8B /* TwitterLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6ADB3C1B6C6E6F00BD3E8B /* TwitterLoginViewController.swift */; };
 		DA6ADB451B6C83E900BD3E8B /* InstagramLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6ADB441B6C83E900BD3E8B /* InstagramLoginViewController.swift */; };
+		DA9869E01B8458840013E199 /* InstagramPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9869DF1B8458840013E199 /* InstagramPost.swift */; };
+		DA9869E21B845BF60013E199 /* InstagramTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9869E11B845BF60013E199 /* InstagramTableCell.swift */; };
 		DA9B84ED1B7DBEDA00246191 /* TwitterSearchTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B84EC1B7DBEDA00246191 /* TwitterSearchTimelineViewController.swift */; };
 		DAA5E4AE1B6D71390066BD56 /* SocialNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA5E4AD1B6D71390066BD56 /* SocialNavigationController.swift */; };
 		DAA5E4B01B6D73320066BD56 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA5E4AF1B6D73320066BD56 /* TabBarController.swift */; };
@@ -99,6 +101,8 @@
 		DA608BC21B6C258600B22EF0 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = SOURCE_ROOT; };
 		DA6ADB3C1B6C6E6F00BD3E8B /* TwitterLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterLoginViewController.swift; sourceTree = "<group>"; };
 		DA6ADB441B6C83E900BD3E8B /* InstagramLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramLoginViewController.swift; sourceTree = "<group>"; };
+		DA9869DF1B8458840013E199 /* InstagramPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramPost.swift; sourceTree = "<group>"; };
+		DA9869E11B845BF60013E199 /* InstagramTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramTableCell.swift; sourceTree = "<group>"; };
 		DA9B84EC1B7DBEDA00246191 /* TwitterSearchTimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterSearchTimelineViewController.swift; sourceTree = "<group>"; };
 		DAA5E4AD1B6D71390066BD56 /* SocialNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialNavigationController.swift; sourceTree = "<group>"; };
 		DAA5E4AF1B6D73320066BD56 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -196,6 +200,8 @@
 				DAA5E4AF1B6D73320066BD56 /* TabBarController.swift */,
 				DA4FD7941B79688300F05253 /* SlugRoute-Bridging-Header.h */,
 				DA9B84EC1B7DBEDA00246191 /* TwitterSearchTimelineViewController.swift */,
+				DA9869DF1B8458840013E199 /* InstagramPost.swift */,
+				DA9869E11B845BF60013E199 /* InstagramTableCell.swift */,
 			);
 			path = SlugRoute;
 			sourceTree = "<group>";
@@ -414,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAA5E4AE1B6D71390066BD56 /* SocialNavigationController.swift in Sources */,
+				DA9869E21B845BF60013E199 /* InstagramTableCell.swift in Sources */,
 				B84153051B13CE8F0075E885 /* EventsNavigationController.swift in Sources */,
 				DA4CA12E1B73458900DA6A94 /* MapNavigationController.swift in Sources */,
 				DAA5E4B01B6D73320066BD56 /* TabBarController.swift in Sources */,
@@ -426,6 +433,7 @@
 				DA5EB4511B6CBF4700991145 /* SocialViewController.swift in Sources */,
 				DA6ADB451B6C83E900BD3E8B /* InstagramLoginViewController.swift in Sources */,
 				B841530B1B13D0690075E885 /* Event.swift in Sources */,
+				DA9869E01B8458840013E199 /* InstagramPost.swift in Sources */,
 				DA9B84ED1B7DBEDA00246191 /* TwitterSearchTimelineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

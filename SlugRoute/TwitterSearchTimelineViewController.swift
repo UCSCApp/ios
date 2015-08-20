@@ -10,11 +10,13 @@ import Foundation
 import UIKit
 import TwitterKit
 
+//http://docs.fabric.io/ios/twitter/show-timelines.html
 class TwitterSearchTimelineViewController: TWTRTimelineViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //for swipe right to go back to SocialViewController
         var swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
         swipeRight.direction = UISwipeGestureRecognizerDirection.Right
         self.view.addGestureRecognizer(swipeRight)
@@ -30,10 +32,12 @@ class TwitterSearchTimelineViewController: TWTRTimelineViewController {
 
     }
     
+    //function for swipe gestures
     func respondToSwipeGesture(gesture: UIGestureRecognizer) {
         
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             
+            //swipe right
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.Right:
                 println("Swiped right")
