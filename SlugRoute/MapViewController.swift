@@ -8,15 +8,14 @@
 
 import Foundation
 import UIKit
+import MapKit
 
 class MapViewController: UIViewController {
-    
 
     @IBOutlet weak var copyright: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         var camera = GMSCameraPosition.cameraWithLatitude(36.99578157522153,
             longitude: -122.058908423001, zoom: 14)
         var mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
@@ -33,6 +32,13 @@ class MapViewController: UIViewController {
         SciEngmarker.title = "S&E Library"
         SciEngmarker.snippet = "UCSC"
         SciEngmarker.map = mapView
+        var c8andOakesDiningHall = GMSMarker()
+        c8andOakesDiningHall.position = CLLocationCoordinate2DMake(36.991655, -122.065103)
+        c8andOakesDiningHall.title = "College 8 & Oakes Dining Hall"
+        c8andOakesDiningHall.snippet = "UCSC"
+        c8andOakesDiningHall.map = mapView
+
+        //Must be somewhere in the view! License Info.
         copyright.text = GMSServices.openSourceLicenseInfo()
     }
 }

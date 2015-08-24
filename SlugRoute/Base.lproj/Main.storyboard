@@ -38,11 +38,60 @@
                     <view key="view" contentMode="scaleToFill" id="OBA-2P-o3n">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="346" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Yhp-yc-Sni">
+                                <rect key="frame" x="0.0" y="64" width="320" height="431"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="InstagramTableCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="InstagramTableCell" rowHeight="346" id="nlO-Ac-8xD" customClass="InstagramTableCell" customModule="SlugRoute" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nlO-Ac-8xD" id="0Tw-k6-Xl4">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="username" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="4" translatesAutoresizingMaskIntoConstraints="NO" id="C3d-Aa-FY5">
+                                                    <rect key="frame" x="139" y="307" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="description" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" minimumFontSize="4" translatesAutoresizingMaskIntoConstraints="NO" id="dgP-gN-KcJ">
+                                                    <rect key="frame" x="58" y="226" width="205" height="52"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="picture" translatesAutoresizingMaskIntoConstraints="NO" id="fEz-vo-zUc">
+                                                    <rect key="frame" x="55" y="8" width="210" height="210"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="by:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="3" translatesAutoresizingMaskIntoConstraints="NO" id="hmt-hS-r3b">
+                                                    <rect key="frame" x="139" y="293" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="5"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="dgP-gN-KcJ" id="Akk-UZ-2UQ"/>
+                                            <outlet property="pictureLabel" destination="fEz-vo-zUc" id="ocO-Ko-NB3"/>
+                                            <outlet property="userLabel" destination="C3d-Aa-FY5" id="MeY-X6-xzD"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="FqH-Dq-hXr" id="8Ur-aC-gW8"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="4O1-zd-v46"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="instagramTable" destination="Yhp-yc-Sni" id="AcA-Fy-WVI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sQz-fH-Dh0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,7 +100,7 @@
         <!--Social View Controller-->
         <scene sceneID="2Ya-FD-4ar">
             <objects>
-                <viewController title="Social View Controller" id="HFf-KR-bHr" customClass="SocialViewController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="socialView" title="Social View Controller" id="HFf-KR-bHr" customClass="SocialViewController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xSV-Qd-T6w"/>
                         <viewControllerLayoutGuide type="bottom" id="Gku-0O-r0n"/>
