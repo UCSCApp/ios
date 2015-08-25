@@ -1,3 +1,0 @@
-framework module CLSSymbolicationDynamic {
-    header "CLSSymbolicationDynamic-Swift.h"
-}
