@@ -14,11 +14,14 @@ class Event : NSObject
    var name                : String = ""
    var date                : String = ""
    var descriptionText     : String = ""
+   var url                 : String = ""
    
    init(data : JSON)
    {
       name              = data["name"].stringValue
       date              = data["date"].stringValue
       descriptionText   = data["description"].stringValue
+      url               = data["url"].stringValue
+
    }
 }

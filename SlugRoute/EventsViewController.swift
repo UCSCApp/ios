@@ -12,9 +12,14 @@ import Alamofire
 
 class EventsViewController: UIViewController {
    
-   var events : [Event] = []
+    var events : [Event] = []
+    var nameLabel:String!
+    var dateLabel:String!
+    var descriptionLabel:String!
+    var urlImage:UIImage!
 
-   @IBOutlet weak var eventsTable: UITableView!
+    @IBOutlet weak var eventsTable: UITableView!
+
    
     override func viewDidLoad()
     {
@@ -69,10 +74,40 @@ class EventsViewController: UIViewController {
       
       cell.nameLabel.text           = event.name
       cell.dateLabel.text           = event.date
-      cell.descriptionLabel.text     = event.descriptionText
-      
+      cell.descriptionLabel.text    = event.descriptionText
+      cell.urlImage.imageFromUrl(event.url)
+    
       return cell
    }
+    
+    func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+        // Get Cell Label
+        let indexPath = tableView.indexPathForSelectedRow();
+        let currentCell = tableView.cellForRowAtIndexPath(indexPath!) as! EventTableCell;
+        
+        nameLabel = currentCell.nameLabel!.text
+        dateLabel = currentCell.dateLabel!.text
+        descriptionLabel = currentCell.descriptionLabel!.text
+        urlImage = currentCell.urlImage!.image
+        performSegueWithIdentifier("toSummary", sender: self)
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if (segue.identifier == "toSummary") {
+            
+            // initialize new view controller and cast it as your view controller
+            var viewController = segue.destinationViewController as! EventViewController
+            // your new view controller should have property that will store passed value
+            viewController.nameLabel = nameLabel
+            viewController.dateLabel = dateLabel
+            viewController.descriptionLabel = description
+            viewController.image = urlImage
+            
+        }
+        
+    }
    
     /*
     // MARK: - Navigation
