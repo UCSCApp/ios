@@ -20,6 +20,7 @@ class SocialViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Social"
     }
     
     

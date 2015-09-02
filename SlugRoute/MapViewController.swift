@@ -12,10 +12,10 @@ import MapKit
 
 class MapViewController: UIViewController {
 
-    @IBOutlet weak var copyright: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Map"
         var camera = GMSCameraPosition.cameraWithLatitude(36.99578157522153,
             longitude: -122.058908423001, zoom: 14)
         var mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
@@ -70,9 +70,5 @@ class MapViewController: UIViewController {
         diningcowellandstevenson.icon = UIImage(named: "dining_hall")
         diningcowellandstevenson.map = mapView
         
-        
-
-        //Must be somewhere in the view! License Info.
-        copyright.text = GMSServices.openSourceLicenseInfo()
     }
 }
