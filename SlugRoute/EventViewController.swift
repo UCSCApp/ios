@@ -51,6 +51,7 @@ class EventViewController: UIViewController {
             //swipe right
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.Right:
+                println("Swiped right")
                 let storyboard : UIStoryboard = UIStoryboard(name:"Main", bundle: nil)
                 let vc : EventsViewController = storyboard.instantiateViewControllerWithIdentifier("eventsView") as! EventsViewController
                 
