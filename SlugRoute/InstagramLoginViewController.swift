@@ -31,10 +31,12 @@ class InstagramLoginViewController: UIViewController {
     {
         super.viewDidLoad()
         
+        /*
         //for swipe right to go back to SocialViewController
         var swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
         swipeRight.direction = UISwipeGestureRecognizerDirection.Right
         self.view.addGestureRecognizer(swipeRight)
+        */
         
         self.title  = "Instagram"
         
@@ -106,6 +108,7 @@ class InstagramLoginViewController: UIViewController {
         return cell
     }
     
+    /*
     func respondToSwipeGesture(gesture: UIGestureRecognizer) {
         
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
@@ -122,5 +125,6 @@ class InstagramLoginViewController: UIViewController {
             }
         }
     }
+    */
     
 }

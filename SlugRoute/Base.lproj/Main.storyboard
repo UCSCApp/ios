@@ -143,7 +143,7 @@
         <!--Twitter-->
         <scene sceneID="kyU-Cm-f8Z">
             <objects>
-                <viewController title="Twitter" id="VQC-43-S8I" customClass="TwitterLoginViewController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Twitter" id="VQC-43-S8I" customClass="TwitterSearchTimelineViewController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ppB-yK-MPq"/>
                         <viewControllerLayoutGuide type="bottom" id="lcv-Ui-aa1"/>

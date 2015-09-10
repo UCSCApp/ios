@@ -16,10 +16,14 @@ class TwitterSearchTimelineViewController: TWTRTimelineViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Twitter"
+        
+        /*
         //for swipe right to go back to SocialViewController
         var swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
         swipeRight.direction = UISwipeGestureRecognizerDirection.Right
         self.view.addGestureRecognizer(swipeRight)
+        */
         
         Twitter.sharedInstance().logInGuestWithCompletion { session, error in
             if let validSession = session {
@@ -32,6 +36,7 @@ class TwitterSearchTimelineViewController: TWTRTimelineViewController {
 
     }
     
+    /*
     //function for swipe gestures
     func respondToSwipeGesture(gesture: UIGestureRecognizer) {
         
@@ -50,6 +55,7 @@ class TwitterSearchTimelineViewController: TWTRTimelineViewController {
             }
         }
     }
+    */
     
 
 }
