@@ -28,7 +28,7 @@ class EventViewController: UIViewController {
         eventName.text = nameLabel
         eventDate.text = dateLabel
         eventDescription.text = descriptionLabel
-        imageBanner = UIImageView(image: image)
+        imageBanner.image = image
         
         //for swipe right to go back to SocialViewController
         var swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")

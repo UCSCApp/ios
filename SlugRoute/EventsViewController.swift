@@ -34,7 +34,25 @@ class EventsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-   
+    //getEvents for testing purposes
+    func getEvents(){
+        var json =
+        "[{\"name\":\"Edge of Eden\",\"date\":\"July 18th 10pm 2am\",\"description\":\"Musical festival with a finale by Squidward Tortellini\",\"url\":\"http://tmcdigitalmedia.com/wp-content/uploads/2013/03/2_27_13-FSNA_Flyer_web_versionF.jpeg\"},{\"name\":\"Holi Festival\",\"date\":\"May 25th 10am 12pm\",\"description\":\"This event is super fun and super great!\",\"url\":\"https://uh.collegiatelink.net/images/W460xL600/0/noshadow/Event/c40dcb200abb430c9c20c632473b959f.jpg\"},{\"name\":\"Meeting\",\"date\":\"May 31st 2pm 4pm\",\"description\":\"Simba is asking you to go to this super boring meeting thing again\",\"url\":\"http://img01.deviantart.net/d568/i/2012/062/a/1/steam_event_flyer_design_by_danwilko-d4rke4s.jpg\"},{\"name\":\"French Fried\",\"date\":\"January 1st 13am 7pm\",\"description\":\"TBH Im not entirely sure what this is, so please dont come to this event at all, This desciption is purposely awkwardly long to hopefully break all of your apps becase I am a devious motherfucker like that. So I am still writing random shit now to break your apps in my malicious ways. I wonder if anyone will actually handle this case. I sure as hell wouldnt. Who the fuck actually spends the time to write this long a description about a dumb event called French Fried holy fuck. Btw I hope you arent actually reading this when you should be coding the solution to fixing your description box that just broke due to my malicious test script. Unless of course it worked in which case, you should probably stop reading this anyway because holy fuck this is a long motha fucking description. It is called French Fried. Starts at 13am. Be there.\",\"url\":\"http://www.hiddenorchestra.com/wp-content/gallery/flyers-and-posters/soundcrash-daedelus_-a5-flyer-01.jpg\"},{\"name\":\"Short but sweet\",\"date\":\"never\",\"description\":\"meow\",\"url\":\"https://www.designmaz.net/wp-content/uploads/2014/11/psd-event-flyer-templates.jpg\"}]"
+        
+        // convert String to NSData
+        var data: NSData = json.dataUsingEncoding(NSUTF8StringEncoding)!
+        var error: NSError?
+        
+        // convert NSData to 'AnyObject'
+        let anyObj: AnyObject? = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(0),
+            error: &error)
+        
+        // convert 'AnyObject' to Array<Business>
+        var jsonObj = JSON(anyObj!)
+        self.parseEvents(jsonObj)
+        
+    }
+    /*
    func getEvents()
    {
       Alamofire.request(.GET, "http://ec2-52-8-25-141.us-west-1.compute.amazonaws.com/events/get/v1")
@@ -52,6 +70,7 @@ class EventsViewController: UIViewController {
             }
       }
    }
+*/
    
    func parseEvents(data : JSON)
    {
@@ -75,39 +94,41 @@ class EventsViewController: UIViewController {
       cell.nameLabel.text           = event.name
       cell.dateLabel.text           = event.date
       cell.descriptionLabel.text    = event.descriptionText
-      cell.urlImage.imageFromUrl(event.url)
+    
+      if let url = NSURL(string: event.url) {
+          if let data = NSData(contentsOfURL: url){
+              if let imageUrl = UIImage(data: data) {
+                  cell.urlImage.image = imageUrl  // you can use your imageUrl UIImage (note: imageUrl it is not an optional here)
+              }
+          }
+      }
     
       return cell
    }
     
-    func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get Cell Label
-        let indexPath = tableView.indexPathForSelectedRow();
-        let currentCell = tableView.cellForRowAtIndexPath(indexPath!) as! EventTableCell;
-        
+        let indexPath = self.eventsTable.indexPathForSelectedRow();
+        let currentCell = self.eventsTable.cellForRowAtIndexPath(indexPath!) as! EventTableCell;
         nameLabel = currentCell.nameLabel!.text
         dateLabel = currentCell.dateLabel!.text
         descriptionLabel = currentCell.descriptionLabel!.text
         urlImage = currentCell.urlImage!.image
-        performSegueWithIdentifier("toSummary", sender: self)
-        
-    }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
         if (segue.identifier == "toSummary") {
-            
             // initialize new view controller and cast it as your view controller
             var viewController = segue.destinationViewController as! EventViewController
             // your new view controller should have property that will store passed value
             viewController.nameLabel = nameLabel
             viewController.dateLabel = dateLabel
-            viewController.descriptionLabel = description
+            viewController.descriptionLabel = descriptionLabel
             viewController.image = urlImage
             
         }
         
     }
+    
    
     /*
     // MARK: - Navigation
