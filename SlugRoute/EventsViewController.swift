@@ -10,15 +10,13 @@ import UIKit
 import Alamofire
 //import SwiftyJSON
 
-class EventsViewController: UIViewController {
+class EventsViewController: UITableViewController {
    
     var events : [Event] = []
     var nameLabel:String!
     var dateLabel:String!
     var descriptionLabel:String!
     var urlImage:UIImage!
-
-    @IBOutlet weak var eventsTable: UITableView!
 
    
     override func viewDidLoad()
@@ -75,15 +73,15 @@ class EventsViewController: UIViewController {
          events.append(Event(data: json))
       }
       
-      eventsTable.reloadData()
+      self.tableView.reloadData()
    }
    
-   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
    {
       return events.count
    }
    
-   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
       let event = events[indexPath.row] as Event
       let cell = tableView.dequeueReusableCellWithIdentifier("EventTableCell", forIndexPath: indexPath) as! EventTableCell
       
@@ -106,8 +104,8 @@ class EventsViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get Cell Label
-        let indexPath = self.eventsTable.indexPathForSelectedRow();
-        let currentCell = self.eventsTable.cellForRowAtIndexPath(indexPath!) as! EventTableCell;
+        let indexPath = self.tableView.indexPathForSelectedRow();
+        let currentCell = self.tableView.cellForRowAtIndexPath(indexPath!) as! EventTableCell;
         nameLabel = currentCell.nameLabel!.text
         dateLabel = currentCell.dateLabel!.text
         descriptionLabel = currentCell.descriptionLabel!.text
