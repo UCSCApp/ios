@@ -6,19 +6,23 @@
 	<dict>
 		<key>Resources/Assets.car</key>
 		<data>
-		BEOxpxr4mAst7kCK/hjdHZK4hPU=
+		mxnfpRR6uXURAzP2TgW+WstGmlw=
 		</data>
-		<key>Resources/CLSFeatureTutorialWindowController.nib</key>
+		<key>Resources/CLSKitDetailDashboardViewController.nib</key>
 		<data>
-		4AFjmuWEMftlXd92ydjpJ3egIzo=
+		D/g5IBwtKQgrZNwebjnTbyUAyXo=
 		</data>
 		<key>Resources/CLSKitFeatureTutorialViewController.nib</key>
 		<data>
-		djgPyDp/9LWPX4Fdo66Facb8UNY=
+		s6wMx5vMuSiqLQtTsk12MiVkXiY=
 		</data>
 		<key>Resources/CLSManualKitKeyProvisionViewController.nib</key>
 		<data>
 		yxhBnBZzdtsaBaM5Enkb6j7hnwc=
+		</data>
+		<key>Resources/CLSUINavigationBarView.nib</key>
+		<data>
+		BbyDRwb+8YORdv9Hcs7A+pKnDEg=
 		</data>
 		<key>Resources/Model.momd/Model.mom</key>
 		<data>
@@ -366,11 +370,11 @@
 		</data>
 		<key>Resources/com.twitter.social.syndication-swift.txt</key>
 		<data>
-		KHAZXpV13ewBLe0G4dH7ukz+xnA=
+		JxQGkDEOjVeQD5sLxC3ENDjCYKU=
 		</data>
 		<key>Resources/com.twitter.social.syndication.txt</key>
 		<data>
-		0KeXax50D1pHp4bixMDmLqNulyE=
+		7EMAkudhRHGKd9RPXzAsotfqYP4=
 		</data>
 		<key>Resources/control.arrow-active.tiff</key>
 		<data>
@@ -379,6 +383,14 @@
 		<key>Resources/control.arrow-inactive.tiff</key>
 		<data>
 		2rexsnYNzZS4BEYHl8o1oa/FrJE=
+		</data>
+		<key>Resources/control.bluebar-arrow-active@2x.png</key>
+		<data>
+		OD1GL6jPMu9eyNThRPM///fhXhI=
+		</data>
+		<key>Resources/control.bluebar-arrow@2x.png</key>
+		<data>
+		F/FJtNDjZQvl1eaSazPLlVEvbUA=
 		</data>
 		<key>Resources/control.button.distribution.active@2x.png</key>
 		<data>
@@ -595,7 +607,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			t3BGW5l+ujkmiwlKodgOGibSf/8=
+			fHzmZzEL83mKqKKMqNqV9x/XM4w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -604,7 +616,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eGt8mdiKCI8B3TMm8A7K1hwmxtM=
+			DQV2eUiJkcIOTMyku9js7eatzoc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -640,6 +652,10 @@
 		<key>Resources/image.cocoapods-logo@2x.png</key>
 		<data>
 		rKUgKrz5/BSppgvr1bQzH7aogS4=
+		</data>
+		<key>Resources/image.detail-arrow@2x.png</key>
+		<data>
+		iCm940NTP6PyS/nd2B0oixzngF0=
 		</data>
 		<key>Resources/image.distribution.udid-icon@2x.png</key>
 		<data>
@@ -696,6 +712,14 @@
 		<key>Resources/image.issue.impact-5.tiff</key>
 		<data>
 		o1LLq7CRxSKN1Kd9V1MI/fpl3Lw=
+		</data>
+		<key>Resources/image.kit-status-action-required@2x.png</key>
+		<data>
+		MbbfslKpO3fyJ0Twgl8lXcEUVFc=
+		</data>
+		<key>Resources/image.kit-status-installed@2x.png</key>
+		<data>
+		7L2JxvjKlcZVN4iG+WLK5mXCue0=
 		</data>
 		<key>Resources/image.light.status-item.tiff</key>
 		<data>
@@ -918,7 +942,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			EWNocIdjLe/PwBnIE7aRGCZ9RlI=
+			hQg6Z5EqzxF3WEgahEfap8wag+4=
 			</data>
 			<key>requirement</key>
 			<string>anchor apple generic and identifier "com.twitter.CLSAsyncOperation" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = L8VKXC2S77)</string>
@@ -927,7 +951,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			R+UlEbCmgv1zpYm0KcfakxuKwU8=
+			3IwGstNSMqIWN3vSl8/ClKhDjHg=
 			</data>
 			<key>requirement</key>
 			<string>identifier "org.cocoapods.LibYAML" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = L8VKXC2S77</string>
@@ -936,7 +960,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			kPkZuLwNLCZ0UnVtRq3K27KhyIw=
+			eMG48esruKVy3Rp9b6uK3i1+mOw=
 			</data>
 			<key>requirement</key>
 			<string>anchor apple generic and identifier "com.crashlytics.Pledge" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = L8VKXC2S77)</string>
@@ -945,7 +969,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			N5cpIG5Or1t/wS4lKRTlQ0nzOsU=
+			hq2nyvjdwJHv2n7tprh2Ul8oSPY=
 			</data>
 			<key>requirement</key>
 			<string>anchor apple generic and identifier "com.squareup.SocketRocket" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = L8VKXC2S77)</string>
@@ -963,7 +987,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			ujRblNp9Wl36kcl6GrDW1ihlJeg=
+			IqUExKShAvnOpioxh/WHdscZ3XA=
 			</data>
 			<key>requirement</key>
 			<string>identifier "org.cocoapods.YAML-Framework" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = L8VKXC2S77</string>
@@ -1051,19 +1075,23 @@
 		</dict>
 		<key>Resources/Assets.car</key>
 		<data>
-		BEOxpxr4mAst7kCK/hjdHZK4hPU=
+		mxnfpRR6uXURAzP2TgW+WstGmlw=
 		</data>
-		<key>Resources/CLSFeatureTutorialWindowController.nib</key>
+		<key>Resources/CLSKitDetailDashboardViewController.nib</key>
 		<data>
-		4AFjmuWEMftlXd92ydjpJ3egIzo=
+		D/g5IBwtKQgrZNwebjnTbyUAyXo=
 		</data>
 		<key>Resources/CLSKitFeatureTutorialViewController.nib</key>
 		<data>
-		djgPyDp/9LWPX4Fdo66Facb8UNY=
+		s6wMx5vMuSiqLQtTsk12MiVkXiY=
 		</data>
 		<key>Resources/CLSManualKitKeyProvisionViewController.nib</key>
 		<data>
 		yxhBnBZzdtsaBaM5Enkb6j7hnwc=
+		</data>
+		<key>Resources/CLSUINavigationBarView.nib</key>
+		<data>
+		BbyDRwb+8YORdv9Hcs7A+pKnDEg=
 		</data>
 		<key>Resources/Model.momd/Model.mom</key>
 		<data>
@@ -1411,11 +1439,11 @@
 		</data>
 		<key>Resources/com.twitter.social.syndication-swift.txt</key>
 		<data>
-		KHAZXpV13ewBLe0G4dH7ukz+xnA=
+		JxQGkDEOjVeQD5sLxC3ENDjCYKU=
 		</data>
 		<key>Resources/com.twitter.social.syndication.txt</key>
 		<data>
-		0KeXax50D1pHp4bixMDmLqNulyE=
+		7EMAkudhRHGKd9RPXzAsotfqYP4=
 		</data>
 		<key>Resources/control.arrow-active.tiff</key>
 		<data>
@@ -1424,6 +1452,14 @@
 		<key>Resources/control.arrow-inactive.tiff</key>
 		<data>
 		2rexsnYNzZS4BEYHl8o1oa/FrJE=
+		</data>
+		<key>Resources/control.bluebar-arrow-active@2x.png</key>
+		<data>
+		OD1GL6jPMu9eyNThRPM///fhXhI=
+		</data>
+		<key>Resources/control.bluebar-arrow@2x.png</key>
+		<data>
+		F/FJtNDjZQvl1eaSazPLlVEvbUA=
 		</data>
 		<key>Resources/control.button.distribution.active@2x.png</key>
 		<data>
@@ -1640,7 +1676,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			t3BGW5l+ujkmiwlKodgOGibSf/8=
+			fHzmZzEL83mKqKKMqNqV9x/XM4w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1649,7 +1685,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eGt8mdiKCI8B3TMm8A7K1hwmxtM=
+			DQV2eUiJkcIOTMyku9js7eatzoc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1685,6 +1721,10 @@
 		<key>Resources/image.cocoapods-logo@2x.png</key>
 		<data>
 		rKUgKrz5/BSppgvr1bQzH7aogS4=
+		</data>
+		<key>Resources/image.detail-arrow@2x.png</key>
+		<data>
+		iCm940NTP6PyS/nd2B0oixzngF0=
 		</data>
 		<key>Resources/image.distribution.udid-icon@2x.png</key>
 		<data>
@@ -1741,6 +1781,14 @@
 		<key>Resources/image.issue.impact-5.tiff</key>
 		<data>
 		o1LLq7CRxSKN1Kd9V1MI/fpl3Lw=
+		</data>
+		<key>Resources/image.kit-status-action-required@2x.png</key>
+		<data>
+		MbbfslKpO3fyJ0Twgl8lXcEUVFc=
+		</data>
+		<key>Resources/image.kit-status-installed@2x.png</key>
+		<data>
+		7L2JxvjKlcZVN4iG+WLK5mXCue0=
 		</data>
 		<key>Resources/image.light.status-item.tiff</key>
 		<data>
@@ -1960,7 +2008,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			EqG6DN58Z9lXxGXaBjCzvJFt6ZA=
+			TLeyDOB81lqKbg5XL+2ovgpNoMA=
 			</data>
 			<key>requirement</key>
 			<string>anchor apple generic and identifier "com.crashlytics.mac.CSYMGenerator" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = L8VKXC2S77)</string>

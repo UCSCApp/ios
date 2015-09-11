@@ -51,11 +51,19 @@
 		DA608BC61B6C258600B22EF0 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA608BC21B6C258600B22EF0 /* TwitterCore.framework */; };
 		DA6ADB3D1B6C6E6F00BD3E8B /* TwitterLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6ADB3C1B6C6E6F00BD3E8B /* TwitterLoginViewController.swift */; };
 		DA6ADB451B6C83E900BD3E8B /* InstagramLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6ADB441B6C83E900BD3E8B /* InstagramLoginViewController.swift */; };
+		DA7332031BA2211A00E674C9 /* DiningNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7332021BA2211A00E674C9 /* DiningNavigationController.swift */; };
+		DA7332071BA226AA00E674C9 /* DiningTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7332061BA226AA00E674C9 /* DiningTableViewController.swift */; };
+		DA73320D1BA22C7100E674C9 /* DiningTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73320C1BA22C7100E674C9 /* DiningTableCell.swift */; };
+		DA73320F1BA22D6500E674C9 /* Dining.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73320E1BA22D6500E674C9 /* Dining.swift */; };
 		DA9869E01B8458840013E199 /* InstagramPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9869DF1B8458840013E199 /* InstagramPost.swift */; };
 		DA9869E21B845BF60013E199 /* InstagramTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9869E11B845BF60013E199 /* InstagramTableCell.swift */; };
 		DA9B84ED1B7DBEDA00246191 /* TwitterSearchTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B84EC1B7DBEDA00246191 /* TwitterSearchTimelineViewController.swift */; };
 		DAA5E4AE1B6D71390066BD56 /* SocialNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA5E4AD1B6D71390066BD56 /* SocialNavigationController.swift */; };
 		DAA5E4B01B6D73320066BD56 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA5E4AF1B6D73320066BD56 /* TabBarController.swift */; };
+		DAC86AE71BA23FA000DD7668 /* MealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC86AE61BA23FA000DD7668 /* MealsViewController.swift */; };
+		DAC86AEB1BA2867600DD7668 /* BreakfastTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC86AEA1BA2867600DD7668 /* BreakfastTableCell.swift */; };
+		DAC86AED1BA2868100DD7668 /* LunchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC86AEC1BA2868100DD7668 /* LunchTableCell.swift */; };
+		DAC86AEF1BA2868C00DD7668 /* DinnerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC86AEE1BA2868C00DD7668 /* DinnerTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,11 +129,19 @@
 		DA608BC21B6C258600B22EF0 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = SOURCE_ROOT; };
 		DA6ADB3C1B6C6E6F00BD3E8B /* TwitterLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterLoginViewController.swift; sourceTree = "<group>"; };
 		DA6ADB441B6C83E900BD3E8B /* InstagramLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramLoginViewController.swift; sourceTree = "<group>"; };
+		DA7332021BA2211A00E674C9 /* DiningNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningNavigationController.swift; sourceTree = "<group>"; };
+		DA7332061BA226AA00E674C9 /* DiningTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningTableViewController.swift; sourceTree = "<group>"; };
+		DA73320C1BA22C7100E674C9 /* DiningTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningTableCell.swift; sourceTree = "<group>"; };
+		DA73320E1BA22D6500E674C9 /* Dining.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dining.swift; sourceTree = "<group>"; };
 		DA9869DF1B8458840013E199 /* InstagramPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramPost.swift; sourceTree = "<group>"; };
 		DA9869E11B845BF60013E199 /* InstagramTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramTableCell.swift; sourceTree = "<group>"; };
 		DA9B84EC1B7DBEDA00246191 /* TwitterSearchTimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterSearchTimelineViewController.swift; sourceTree = "<group>"; };
 		DAA5E4AD1B6D71390066BD56 /* SocialNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialNavigationController.swift; sourceTree = "<group>"; };
 		DAA5E4AF1B6D73320066BD56 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		DAC86AE61BA23FA000DD7668 /* MealsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealsViewController.swift; sourceTree = "<group>"; };
+		DAC86AEA1BA2867600DD7668 /* BreakfastTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreakfastTableCell.swift; sourceTree = "<group>"; };
+		DAC86AEC1BA2868100DD7668 /* LunchTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LunchTableCell.swift; sourceTree = "<group>"; };
+		DAC86AEE1BA2868C00DD7668 /* DinnerTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinnerTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +248,14 @@
 				DA4688E21B9781D500F11DD0 /* SettingsNavigationController.swift */,
 				DA4688E81B9786D300F11DD0 /* SettingsTableViewCell.swift */,
 				DA4688EA1B978D1000F11DD0 /* SettingsViewController.swift */,
+				DA7332021BA2211A00E674C9 /* DiningNavigationController.swift */,
+				DA7332061BA226AA00E674C9 /* DiningTableViewController.swift */,
+				DA73320C1BA22C7100E674C9 /* DiningTableCell.swift */,
+				DA73320E1BA22D6500E674C9 /* Dining.swift */,
+				DAC86AE61BA23FA000DD7668 /* MealsViewController.swift */,
+				DAC86AEA1BA2867600DD7668 /* BreakfastTableCell.swift */,
+				DAC86AEC1BA2868100DD7668 /* LunchTableCell.swift */,
+				DAC86AEE1BA2868C00DD7668 /* DinnerTableCell.swift */,
 			);
 			path = SlugRoute;
 			sourceTree = "<group>";
@@ -458,9 +482,13 @@
 				DAA5E4AE1B6D71390066BD56 /* SocialNavigationController.swift in Sources */,
 				DA9869E21B845BF60013E199 /* InstagramTableCell.swift in Sources */,
 				DA4688EB1B978D1000F11DD0 /* SettingsViewController.swift in Sources */,
+				DA73320D1BA22C7100E674C9 /* DiningTableCell.swift in Sources */,
+				DAC86AED1BA2868100DD7668 /* LunchTableCell.swift in Sources */,
 				B84153051B13CE8F0075E885 /* EventsNavigationController.swift in Sources */,
 				DA4CA12E1B73458900DA6A94 /* MapNavigationController.swift in Sources */,
 				DAA5E4B01B6D73320066BD56 /* TabBarController.swift in Sources */,
+				DAC86AEF1BA2868C00DD7668 /* DinnerTableCell.swift in Sources */,
+				DA7332071BA226AA00E674C9 /* DiningTableViewController.swift in Sources */,
 				B84152E31B13CAE10075E885 /* AppDelegate.swift in Sources */,
 				DA4CA1301B73462600DA6A94 /* MapViewController.swift in Sources */,
 				DA6ADB3D1B6C6E6F00BD3E8B /* TwitterLoginViewController.swift in Sources */,
@@ -472,8 +500,12 @@
 				B841530B1B13D0690075E885 /* Event.swift in Sources */,
 				DA4688E31B9781D500F11DD0 /* SettingsNavigationController.swift in Sources */,
 				DA9869E01B8458840013E199 /* InstagramPost.swift in Sources */,
+				DA7332031BA2211A00E674C9 /* DiningNavigationController.swift in Sources */,
 				DA9B84ED1B7DBEDA00246191 /* TwitterSearchTimelineViewController.swift in Sources */,
+				DA73320F1BA22D6500E674C9 /* Dining.swift in Sources */,
+				DAC86AE71BA23FA000DD7668 /* MealsViewController.swift in Sources */,
 				DA4688E91B9786D300F11DD0 /* SettingsTableViewCell.swift in Sources */,
+				DAC86AEB1BA2867600DD7668 /* BreakfastTableCell.swift in Sources */,
 				DA3DF0951B9561F000E67952 /* EventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

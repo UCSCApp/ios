@@ -8,10 +8,8 @@ class <Your>TweetViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 #######
-        Twitter.sharedInstance().logInGuestWithCompletion { (session, error) in
-            Twitter.sharedInstance().APIClient.loadTweetWithID("20") { (tweet, error) in
-                self.view.addSubview(TWTRTweetView(tweet: tweet))
-            }
+        TWTRAPIClient().loadTweetWithID("20") { (tweet, error) in
+            self.view.addSubview(TWTRTweetView(tweet: tweet))
         }
 #######
     }
