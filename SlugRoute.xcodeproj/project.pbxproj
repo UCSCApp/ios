@@ -43,6 +43,17 @@
 		DA4CA16C1B740AE500DA6A94 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4CA16B1B740AE500DA6A94 /* SystemConfiguration.framework */; };
 		DA4FD7981B796C5C00F05253 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4FD7971B796C5C00F05253 /* GoogleMaps.framework */; };
 		DA4FD79C1B79702D00F05253 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DA4FD79B1B79702D00F05253 /* GoogleMaps.bundle */; };
+		DA525A821BA37A4F0035AEE2 /* ic_allergy_free.png in Resources */ = {isa = PBXBuildFile; fileRef = DA525A771BA37A4E0035AEE2 /* ic_allergy_free.png */; };
+		DA525A831BA37A4F0035AEE2 /* ic_beef.png in Resources */ = {isa = PBXBuildFile; fileRef = DA525A781BA37A4E0035AEE2 /* ic_beef.png */; };
+		DA525A841BA37A4F0035AEE2 /* ic_egg.png in Resources */ = {isa = PBXBuildFile; fileRef = DA525A791BA37A4E0035AEE2 /* ic_egg.png */; };
+		DA525A851BA37A4F0035AEE2 /* ic_fish.png in Resources */ = {isa = PBXBuildFile; fileRef = DA525A7A1BA37A4E0035AEE2 /* ic_fish.png */; };
+		DA525A861BA37A4F0035AEE2 /* ic_gluten.png in Resources */ = {isa = PBXBuildFile; fileRef = DA525A7B1BA37A4E0035AEE2 /* ic_gluten.png */; };
+		DA525A871BA37A4F0035AEE2 /* ic_milk.png in Resources */ = {isa = PBXBuildFile; fileRef = DA525A7C1BA37A4E0035AEE2 /* ic_milk.png */; };
+		DA525A881BA37A4F0035AEE2 /* ic_nuts.png in Resources */ = {isa = PBXBuildFile; fileRef = DA525A7D1BA37A4E0035AEE2 /* ic_nuts.png */; };
+		DA525A891BA37A4F0035AEE2 /* ic_pork.png in Resources */ = {isa = PBXBuildFile; fileRef = DA525A7E1BA37A4E0035AEE2 /* ic_pork.png */; };
+		DA525A8A1BA37A4F0035AEE2 /* ic_soy.png in Resources */ = {isa = PBXBuildFile; fileRef = DA525A7F1BA37A4E0035AEE2 /* ic_soy.png */; };
+		DA525A8B1BA37A4F0035AEE2 /* ic_vegan.png in Resources */ = {isa = PBXBuildFile; fileRef = DA525A801BA37A4E0035AEE2 /* ic_vegan.png */; };
+		DA525A8C1BA37A4F0035AEE2 /* ic_veggie.png in Resources */ = {isa = PBXBuildFile; fileRef = DA525A811BA37A4F0035AEE2 /* ic_veggie.png */; };
 		DA5EB4511B6CBF4700991145 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5EB4501B6CBF4700991145 /* SocialViewController.swift */; };
 		DA608BBE1B6C23F000B22EF0 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA608BBD1B6C23F000B22EF0 /* SwiftyJSON.swift */; };
 		DA608BC31B6C258600B22EF0 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA608BBF1B6C258600B22EF0 /* Fabric.framework */; };
@@ -121,6 +132,17 @@
 		DA4FD7941B79688300F05253 /* SlugRoute-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SlugRoute-Bridging-Header.h"; sourceTree = "<group>"; };
 		DA4FD7971B796C5C00F05253 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 		DA4FD79B1B79702D00F05253 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = SlugRoute/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		DA525A771BA37A4E0035AEE2 /* ic_allergy_free.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_allergy_free.png; path = Images.xcassets/dining.imageset/ic_allergy_free.png; sourceTree = "<group>"; };
+		DA525A781BA37A4E0035AEE2 /* ic_beef.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_beef.png; path = Images.xcassets/dining.imageset/ic_beef.png; sourceTree = "<group>"; };
+		DA525A791BA37A4E0035AEE2 /* ic_egg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_egg.png; path = Images.xcassets/dining.imageset/ic_egg.png; sourceTree = "<group>"; };
+		DA525A7A1BA37A4E0035AEE2 /* ic_fish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_fish.png; path = Images.xcassets/dining.imageset/ic_fish.png; sourceTree = "<group>"; };
+		DA525A7B1BA37A4E0035AEE2 /* ic_gluten.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_gluten.png; path = Images.xcassets/dining.imageset/ic_gluten.png; sourceTree = "<group>"; };
+		DA525A7C1BA37A4E0035AEE2 /* ic_milk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_milk.png; path = Images.xcassets/dining.imageset/ic_milk.png; sourceTree = "<group>"; };
+		DA525A7D1BA37A4E0035AEE2 /* ic_nuts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_nuts.png; path = Images.xcassets/dining.imageset/ic_nuts.png; sourceTree = "<group>"; };
+		DA525A7E1BA37A4E0035AEE2 /* ic_pork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_pork.png; path = Images.xcassets/dining.imageset/ic_pork.png; sourceTree = "<group>"; };
+		DA525A7F1BA37A4E0035AEE2 /* ic_soy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_soy.png; path = Images.xcassets/dining.imageset/ic_soy.png; sourceTree = "<group>"; };
+		DA525A801BA37A4E0035AEE2 /* ic_vegan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_vegan.png; path = Images.xcassets/dining.imageset/ic_vegan.png; sourceTree = "<group>"; };
+		DA525A811BA37A4F0035AEE2 /* ic_veggie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_veggie.png; path = Images.xcassets/dining.imageset/ic_veggie.png; sourceTree = "<group>"; };
 		DA5EB4501B6CBF4700991145 /* SocialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
 		DA608BBD1B6C23F000B22EF0 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../SwiftyJSON.swift; sourceTree = "<group>"; };
 		DA608BBF1B6C258600B22EF0 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
@@ -232,6 +254,17 @@
 				DA5EB4501B6CBF4700991145 /* SocialViewController.swift */,
 				DA3DF0841B92715F00E67952 /* dining_hall.png */,
 				DAA5E4AD1B6D71390066BD56 /* SocialNavigationController.swift */,
+				DA525A771BA37A4E0035AEE2 /* ic_allergy_free.png */,
+				DA525A781BA37A4E0035AEE2 /* ic_beef.png */,
+				DA525A791BA37A4E0035AEE2 /* ic_egg.png */,
+				DA525A7A1BA37A4E0035AEE2 /* ic_fish.png */,
+				DA525A7B1BA37A4E0035AEE2 /* ic_gluten.png */,
+				DA525A7C1BA37A4E0035AEE2 /* ic_milk.png */,
+				DA525A7D1BA37A4E0035AEE2 /* ic_nuts.png */,
+				DA525A7E1BA37A4E0035AEE2 /* ic_pork.png */,
+				DA525A7F1BA37A4E0035AEE2 /* ic_soy.png */,
+				DA525A801BA37A4E0035AEE2 /* ic_vegan.png */,
+				DA525A811BA37A4F0035AEE2 /* ic_veggie.png */,
 				DA3DF0861B9272DD00E67952 /* cafe.png */,
 				DA3DF0871B9272DE00E67952 /* classroom.png */,
 				DA3DF0881B9272DE00E67952 /* computer_lab.png */,
@@ -392,15 +425,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA3DF08D1B9272DE00E67952 /* computer_lab.png in Resources */,
+				DA525A891BA37A4F0035AEE2 /* ic_pork.png in Resources */,
+				DA525A8A1BA37A4F0035AEE2 /* ic_soy.png in Resources */,
+				DA525A8B1BA37A4F0035AEE2 /* ic_vegan.png in Resources */,
 				DA3DF08E1B9272DE00E67952 /* library.png in Resources */,
 				DA3DF08F1B9272DE00E67952 /* loop_bus.png in Resources */,
+				DA525A851BA37A4F0035AEE2 /* ic_fish.png in Resources */,
+				DA525A831BA37A4F0035AEE2 /* ic_beef.png in Resources */,
+				DA525A821BA37A4F0035AEE2 /* ic_allergy_free.png in Resources */,
+				DA525A871BA37A4F0035AEE2 /* ic_milk.png in Resources */,
+				DA525A881BA37A4F0035AEE2 /* ic_nuts.png in Resources */,
 				DA0295221B7F333A0018FF48 /* Main.storyboard in Resources */,
 				DA608BC51B6C258600B22EF0 /* TwitterKitResources.bundle in Resources */,
 				DA3DF08C1B9272DE00E67952 /* classroom.png in Resources */,
 				DA3DF08B1B9272DE00E67952 /* cafe.png in Resources */,
 				B84152EC1B13CAE10075E885 /* Images.xcassets in Resources */,
 				DA3DF0851B92715F00E67952 /* dining_hall.png in Resources */,
+				DA525A861BA37A4F0035AEE2 /* ic_gluten.png in Resources */,
+				DA525A8C1BA37A4F0035AEE2 /* ic_veggie.png in Resources */,
 				DA4FD79C1B79702D00F05253 /* GoogleMaps.bundle in Resources */,
+				DA525A841BA37A4F0035AEE2 /* ic_egg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

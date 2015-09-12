@@ -364,44 +364,82 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="Breakfast" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8h-H1-9aQ">
-                                <rect key="frame" x="82" y="72" width="156" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="Lunch" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3os-ke-hqj">
-                                <rect key="frame" x="86" y="198" width="148" height="21"/>
+                                <rect key="frame" x="85" y="220" width="148" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="Dinner" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Go-XB-Jsd">
-                                <rect key="frame" x="94" y="340" width="132" height="21"/>
+                                <rect key="frame" x="94" y="370" width="132" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="breakfastTable" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="TGM-Ju-MWW">
-                                <rect key="frame" x="0.0" y="101" width="320" height="89"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="breakfastTable" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="TGM-Ju-MWW">
+                                <rect key="frame" x="-1" y="92" width="320" height="130"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="breakfastCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="breakfastCell" id="9pv-oB-MJr" customClass="BreakfastTableCell" customModule="SlugRoute" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="breakfastCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="breakfastCell" rowHeight="60" id="9pv-oB-MJr" customClass="BreakfastTableCell" customModule="SlugRoute" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9pv-oB-MJr" id="4ew-aH-b1y">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVV-PB-v5B">
-                                                    <rect key="frame" x="21" y="11" width="160" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="8" y="15" width="137" height="27"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kTi-ha-1ud">
+                                                    <rect key="frame" x="176" y="0.0" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e9K-aN-3Hu">
+                                                    <rect key="frame" x="201" y="0.0" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wzR-Wv-VU6">
+                                                    <rect key="frame" x="227" y="0.0" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IwF-cR-TC2">
+                                                    <rect key="frame" x="251" y="0.0" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o0A-uM-YQJ">
+                                                    <rect key="frame" x="276" y="0.0" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Icm-xG-EvD">
+                                                    <rect key="frame" x="176" y="26" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eXK-o5-hFI">
+                                                    <rect key="frame" x="201" y="26" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1iM-lM-wj9">
+                                                    <rect key="frame" x="227" y="26" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="in0-gk-rbj">
+                                                    <rect key="frame" x="251" y="26" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2WX-eO-e14">
+                                                    <rect key="frame" x="276" y="26" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GqC-Bx-rbb">
+                                                    <rect key="frame" x="148" y="15" width="25" height="25"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="allergy" destination="GqC-Bx-rbb" id="bFk-S3-uiy"/>
+                                            <outlet property="beef" destination="kTi-ha-1ud" id="eoG-t9-DtO"/>
                                             <outlet property="breakfastName" destination="JVV-PB-v5B" id="BYB-Op-the"/>
+                                            <outlet property="egg" destination="wzR-Wv-VU6" id="CbM-GA-RvH"/>
+                                            <outlet property="fish" destination="IwF-cR-TC2" id="O4U-CO-Vr1"/>
+                                            <outlet property="gluten" destination="1iM-lM-wj9" id="WSN-Vj-jFh"/>
+                                            <outlet property="milk" destination="Icm-xG-EvD" id="fw8-hQ-nt8"/>
+                                            <outlet property="nuts" destination="eXK-o5-hFI" id="mol-nI-Gg2"/>
+                                            <outlet property="pork" destination="e9K-aN-3Hu" id="tIH-sB-np6"/>
+                                            <outlet property="soy" destination="1iM-lM-wj9" id="yci-uK-HiW"/>
+                                            <outlet property="vegan" destination="in0-gk-rbj" id="fbd-0B-5ez"/>
+                                            <outlet property="veggie" destination="2WX-eO-e14" id="B8p-RF-h8F"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -410,26 +448,70 @@
                                     <outlet property="delegate" destination="G17-63-5a5" id="6II-z8-xU8"/>
                                 </connections>
                             </tableView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="lunchTable" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="tf9-ge-G06">
-                                <rect key="frame" x="-5" y="229" width="325" height="109"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="lunchTable" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="tf9-ge-G06">
+                                <rect key="frame" x="-3" y="240" width="325" height="130"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="lunchCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="lunchCell" id="r2x-m5-Cj5" customClass="LunchTableCell" customModule="SlugRoute" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="lunchCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="lunchCell" rowHeight="60" id="r2x-m5-Cj5" customClass="LunchTableCell" customModule="SlugRoute" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r2x-m5-Cj5" id="p6x-ld-2Uu">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8iL-xI-FwA">
-                                                    <rect key="frame" x="24" y="11" width="156" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="8" y="19" width="140" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9hh-na-7V0">
+                                                    <rect key="frame" x="232" y="0.0" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z0t-0O-12i">
+                                                    <rect key="frame" x="257" y="0.0" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2TF-tm-q1v">
+                                                    <rect key="frame" x="283" y="0.0" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dqf-GY-puJ">
+                                                    <rect key="frame" x="178" y="26" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fj6-2H-7KX">
+                                                    <rect key="frame" x="205" y="26" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0aD-PQ-Mns">
+                                                    <rect key="frame" x="232" y="26" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L56-hN-Zfh">
+                                                    <rect key="frame" x="257" y="26" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qns-WJ-XWo">
+                                                    <rect key="frame" x="283" y="26" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rpO-Jg-bPY">
+                                                    <rect key="frame" x="205" y="1" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lbN-iI-Z8F">
+                                                    <rect key="frame" x="178" y="0.0" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rYe-yL-onR">
+                                                    <rect key="frame" x="150" y="15" width="25" height="25"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="allergy" destination="rYe-yL-onR" id="YiI-NG-lEH"/>
+                                            <outlet property="beef" destination="lbN-iI-Z8F" id="kw0-X8-Oy9"/>
+                                            <outlet property="egg" destination="9hh-na-7V0" id="HnE-ar-Xni"/>
+                                            <outlet property="fish" destination="z0t-0O-12i" id="x8A-wO-Ch1"/>
+                                            <outlet property="gluten" destination="0aD-PQ-Mns" id="83F-0C-Chb"/>
                                             <outlet property="lunchName" destination="8iL-xI-FwA" id="xto-pB-W1W"/>
+                                            <outlet property="milk" destination="dqf-GY-puJ" id="6lM-K7-kJq"/>
+                                            <outlet property="nuts" destination="Fj6-2H-7KX" id="ZBg-GO-EGl"/>
+                                            <outlet property="pork" destination="rpO-Jg-bPY" id="Dup-XC-UqN"/>
+                                            <outlet property="soy" destination="2TF-tm-q1v" id="NNu-FT-fxq"/>
+                                            <outlet property="vegan" destination="L56-hN-Zfh" id="ZNI-Jr-4XQ"/>
+                                            <outlet property="veggie" destination="qns-WJ-XWo" id="eLn-rb-DQN"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -438,26 +520,70 @@
                                     <outlet property="delegate" destination="G17-63-5a5" id="oEk-bz-pNm"/>
                                 </connections>
                             </tableView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="dinnerTable" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zzQ-ZG-yRT">
-                                <rect key="frame" x="-9" y="369" width="329" height="150"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="dinnerTable" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zzQ-ZG-yRT">
+                                <rect key="frame" x="-5" y="389" width="329" height="130"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="dinnerCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="dinnerCell" id="lQ1-5F-xgK" customClass="DinnerTableCell" customModule="SlugRoute" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="dinnerCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="dinnerCell" rowHeight="66" id="lQ1-5F-xgK" customClass="DinnerTableCell" customModule="SlugRoute" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="329" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lQ1-5F-xgK" id="NSt-ue-Mye">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7T-9C-T72">
-                                                    <rect key="frame" x="28" y="11" width="178" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="13" y="22" width="138" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qv0-to-OgY">
+                                                    <rect key="frame" x="185" y="0.0" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3B5-Gw-m7r">
+                                                    <rect key="frame" x="185" y="22" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YFn-OP-Rqg">
+                                                    <rect key="frame" x="211" y="0.0" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v6r-Dh-S72">
+                                                    <rect key="frame" x="211" y="22" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XFr-20-sGj">
+                                                    <rect key="frame" x="235" y="0.0" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r5A-OW-cLx">
+                                                    <rect key="frame" x="235" y="22" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hTo-gB-ya1">
+                                                    <rect key="frame" x="259" y="0.0" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gnD-45-JAp">
+                                                    <rect key="frame" x="259" y="22" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ItO-Ri-7m2">
+                                                    <rect key="frame" x="286" y="0.0" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a47-b3-7iZ">
+                                                    <rect key="frame" x="286" y="22" width="25" height="25"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HAe-gu-lCi">
+                                                    <rect key="frame" x="159" y="13" width="25" height="25"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="allergy" destination="HAe-gu-lCi" id="hFV-vl-xch"/>
+                                            <outlet property="beef" destination="qv0-to-OgY" id="yyR-SE-Ber"/>
                                             <outlet property="dinnerName" destination="M7T-9C-T72" id="XEx-Xd-jrc"/>
+                                            <outlet property="egg" destination="XFr-20-sGj" id="aGl-W2-ZIe"/>
+                                            <outlet property="fish" destination="hTo-gB-ya1" id="ISm-9e-PXO"/>
+                                            <outlet property="gluten" destination="r5A-OW-cLx" id="awd-GW-CIN"/>
+                                            <outlet property="milk" destination="3B5-Gw-m7r" id="D0R-hq-IOm"/>
+                                            <outlet property="nuts" destination="v6r-Dh-S72" id="paA-GA-zFp"/>
+                                            <outlet property="pork" destination="YFn-OP-Rqg" id="Uso-7z-HEx"/>
+                                            <outlet property="soy" destination="ItO-Ri-7m2" id="x7L-PQ-qe2"/>
+                                            <outlet property="vegan" destination="gnD-45-JAp" id="55G-m3-UcZ"/>
+                                            <outlet property="veggie" destination="a47-b3-7iZ" id="iop-UW-70y"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -466,6 +592,12 @@
                                     <outlet property="delegate" destination="G17-63-5a5" id="Ttu-Po-PQ1"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="Breakfast" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8h-H1-9aQ">
+                                <rect key="frame" x="82" y="72" width="156" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

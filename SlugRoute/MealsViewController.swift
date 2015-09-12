@@ -11,9 +11,9 @@ import UIKit
 
 class BreakfastItem: NSObject {
     var name: String = ""
-    var attributes: NSArray = []
+    var attributes: Array<String> = []
     
-    init(name: String, attr: NSArray?) {
+    init(name: String, attr: Array<String>?) {
         self.name = name
         self.attributes = attr!
     }
@@ -21,9 +21,9 @@ class BreakfastItem: NSObject {
 
 class LunchItem: NSObject {
     var name: String = ""
-    var attributes: NSArray = []
+    var attributes: Array<String> = []
     
-    init(name: String, attr: NSArray?) {
+    init(name: String, attr: Array<String>?) {
         self.name = name
         self.attributes = attr!
     }
@@ -31,9 +31,9 @@ class LunchItem: NSObject {
 
 class DinnerItem: NSObject {
     var name: String = ""
-    var attributes: NSArray = []
+    var attributes: Array<String> = []
     
-    init(name: String, attr: NSArray?) {
+    init(name: String, attr: Array<String>?) {
         self.name = name
         self.attributes = attr!
     }
@@ -45,7 +45,8 @@ class MealsViewController: UIViewController{
     var dinnerItems : Array<DinnerItem> = []
     var collegeName : String = ""
     var items : AnyObject = ""
-
+    
+    
     @IBOutlet weak var breakfastLabel: UILabel!
     
     @IBOutlet weak var lunchLabel: UILabel!
@@ -82,7 +83,7 @@ class MealsViewController: UIViewController{
                                     attr = value as! NSArray
                                 }
                             }
-                            self.breakfastItems.append(BreakfastItem(name: name, attr: attr))
+                            self.breakfastItems.append(BreakfastItem(name: name, attr: attr as? Array<String>))
                         }
                     }
                 }
@@ -99,7 +100,7 @@ class MealsViewController: UIViewController{
                                     attr = value as! NSArray
                                 }
                             }
-                            self.lunchItems.append(LunchItem(name: name, attr: attr))
+                            self.lunchItems.append(LunchItem(name: name, attr: attr as? Array<String>))
                         }
                     }
                 }
@@ -116,7 +117,7 @@ class MealsViewController: UIViewController{
                                     attr = value as! NSArray
                                 }
                             }
-                            self.dinnerItems.append(DinnerItem(name: name, attr: attr))
+                            self.dinnerItems.append(DinnerItem(name: name, attr: attr as? Array<String>))
                         }
                     }
                 
@@ -129,6 +130,8 @@ class MealsViewController: UIViewController{
         
         // Do any additional setup after loading the view.
     }
+    
+    // --- UITableViewDataSource protocol ---
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -153,6 +156,47 @@ class MealsViewController: UIViewController{
         
             cell.breakfastName.text                = breakfast.name
             cell.attributes                        = breakfast.attributes
+            
+            
+            for image: String in cell.attributes{
+                if(image == "eggs"){
+                    cell.egg.image = UIImage(named:"ic_egg")
+                }
+                else if(image == "soy"){
+                    cell.soy.image = UIImage(named:"ic_soy.png")
+                }
+                else if(image == "veggie"){
+                    cell.veggie.image = UIImage(named:"ic_veggie.png")
+                }
+                else if(image == "milk"){
+                    cell.milk.image = UIImage(named:"ic_milk.png")
+                }
+                else if(image == "gluten"){
+                    cell.gluten.image = UIImage(named:"ic_glutten.png")
+                }
+                else if(image == "nuts"){
+                    cell.nuts.image = UIImage(named:"ic_nuts.png")
+                }
+                else if(image == "fish"){
+                    cell.fish.image = UIImage(named:"ic_fish.png")
+                }
+                else if(image == "pork"){
+                    cell.pork.image = UIImage(named:"ic_pork.png")
+                }
+                else if(image == "vegan"){
+                    cell.vegan.image = UIImage(named:"ic_vegan.png")
+                }
+                else if(image == "beef"){
+                    cell.beef.image = UIImage(named:"ic_beef.png")
+                }
+                else if(image == "allergy free"){
+                    cell.allergy.image = UIImage(named:"ic_allergy_free.png")
+                }
+                else{
+                    //filler for now
+                    cell.allergy.image = UIImage(named:"")
+                }
+            }
 
             return cell
         }
@@ -162,6 +206,46 @@ class MealsViewController: UIViewController{
             
             cell.lunchName.text                    = lunch.name
             cell.attributes                        = lunch.attributes
+            
+            for image: String in cell.attributes{
+                if(image == "eggs"){
+                    cell.egg.image = UIImage(named:"ic_egg")
+                }
+                else if(image == "soy"){
+                    cell.soy.image = UIImage(named:"ic_soy.png")
+                }
+                else if(image == "veggie"){
+                    cell.veggie.image = UIImage(named:"ic_veggie.png")
+                }
+                else if(image == "milk"){
+                    cell.milk.image = UIImage(named:"ic_milk.png")
+                }
+                else if(image == "gluten"){
+                    cell.gluten.image = UIImage(named:"ic_glutten.png")
+                }
+                else if(image == "nuts"){
+                    cell.nuts.image = UIImage(named:"ic_nuts.png")
+                }
+                else if(image == "fish"){
+                    cell.fish.image = UIImage(named:"ic_fish.png")
+                }
+                else if(image == "pork"){
+                    cell.pork.image = UIImage(named:"ic_pork.png")
+                }
+                else if(image == "vegan"){
+                    cell.vegan.image = UIImage(named:"ic_vegan.png")
+                }
+                else if(image == "beef"){
+                    cell.beef.image = UIImage(named:"ic_beef.png")
+                }
+                else if(image == "allergy free"){
+                    cell.allergy.image = UIImage(named:"ic_allergy_free.png")
+                }
+                else{
+                    //filler for now
+                    cell.allergy.image = UIImage(named:"")
+                }
+            }
             
             return cell
         
@@ -173,6 +257,46 @@ class MealsViewController: UIViewController{
             cell.dinnerName.text                   = dinner.name
             cell.attributes                        = dinner.attributes
             
+            for image: String in cell.attributes{
+                if(image == "eggs"){
+                    cell.egg.image = UIImage(named:"ic_egg")
+                }
+                else if(image == "soy"){
+                    cell.soy.image = UIImage(named:"ic_soy.png")
+                }
+                else if(image == "veggie"){
+                    cell.veggie.image = UIImage(named:"ic_veggie.png")
+                }
+                else if(image == "milk"){
+                    cell.milk.image = UIImage(named:"ic_milk.png")
+                }
+                else if(image == "gluten"){
+                    cell.gluten.image = UIImage(named:"ic_glutten.png")
+                }
+                else if(image == "nuts"){
+                    cell.nuts.image = UIImage(named:"ic_nuts.png")
+                }
+                else if(image == "fish"){
+                    cell.fish.image = UIImage(named:"ic_fish.png")
+                }
+                else if(image == "pork"){
+                    cell.pork.image = UIImage(named:"ic_pork.png")
+                }
+                else if(image == "vegan"){
+                    cell.vegan.image = UIImage(named:"ic_vegan.png")
+                }
+                else if(image == "beef"){
+                    cell.beef.image = UIImage(named:"ic_beef.png")
+                }
+                else if(image == "allergy free"){
+                    cell.allergy.image = UIImage(named:"ic_allergy_free.png")
+                }
+                else{
+                    //filler for now
+                    cell.allergy.image = UIImage(named:"")
+                }
+            }
+            
             return cell
         
         }
@@ -182,7 +306,7 @@ class MealsViewController: UIViewController{
             return cell
         }
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

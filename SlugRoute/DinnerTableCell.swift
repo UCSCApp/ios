@@ -11,8 +11,22 @@ import UIKit
 
 class DinnerTableCell: UITableViewCell {
     
+    @IBOutlet weak var allergy: UIImageView!
+    @IBOutlet weak var beef: UIImageView!
+    @IBOutlet weak var pork: UIImageView!
+    @IBOutlet weak var egg: UIImageView!
+    @IBOutlet weak var fish: UIImageView!
+    @IBOutlet weak var soy: UIImageView!
+    @IBOutlet weak var milk: UIImageView!
+    @IBOutlet weak var nuts: UIImageView!
+    @IBOutlet weak var gluten: UIImageView!
+    @IBOutlet weak var vegan: UIImageView!
+    @IBOutlet weak var veggie: UIImageView!
+    
+    
+    
     @IBOutlet weak var dinnerName: UILabel!
-    var attributes: NSArray = []
+    var attributes: Array<String> = []
 
     
     override func awakeFromNib() {
