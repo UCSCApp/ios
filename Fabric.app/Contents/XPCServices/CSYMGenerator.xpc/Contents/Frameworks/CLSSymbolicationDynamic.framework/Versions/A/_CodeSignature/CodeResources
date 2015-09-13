@@ -74,34 +74,6 @@
 			<key>requirement</key>
 			<string>identifier "com.apple.dt.runtime.swiftSecurity" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = L8VKXC2S77</string>
 		</dict>
-		<key>Headers/CLSSymbolProcessor.h</key>
-		<data>
-		yZm/zoW/hXdB8qnm6EeLw0aVYug=
-		</data>
-		<key>Headers/CLSSymbolRange.h</key>
-		<data>
-		vW61QhmEBwFNbNFiU1Xh/GAZTQ4=
-		</data>
-		<key>Headers/CLSSymbolication.h</key>
-		<data>
-		QP42/Qom0kowTwP+6hn0fbP5a+w=
-		</data>
-		<key>Headers/CLSSymbolicationDynamic-Swift.h</key>
-		<data>
-		quB+2PoEhMhEjW+W/O6o+GMIQgg=
-		</data>
-		<key>Modules/CLSSymbolicationDynamic.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		OF0m8nNl5yxmSrqebR/kQJQPRGE=
-		</data>
-		<key>Modules/CLSSymbolicationDynamic.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		n4iUcxMVeq8C3+RiXKkcGiLbS3k=
-		</data>
-		<key>Modules/module.modulemap</key>
-		<data>
-		PpogoamjQ4OTBs8uT+5Z0KVP750=
-		</data>
 		<key>Resources/Info.plist</key>
 		<data>
 		GMGNP45hjQDpTB5+WFFq7lTK9Do=
