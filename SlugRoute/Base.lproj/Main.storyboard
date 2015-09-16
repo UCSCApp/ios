@@ -32,7 +32,7 @@
         <!--Instagram Login View Controller-->
         <scene sceneID="2Au-Bn-TFd">
             <objects>
-                <viewController id="FqH-Dq-hXr" customClass="InstagramLoginViewController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="FqH-Dq-hXr" customClass="InstagramLoginViewController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="h9Z-Ih-nvu"/>
                         <viewControllerLayoutGuide type="bottom" id="uZA-Ab-mbg"/>
@@ -44,6 +44,9 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="346" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Yhp-yc-Sni">
                                 <rect key="frame" x="0.0" y="64" width="320" height="431"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="SqQ-yD-bnG"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" restorationIdentifier="InstagramTableCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="InstagramTableCell" rowHeight="346" id="nlO-Ac-8xD" customClass="InstagramTableCell" customModule="SlugRoute" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -81,12 +84,44 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="SqQ-yD-bnG"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="SqQ-yD-bnG"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="FqH-Dq-hXr" id="8Ur-aC-gW8"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Yhp-yc-Sni" firstAttribute="top" secondItem="OBA-2P-o3n" secondAttribute="top" constant="64" id="3vN-2e-xcw"/>
+                            <constraint firstAttribute="trailing" secondItem="Yhp-yc-Sni" secondAttribute="trailing" id="bbD-l5-5ha"/>
+                            <constraint firstAttribute="bottom" secondItem="Yhp-yc-Sni" secondAttribute="bottom" constant="49" id="f07-4D-n5A"/>
+                            <constraint firstItem="Yhp-yc-Sni" firstAttribute="leading" secondItem="OBA-2P-o3n" secondAttribute="leading" id="hPm-oK-gSu"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3vN-2e-xcw"/>
+                                <exclude reference="bbD-l5-5ha"/>
+                                <exclude reference="f07-4D-n5A"/>
+                                <exclude reference="hPm-oK-gSu"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="3vN-2e-xcw"/>
+                                <include reference="bbD-l5-5ha"/>
+                                <include reference="f07-4D-n5A"/>
+                                <include reference="hPm-oK-gSu"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="4O1-zd-v46"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
@@ -97,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sQz-fH-Dh0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1639" y="-1350"/>
+            <point key="canvasLocation" x="1638" y="-1350"/>
         </scene>
         <!--Social View Controller-->
         <scene sceneID="2Ya-FD-4ar">
