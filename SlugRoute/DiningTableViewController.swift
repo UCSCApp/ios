@@ -99,7 +99,7 @@ class DiningTableViewController: UITableViewController{
         self.items = currentCell.items
         if (segue.identifier == "toMeals") {
             // initialize new view controller and cast it as your view controller
-            var viewController = segue.destinationViewController as! MealsViewController
+            var viewController = segue.destinationViewController as! MealsTableViewController
             // your new view controller should have property that will store passed value
             viewController.collegeName = self.collegeName
             viewController.items = self.items

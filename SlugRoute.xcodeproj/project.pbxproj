@@ -73,8 +73,8 @@
 		DAA5E4B01B6D73320066BD56 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA5E4AF1B6D73320066BD56 /* TabBarController.swift */; };
 		DAC86AE71BA23FA000DD7668 /* MealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC86AE61BA23FA000DD7668 /* MealsViewController.swift */; };
 		DAC86AEB1BA2867600DD7668 /* BreakfastTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC86AEA1BA2867600DD7668 /* BreakfastTableCell.swift */; };
-		DAC86AED1BA2868100DD7668 /* LunchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC86AEC1BA2868100DD7668 /* LunchTableCell.swift */; };
-		DAC86AEF1BA2868C00DD7668 /* DinnerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC86AEE1BA2868C00DD7668 /* DinnerTableCell.swift */; };
+		DAE156E81BAA6F7900DFFFCE /* MealsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE156E71BAA6F7900DFFFCE /* MealsTableViewController.swift */; };
+		DAE156EE1BAA7D2300DFFFCE /* MealTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE156ED1BAA7D2300DFFFCE /* MealTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,8 +162,8 @@
 		DAA5E4AF1B6D73320066BD56 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		DAC86AE61BA23FA000DD7668 /* MealsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealsViewController.swift; sourceTree = "<group>"; };
 		DAC86AEA1BA2867600DD7668 /* BreakfastTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreakfastTableCell.swift; sourceTree = "<group>"; };
-		DAC86AEC1BA2868100DD7668 /* LunchTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LunchTableCell.swift; sourceTree = "<group>"; };
-		DAC86AEE1BA2868C00DD7668 /* DinnerTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinnerTableCell.swift; sourceTree = "<group>"; };
+		DAE156E71BAA6F7900DFFFCE /* MealsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealsTableViewController.swift; sourceTree = "<group>"; };
+		DAE156ED1BAA7D2300DFFFCE /* MealTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,8 +287,8 @@
 				DA73320E1BA22D6500E674C9 /* Dining.swift */,
 				DAC86AE61BA23FA000DD7668 /* MealsViewController.swift */,
 				DAC86AEA1BA2867600DD7668 /* BreakfastTableCell.swift */,
-				DAC86AEC1BA2868100DD7668 /* LunchTableCell.swift */,
-				DAC86AEE1BA2868C00DD7668 /* DinnerTableCell.swift */,
+				DAE156E71BAA6F7900DFFFCE /* MealsTableViewController.swift */,
+				DAE156ED1BAA7D2300DFFFCE /* MealTableCell.swift */,
 			);
 			path = SlugRoute;
 			sourceTree = "<group>";
@@ -524,14 +524,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAA5E4AE1B6D71390066BD56 /* SocialNavigationController.swift in Sources */,
+				DAE156EE1BAA7D2300DFFFCE /* MealTableCell.swift in Sources */,
 				DA9869E21B845BF60013E199 /* InstagramTableCell.swift in Sources */,
 				DA4688EB1B978D1000F11DD0 /* SettingsViewController.swift in Sources */,
 				DA73320D1BA22C7100E674C9 /* DiningTableCell.swift in Sources */,
-				DAC86AED1BA2868100DD7668 /* LunchTableCell.swift in Sources */,
 				B84153051B13CE8F0075E885 /* EventsNavigationController.swift in Sources */,
 				DA4CA12E1B73458900DA6A94 /* MapNavigationController.swift in Sources */,
 				DAA5E4B01B6D73320066BD56 /* TabBarController.swift in Sources */,
-				DAC86AEF1BA2868C00DD7668 /* DinnerTableCell.swift in Sources */,
 				DA7332071BA226AA00E674C9 /* DiningTableViewController.swift in Sources */,
 				B84152E31B13CAE10075E885 /* AppDelegate.swift in Sources */,
 				DA4CA1301B73462600DA6A94 /* MapViewController.swift in Sources */,
@@ -549,6 +548,7 @@
 				DA73320F1BA22D6500E674C9 /* Dining.swift in Sources */,
 				DAC86AE71BA23FA000DD7668 /* MealsViewController.swift in Sources */,
 				DA4688E91B9786D300F11DD0 /* SettingsTableViewCell.swift in Sources */,
+				DAE156E81BAA6F7900DFFFCE /* MealsTableViewController.swift in Sources */,
 				DAC86AEB1BA2867600DD7668 /* BreakfastTableCell.swift in Sources */,
 				DA3DF0951B9561F000E67952 /* EventViewController.swift in Sources */,
 			);
