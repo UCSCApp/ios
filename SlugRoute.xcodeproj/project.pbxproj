@@ -234,61 +234,24 @@
 		B84152DF1B13CAE10075E885 /* SlugRoute */ = {
 			isa = PBXGroup;
 			children = (
-				DA3DF0921B951D3000E67952 /* EventTableCell.swift */,
-				DA3DF0901B951C8200E67952 /* EventsViewController.swift */,
+				DAE156F71BAA9BE900DFFFCE /* Social */,
+				DAE156F61BAA9BE200DFFFCE /* Map */,
+				DAE156F51BAA9BD700DFFFCE /* Settings */,
+				DAE156F41BAA9BCF00DFFFCE /* Dining */,
+				DAE156F31BAA9BC000DFFFCE /* Events */,
 				B84152E21B13CAE10075E885 /* AppDelegate.swift */,
 				B84152E81B13CAE10075E885 /* Main.storyboard */,
 				B84152EB1B13CAE10075E885 /* Images.xcassets */,
 				B84152ED1B13CAE10075E885 /* LaunchScreen.xib */,
 				B84152E01B13CAE10075E885 /* Supporting Files */,
-				B84153041B13CE8F0075E885 /* EventsNavigationController.swift */,
 				DA608BBF1B6C258600B22EF0 /* Fabric.framework */,
 				DA608BC01B6C258600B22EF0 /* TwitterKit.framework */,
 				DA608BC11B6C258600B22EF0 /* TwitterKitResources.bundle */,
 				DA608BC21B6C258600B22EF0 /* TwitterCore.framework */,
 				DA608BBD1B6C23F000B22EF0 /* SwiftyJSON.swift */,
-				DA6ADB441B6C83E900BD3E8B /* InstagramLoginViewController.swift */,
 				DA4FD7971B796C5C00F05253 /* GoogleMaps.framework */,
-				DA6ADB3C1B6C6E6F00BD3E8B /* TwitterLoginViewController.swift */,
-				B841530A1B13D0690075E885 /* Event.swift */,
-				DA5EB4501B6CBF4700991145 /* SocialViewController.swift */,
-				DA3DF0841B92715F00E67952 /* dining_hall.png */,
-				DAA5E4AD1B6D71390066BD56 /* SocialNavigationController.swift */,
-				DA525A771BA37A4E0035AEE2 /* ic_allergy_free.png */,
-				DA525A781BA37A4E0035AEE2 /* ic_beef.png */,
-				DA525A791BA37A4E0035AEE2 /* ic_egg.png */,
-				DA525A7A1BA37A4E0035AEE2 /* ic_fish.png */,
-				DA525A7B1BA37A4E0035AEE2 /* ic_gluten.png */,
-				DA525A7C1BA37A4E0035AEE2 /* ic_milk.png */,
-				DA525A7D1BA37A4E0035AEE2 /* ic_nuts.png */,
-				DA525A7E1BA37A4E0035AEE2 /* ic_pork.png */,
-				DA525A7F1BA37A4E0035AEE2 /* ic_soy.png */,
-				DA525A801BA37A4E0035AEE2 /* ic_vegan.png */,
-				DA525A811BA37A4F0035AEE2 /* ic_veggie.png */,
-				DA3DF0861B9272DD00E67952 /* cafe.png */,
-				DA3DF0871B9272DE00E67952 /* classroom.png */,
-				DA3DF0881B9272DE00E67952 /* computer_lab.png */,
-				DA3DF0891B9272DE00E67952 /* library.png */,
-				DA3DF08A1B9272DE00E67952 /* loop_bus.png */,
-				DA4CA12D1B73458900DA6A94 /* MapNavigationController.swift */,
-				DA4CA12F1B73462600DA6A94 /* MapViewController.swift */,
 				DAA5E4AF1B6D73320066BD56 /* TabBarController.swift */,
 				DA4FD7941B79688300F05253 /* SlugRoute-Bridging-Header.h */,
-				DA9B84EC1B7DBEDA00246191 /* TwitterSearchTimelineViewController.swift */,
-				DA9869DF1B8458840013E199 /* InstagramPost.swift */,
-				DA9869E11B845BF60013E199 /* InstagramTableCell.swift */,
-				DA3DF0941B9561F000E67952 /* EventViewController.swift */,
-				DA4688E21B9781D500F11DD0 /* SettingsNavigationController.swift */,
-				DA4688E81B9786D300F11DD0 /* SettingsTableViewCell.swift */,
-				DA4688EA1B978D1000F11DD0 /* SettingsViewController.swift */,
-				DA7332021BA2211A00E674C9 /* DiningNavigationController.swift */,
-				DA7332061BA226AA00E674C9 /* DiningTableViewController.swift */,
-				DA73320C1BA22C7100E674C9 /* DiningTableCell.swift */,
-				DA73320E1BA22D6500E674C9 /* Dining.swift */,
-				DAC86AE61BA23FA000DD7668 /* MealsViewController.swift */,
-				DAC86AEA1BA2867600DD7668 /* BreakfastTableCell.swift */,
-				DAE156E71BAA6F7900DFFFCE /* MealsTableViewController.swift */,
-				DAE156ED1BAA7D2300DFFFCE /* MealTableCell.swift */,
 			);
 			path = SlugRoute;
 			sourceTree = "<group>";
@@ -338,6 +301,99 @@
 				88152EAC8DA08C7A7BFC6E6D /* Pods_SlugRoute.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAE156F31BAA9BC000DFFFCE /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				DA3DF0941B9561F000E67952 /* EventViewController.swift */,
+				DA3DF0921B951D3000E67952 /* EventTableCell.swift */,
+				DA3DF0901B951C8200E67952 /* EventsViewController.swift */,
+				B84153041B13CE8F0075E885 /* EventsNavigationController.swift */,
+				B841530A1B13D0690075E885 /* Event.swift */,
+			);
+			name = Events;
+			sourceTree = "<group>";
+		};
+		DAE156F41BAA9BCF00DFFFCE /* Dining */ = {
+			isa = PBXGroup;
+			children = (
+				DAE156F81BAA9CB500DFFFCE /* attribute icons */,
+				DA7332021BA2211A00E674C9 /* DiningNavigationController.swift */,
+				DA7332061BA226AA00E674C9 /* DiningTableViewController.swift */,
+				DA73320C1BA22C7100E674C9 /* DiningTableCell.swift */,
+				DA73320E1BA22D6500E674C9 /* Dining.swift */,
+				DAC86AE61BA23FA000DD7668 /* MealsViewController.swift */,
+				DAC86AEA1BA2867600DD7668 /* BreakfastTableCell.swift */,
+				DAE156E71BAA6F7900DFFFCE /* MealsTableViewController.swift */,
+				DAE156ED1BAA7D2300DFFFCE /* MealTableCell.swift */,
+			);
+			name = Dining;
+			sourceTree = "<group>";
+		};
+		DAE156F51BAA9BD700DFFFCE /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DA4688E21B9781D500F11DD0 /* SettingsNavigationController.swift */,
+				DA4688E81B9786D300F11DD0 /* SettingsTableViewCell.swift */,
+				DA4688EA1B978D1000F11DD0 /* SettingsViewController.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		DAE156F61BAA9BE200DFFFCE /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				DAE156F91BAA9CE100DFFFCE /* icons */,
+				DA4CA12D1B73458900DA6A94 /* MapNavigationController.swift */,
+				DA4CA12F1B73462600DA6A94 /* MapViewController.swift */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		DAE156F71BAA9BE900DFFFCE /* Social */ = {
+			isa = PBXGroup;
+			children = (
+				DA9B84EC1B7DBEDA00246191 /* TwitterSearchTimelineViewController.swift */,
+				DA9869DF1B8458840013E199 /* InstagramPost.swift */,
+				DA9869E11B845BF60013E199 /* InstagramTableCell.swift */,
+				DA6ADB441B6C83E900BD3E8B /* InstagramLoginViewController.swift */,
+				DA6ADB3C1B6C6E6F00BD3E8B /* TwitterLoginViewController.swift */,
+				DA5EB4501B6CBF4700991145 /* SocialViewController.swift */,
+				DAA5E4AD1B6D71390066BD56 /* SocialNavigationController.swift */,
+			);
+			name = Social;
+			sourceTree = "<group>";
+		};
+		DAE156F81BAA9CB500DFFFCE /* attribute icons */ = {
+			isa = PBXGroup;
+			children = (
+				DA525A771BA37A4E0035AEE2 /* ic_allergy_free.png */,
+				DA525A781BA37A4E0035AEE2 /* ic_beef.png */,
+				DA525A791BA37A4E0035AEE2 /* ic_egg.png */,
+				DA525A7A1BA37A4E0035AEE2 /* ic_fish.png */,
+				DA525A801BA37A4E0035AEE2 /* ic_vegan.png */,
+				DA525A811BA37A4F0035AEE2 /* ic_veggie.png */,
+				DA525A7B1BA37A4E0035AEE2 /* ic_gluten.png */,
+				DA525A7C1BA37A4E0035AEE2 /* ic_milk.png */,
+				DA525A7D1BA37A4E0035AEE2 /* ic_nuts.png */,
+				DA525A7E1BA37A4E0035AEE2 /* ic_pork.png */,
+				DA525A7F1BA37A4E0035AEE2 /* ic_soy.png */,
+			);
+			name = "attribute icons";
+			sourceTree = "<group>";
+		};
+		DAE156F91BAA9CE100DFFFCE /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				DA3DF0841B92715F00E67952 /* dining_hall.png */,
+				DA3DF0861B9272DD00E67952 /* cafe.png */,
+				DA3DF0871B9272DE00E67952 /* classroom.png */,
+				DA3DF0881B9272DE00E67952 /* computer_lab.png */,
+				DA3DF0891B9272DE00E67952 /* library.png */,
+				DA3DF08A1B9272DE00E67952 /* loop_bus.png */,
+			);
+			name = icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
