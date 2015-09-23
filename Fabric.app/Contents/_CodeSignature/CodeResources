@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Assets.car</key>
 		<data>
-		mxnfpRR6uXURAzP2TgW+WstGmlw=
+		5dB6hrC15ArzUFPMTzFzXUzTuAY=
 		</data>
 		<key>Resources/CLSKitDetailDashboardViewController.nib</key>
 		<data>
@@ -251,6 +251,10 @@
 		<key>Resources/com.mopub.appdelegate.txt</key>
 		<data>
 		xEl4ab/VYfE+woKBr6hYdlRTA/I=
+		</data>
+		<key>Resources/com.mopub.ats.info-plist.txt</key>
+		<data>
+		GRZuYoORxP2XG/13WPBr+HgWIas=
 		</data>
 		<key>Resources/com.mopub.banner.viewcontroller-swift.txt</key>
 		<data>
@@ -607,7 +611,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fHzmZzEL83mKqKKMqNqV9x/XM4w=
+			NqkwtK3su7DziCXm/LvWqvE/jLc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -616,14 +620,14 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DQV2eUiJkcIOTMyku9js7eatzoc=
+			ci/kxSe+P5hqMb0h42mGrK7q+Vo=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>Resources/fabric.icns</key>
 		<data>
-		WR1iDWxzjFX6CygNLSygsu7BMuA=
+		/HXM2gu6Z9QXIaY5rL8xgMKDkcc=
 		</data>
 		<key>Resources/image.backward-compatible@2x.png</key>
 		<data>
@@ -951,7 +955,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			3IwGstNSMqIWN3vSl8/ClKhDjHg=
+			yntthGvpRL2B475K2KHnHpJfh0g=
 			</data>
 			<key>requirement</key>
 			<string>identifier "org.cocoapods.LibYAML" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = L8VKXC2S77</string>
@@ -987,7 +991,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			IqUExKShAvnOpioxh/WHdscZ3XA=
+			h3SF/R6DPYrMqSf3qbqJ8lVgt8k=
 			</data>
 			<key>requirement</key>
 			<string>identifier "org.cocoapods.YAML-Framework" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = L8VKXC2S77</string>
@@ -1075,7 +1079,7 @@
 		</dict>
 		<key>Resources/Assets.car</key>
 		<data>
-		mxnfpRR6uXURAzP2TgW+WstGmlw=
+		5dB6hrC15ArzUFPMTzFzXUzTuAY=
 		</data>
 		<key>Resources/CLSKitDetailDashboardViewController.nib</key>
 		<data>
@@ -1320,6 +1324,10 @@
 		<key>Resources/com.mopub.appdelegate.txt</key>
 		<data>
 		xEl4ab/VYfE+woKBr6hYdlRTA/I=
+		</data>
+		<key>Resources/com.mopub.ats.info-plist.txt</key>
+		<data>
+		GRZuYoORxP2XG/13WPBr+HgWIas=
 		</data>
 		<key>Resources/com.mopub.banner.viewcontroller-swift.txt</key>
 		<data>
@@ -1676,7 +1684,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fHzmZzEL83mKqKKMqNqV9x/XM4w=
+			NqkwtK3su7DziCXm/LvWqvE/jLc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1685,14 +1693,14 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DQV2eUiJkcIOTMyku9js7eatzoc=
+			ci/kxSe+P5hqMb0h42mGrK7q+Vo=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>Resources/fabric.icns</key>
 		<data>
-		WR1iDWxzjFX6CygNLSygsu7BMuA=
+		/HXM2gu6Z9QXIaY5rL8xgMKDkcc=
 		</data>
 		<key>Resources/image.backward-compatible@2x.png</key>
 		<data>
@@ -2008,7 +2016,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			TLeyDOB81lqKbg5XL+2ovgpNoMA=
+			PPKE4e60KlofsOQTImRX9CLJ1sE=
 			</data>
 			<key>requirement</key>
 			<string>anchor apple generic and identifier "com.crashlytics.mac.CSYMGenerator" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = L8VKXC2S77)</string>
