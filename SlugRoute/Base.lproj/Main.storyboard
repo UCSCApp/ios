@@ -340,57 +340,132 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="ec6-i4-h2S" kind="relationship" relationship="rootViewController" id="4M6-ny-Gif"/>
+                        <segue destination="Zmm-Qe-q0T" kind="relationship" relationship="rootViewController" id="gpg-pc-con"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JxK-a4-uML" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="776" y="1320"/>
         </scene>
-        <!--DiningTableViewController-->
-        <scene sceneID="RBO-06-Kyw">
+        <!--Dining Table View Controller-->
+        <scene sceneID="bcR-2g-VHr">
             <objects>
-                <tableViewController title="DiningTableViewController" id="ec6-i4-h2S" customClass="DiningTableViewController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="6XN-R4-0lb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <viewController storyboardIdentifier="diningButtons" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zmm-Qe-q0T" customClass="DiningTableViewController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WA8-Yd-4lk"/>
+                        <viewControllerLayoutGuide type="bottom" id="pMu-5d-hyp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HVU-1v-Gga">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="DiningTableCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiningTableCell" id="QQK-Gp-Ou0" customClass="DiningTableCell" customModule="SlugRoute" customModuleProvider="target">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QQK-Gp-Ou0" id="dhf-NI-3Ql">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1z-5w-87l">
-                                            <rect key="frame" x="14" y="8" width="197" height="24"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDg-ht-fv9">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="dining_college9&amp;10.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="155" y="64" width="165" height="140"/>
+                                </variation>
                                 <connections>
-                                    <outlet property="college" destination="n1z-5w-87l" id="QwG-FD-Fba"/>
-                                    <segue destination="veu-ud-6tK" kind="show" identifier="toMeals" id="gzY-L7-ESR"/>
+                                    <action selector="college910:" destination="Zmm-Qe-q0T" eventType="touchUpInside" id="sMw-FF-oFd"/>
+                                    <segue destination="veu-ud-6tK" kind="show" identifier="toCollege9and10" id="UBd-vF-uEP"/>
                                 </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="ec6-i4-h2S" id="EDi-Ml-Rqi"/>
-                            <outlet property="delegate" destination="ec6-i4-h2S" id="0Ip-9b-kiU"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="jz1-vv-5Rt"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YbU-G1-8BX">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
+                                </accessibility>
+                                <state key="normal" title="Button" image="dining_college8&amp;oakes.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="64" width="160" height="140"/>
+                                </variation>
+                                <connections>
+                                    <action selector="college8Oakes:" destination="Zmm-Qe-q0T" eventType="touchUpInside" id="w53-Gk-cxF"/>
+                                    <segue destination="veu-ud-6tK" kind="show" identifier="toCollege8Oakes" id="WaZ-Nn-Wwc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bbl-nN-3FP">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="dining_porter&amp;kresge.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="160" y="201" width="160" height="140"/>
+                                </variation>
+                                <connections>
+                                    <action selector="porterkresge:" destination="Zmm-Qe-q0T" eventType="touchUpInside" id="bbx-X0-diu"/>
+                                    <segue destination="veu-ud-6tK" kind="show" identifier="toPorterKresge" id="D4y-lN-6yn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqA-Mo-v4t">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="dining_cowell&amp;stevenson.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="201" width="160" height="140"/>
+                                </variation>
+                                <connections>
+                                    <action selector="cowellstevenson:" destination="Zmm-Qe-q0T" eventType="touchUpInside" id="9E2-g0-Lmh"/>
+                                    <segue destination="veu-ud-6tK" kind="show" identifier="toCowellStevenson" id="I8Y-UV-oLE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkA-HT-RnF">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="dining_merill&amp;crown.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="341" width="160" height="140"/>
+                                </variation>
+                                <connections>
+                                    <action selector="merrill:" destination="Zmm-Qe-q0T" eventType="touchUpInside" id="cVV-xf-frA"/>
+                                    <segue destination="veu-ud-6tK" kind="show" identifier="toMerrillCrown" id="p5Y-VY-Gr5"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dining_default.png" translatesAutoresizingMaskIntoConstraints="NO" id="ieK-eb-d2Q">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="160" y="341" width="160" height="140"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="TDg-ht-fv9"/>
+                                <exclude reference="YbU-G1-8BX"/>
+                                <exclude reference="Bbl-nN-3FP"/>
+                                <exclude reference="TqA-Mo-v4t"/>
+                                <exclude reference="wkA-HT-RnF"/>
+                                <exclude reference="ieK-eb-d2Q"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="TDg-ht-fv9"/>
+                                <include reference="YbU-G1-8BX"/>
+                                <include reference="Bbl-nN-3FP"/>
+                                <include reference="TqA-Mo-v4t"/>
+                                <include reference="wkA-HT-RnF"/>
+                                <include reference="ieK-eb-d2Q"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="blj-Jq-DF5"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="haA-FY-B68" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jA2-O7-kDm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1191" y="1320"/>
+            <point key="canvasLocation" x="1273" y="1320"/>
         </scene>
         <!--Meals Table View Controller-->
         <scene sceneID="vXn-cL-Dhb">
             <objects>
-                <tableViewController id="veu-ud-6tK" customClass="MealsTableViewController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="mealsView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="veu-ud-6tK" customClass="MealsTableViewController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ygS-Uo-Ayi">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -436,7 +511,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cKd-1B-efX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1729.5" y="1320"/>
+            <point key="canvasLocation" x="1827" y="1320"/>
         </scene>
         <!--Meals View Controller-->
         <scene sceneID="R92-62-yqh">
@@ -535,7 +610,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ze4-fI-3a8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2277" y="1320"/>
+            <point key="canvasLocation" x="2382" y="1320"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="DLy-rS-Ig3">
@@ -672,4 +747,15 @@
             <point key="canvasLocation" x="792" y="-698"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dining_college8&amp;oakes.png" width="202" height="202"/>
+        <image name="dining_college9&amp;10.png" width="203" height="203"/>
+        <image name="dining_cowell&amp;stevenson.png" width="203" height="204"/>
+        <image name="dining_default.png" width="203" height="203"/>
+        <image name="dining_merill&amp;crown.png" width="203" height="203"/>
+        <image name="dining_porter&amp;kresge.png" width="203" height="203"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="p5Y-VY-Gr5"/>
+    </inferredMetricsTieBreakers>
 </document>

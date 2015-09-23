@@ -64,7 +64,6 @@
 		DA6ADB451B6C83E900BD3E8B /* InstagramLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6ADB441B6C83E900BD3E8B /* InstagramLoginViewController.swift */; };
 		DA7332031BA2211A00E674C9 /* DiningNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7332021BA2211A00E674C9 /* DiningNavigationController.swift */; };
 		DA7332071BA226AA00E674C9 /* DiningTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7332061BA226AA00E674C9 /* DiningTableViewController.swift */; };
-		DA73320D1BA22C7100E674C9 /* DiningTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73320C1BA22C7100E674C9 /* DiningTableCell.swift */; };
 		DA73320F1BA22D6500E674C9 /* Dining.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73320E1BA22D6500E674C9 /* Dining.swift */; };
 		DA9869E01B8458840013E199 /* InstagramPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9869DF1B8458840013E199 /* InstagramPost.swift */; };
 		DA9869E21B845BF60013E199 /* InstagramTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9869E11B845BF60013E199 /* InstagramTableCell.swift */; };
@@ -75,6 +74,12 @@
 		DAC86AEB1BA2867600DD7668 /* BreakfastTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC86AEA1BA2867600DD7668 /* BreakfastTableCell.swift */; };
 		DAE156E81BAA6F7900DFFFCE /* MealsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE156E71BAA6F7900DFFFCE /* MealsTableViewController.swift */; };
 		DAE156EE1BAA7D2300DFFFCE /* MealTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE156ED1BAA7D2300DFFFCE /* MealTableCell.swift */; };
+		DAE1570A1BB25AF600DFFFCE /* dining_porter&kresge.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE157051BB25AF600DFFFCE /* dining_porter&kresge.png */; };
+		DAE1570B1BB25AF600DFFFCE /* dining_merill&crown.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE157061BB25AF600DFFFCE /* dining_merill&crown.png */; };
+		DAE1570C1BB25AF600DFFFCE /* dining_cowell&stevenson.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE157071BB25AF600DFFFCE /* dining_cowell&stevenson.png */; };
+		DAE1570D1BB25AF600DFFFCE /* dining_college9&10.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE157081BB25AF600DFFFCE /* dining_college9&10.png */; };
+		DAE1570E1BB25AF600DFFFCE /* dining_college8&oakes.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE157091BB25AF600DFFFCE /* dining_college8&oakes.png */; };
+		DAE157101BB2603400DFFFCE /* dining_default.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE1570F1BB2603400DFFFCE /* dining_default.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,7 +158,6 @@
 		DA6ADB441B6C83E900BD3E8B /* InstagramLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramLoginViewController.swift; sourceTree = "<group>"; };
 		DA7332021BA2211A00E674C9 /* DiningNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningNavigationController.swift; sourceTree = "<group>"; };
 		DA7332061BA226AA00E674C9 /* DiningTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningTableViewController.swift; sourceTree = "<group>"; };
-		DA73320C1BA22C7100E674C9 /* DiningTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningTableCell.swift; sourceTree = "<group>"; };
 		DA73320E1BA22D6500E674C9 /* Dining.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dining.swift; sourceTree = "<group>"; };
 		DA9869DF1B8458840013E199 /* InstagramPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramPost.swift; sourceTree = "<group>"; };
 		DA9869E11B845BF60013E199 /* InstagramTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramTableCell.swift; sourceTree = "<group>"; };
@@ -164,6 +168,12 @@
 		DAC86AEA1BA2867600DD7668 /* BreakfastTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreakfastTableCell.swift; sourceTree = "<group>"; };
 		DAE156E71BAA6F7900DFFFCE /* MealsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealsTableViewController.swift; sourceTree = "<group>"; };
 		DAE156ED1BAA7D2300DFFFCE /* MealTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableCell.swift; sourceTree = "<group>"; };
+		DAE157051BB25AF600DFFFCE /* dining_porter&kresge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dining_porter&kresge.png"; sourceTree = "<group>"; };
+		DAE157061BB25AF600DFFFCE /* dining_merill&crown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dining_merill&crown.png"; sourceTree = "<group>"; };
+		DAE157071BB25AF600DFFFCE /* dining_cowell&stevenson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dining_cowell&stevenson.png"; sourceTree = "<group>"; };
+		DAE157081BB25AF600DFFFCE /* dining_college9&10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dining_college9&10.png"; sourceTree = "<group>"; };
+		DAE157091BB25AF600DFFFCE /* dining_college8&oakes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dining_college8&oakes.png"; sourceTree = "<group>"; };
+		DAE1570F1BB2603400DFFFCE /* dining_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dining_default.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,10 +328,10 @@
 		DAE156F41BAA9BCF00DFFFCE /* Dining */ = {
 			isa = PBXGroup;
 			children = (
+				DAE156FA1BB2507900DFFFCE /* college buttons */,
 				DAE156F81BAA9CB500DFFFCE /* attribute icons */,
 				DA7332021BA2211A00E674C9 /* DiningNavigationController.swift */,
 				DA7332061BA226AA00E674C9 /* DiningTableViewController.swift */,
-				DA73320C1BA22C7100E674C9 /* DiningTableCell.swift */,
 				DA73320E1BA22D6500E674C9 /* Dining.swift */,
 				DAC86AE61BA23FA000DD7668 /* MealsViewController.swift */,
 				DAC86AEA1BA2867600DD7668 /* BreakfastTableCell.swift */,
@@ -394,6 +404,19 @@
 				DA3DF08A1B9272DE00E67952 /* loop_bus.png */,
 			);
 			name = icons;
+			sourceTree = "<group>";
+		};
+		DAE156FA1BB2507900DFFFCE /* college buttons */ = {
+			isa = PBXGroup;
+			children = (
+				DAE157051BB25AF600DFFFCE /* dining_porter&kresge.png */,
+				DAE157061BB25AF600DFFFCE /* dining_merill&crown.png */,
+				DAE1570F1BB2603400DFFFCE /* dining_default.png */,
+				DAE157071BB25AF600DFFFCE /* dining_cowell&stevenson.png */,
+				DAE157081BB25AF600DFFFCE /* dining_college9&10.png */,
+				DAE157091BB25AF600DFFFCE /* dining_college8&oakes.png */,
+			);
+			name = "college buttons";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -482,10 +505,13 @@
 			files = (
 				DA3DF08D1B9272DE00E67952 /* computer_lab.png in Resources */,
 				DA525A891BA37A4F0035AEE2 /* ic_pork.png in Resources */,
+				DAE1570A1BB25AF600DFFFCE /* dining_porter&kresge.png in Resources */,
 				DA525A8A1BA37A4F0035AEE2 /* ic_soy.png in Resources */,
+				DAE1570D1BB25AF600DFFFCE /* dining_college9&10.png in Resources */,
 				DA525A8B1BA37A4F0035AEE2 /* ic_vegan.png in Resources */,
 				DA3DF08E1B9272DE00E67952 /* library.png in Resources */,
 				DA3DF08F1B9272DE00E67952 /* loop_bus.png in Resources */,
+				DAE1570C1BB25AF600DFFFCE /* dining_cowell&stevenson.png in Resources */,
 				DA525A851BA37A4F0035AEE2 /* ic_fish.png in Resources */,
 				DA525A831BA37A4F0035AEE2 /* ic_beef.png in Resources */,
 				DA525A821BA37A4F0035AEE2 /* ic_allergy_free.png in Resources */,
@@ -494,11 +520,14 @@
 				DA0295221B7F333A0018FF48 /* Main.storyboard in Resources */,
 				DA608BC51B6C258600B22EF0 /* TwitterKitResources.bundle in Resources */,
 				DA3DF08C1B9272DE00E67952 /* classroom.png in Resources */,
+				DAE157101BB2603400DFFFCE /* dining_default.png in Resources */,
 				DA3DF08B1B9272DE00E67952 /* cafe.png in Resources */,
 				B84152EC1B13CAE10075E885 /* Images.xcassets in Resources */,
 				DA3DF0851B92715F00E67952 /* dining_hall.png in Resources */,
+				DAE1570E1BB25AF600DFFFCE /* dining_college8&oakes.png in Resources */,
 				DA525A861BA37A4F0035AEE2 /* ic_gluten.png in Resources */,
 				DA525A8C1BA37A4F0035AEE2 /* ic_veggie.png in Resources */,
+				DAE1570B1BB25AF600DFFFCE /* dining_merill&crown.png in Resources */,
 				DA4FD79C1B79702D00F05253 /* GoogleMaps.bundle in Resources */,
 				DA525A841BA37A4F0035AEE2 /* ic_egg.png in Resources */,
 			);
@@ -583,7 +612,6 @@
 				DAE156EE1BAA7D2300DFFFCE /* MealTableCell.swift in Sources */,
 				DA9869E21B845BF60013E199 /* InstagramTableCell.swift in Sources */,
 				DA4688EB1B978D1000F11DD0 /* SettingsViewController.swift in Sources */,
-				DA73320D1BA22C7100E674C9 /* DiningTableCell.swift in Sources */,
 				B84153051B13CE8F0075E885 /* EventsNavigationController.swift in Sources */,
 				DA4CA12E1B73458900DA6A94 /* MapNavigationController.swift in Sources */,
 				DAA5E4B01B6D73320066BD56 /* TabBarController.swift in Sources */,

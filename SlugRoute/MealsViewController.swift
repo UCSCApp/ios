@@ -29,6 +29,7 @@ class MealsViewController: UIViewController{
         super.viewDidLoad()
     
         self.title = mealName
+        
 
         
         // Do any additional setup after loading the view.
@@ -136,5 +137,6 @@ class MealsViewController: UIViewController{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 }

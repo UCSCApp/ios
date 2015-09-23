@@ -10,11 +10,75 @@ import Foundation
 import UIKit
 import Alamofire
 
-class DiningTableViewController: UITableViewController{
+class DiningTableViewController: UIViewController{
     var dining : [Dining] = []
     var collegeName : String = ""
     var items : AnyObject = ""
 
+    @IBAction func college8Oakes(sender: UIButton) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        
+        for dine in self.dining{
+            if(dine.name == "CollegeEight"){
+                self.items = dine.items
+                self.collegeName = dine.name
+            }
+        }
+
+    }
+
+    @IBAction func college910(sender: UIButton) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+
+        
+        for dine in self.dining{
+            if(dine.name == "CollegeNine&Ten"){
+                self.items = dine.items
+                self.collegeName = dine.name
+            }
+        }
+
+    }
+
+    @IBAction func cowellstevenson(sender: UIButton) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+
+        
+        for dine in self.dining{
+            if(dine.name == "Cowell"){
+                self.items = dine.items
+                self.collegeName = dine.name
+            }
+        }
+        
+    }
+    
+    @IBAction func porterkresge(sender: UIButton) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        
+        for dine in self.dining{
+            if(dine.name == "Porter"){
+                self.items = dine.items
+                self.collegeName = dine.name
+            }
+        }
+
+    }
+    @IBAction func merrill(sender: UIButton) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        
+        for dine in self.dining{
+            if(dine.name == "Crown&Merill"){
+                self.items = dine.items
+                self.collegeName = dine.name
+            }
+        }
+        
+
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -71,44 +135,15 @@ class DiningTableViewController: UITableViewController{
             dining.append(Dining(data: json))
         }
         
-        self.tableView.reloadData()
-    }
-    
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-    {
-        return dining.count
-    }
-    
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let dining = self.dining[indexPath.row] as Dining
-        let cell = tableView.dequeueReusableCellWithIdentifier("DiningTableCell", forIndexPath: indexPath) as! DiningTableCell
-        
-        cell.college.text             = dining.name
-        cell.items                    = dining.items
-        
-        return cell
-    }
-    
-    
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get Cell Label
-        let indexPath = self.tableView.indexPathForSelectedRow();
-        let currentCell = self.tableView.cellForRowAtIndexPath(indexPath!) as! DiningTableCell;
-        self.collegeName = currentCell.college!.text!
-        self.items = currentCell.items
-        if (segue.identifier == "toMeals") {
-            // initialize new view controller and cast it as your view controller
-            var viewController = segue.destinationViewController as! MealsTableViewController
-            // your new view controller should have property that will store passed value
-            viewController.collegeName = self.collegeName
-            viewController.items = self.items
-            
-        }
-        
     }
 
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+            
+        var yourNextViewController = (segue.destinationViewController as! MealsTableViewController)
+        yourNextViewController.items = self.items
+        yourNextViewController.collegeName = self.collegeName
+        
+    }
 
     
 }

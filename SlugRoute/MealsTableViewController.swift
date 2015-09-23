@@ -52,6 +52,7 @@ class MealsTableViewController: UITableViewController {
         super.viewDidLoad()
         self.title = collegeName
         
+        
         //parsing JSON (type AnyObject) puts college's meals into arrays.
         if let jsonResult = items as? Dictionary<String, AnyObject> {
             for(key, value) in jsonResult{
