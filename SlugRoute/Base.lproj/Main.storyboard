@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -20,9 +21,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="DbG-wH-6Nh" kind="relationship" relationship="viewControllers" id="4Cs-Td-deo"/>
-                        <segue destination="nIh-qK-fjT" kind="relationship" relationship="viewControllers" id="c1x-zy-1Ht"/>
                         <segue destination="dVP-ei-kRe" kind="relationship" relationship="viewControllers" id="FeO-jr-y0N"/>
-                        <segue destination="asj-g4-MB0" kind="relationship" relationship="viewControllers" id="XIf-6Y-Vd3"/>
                         <segue destination="m97-e7-l1x" kind="relationship" relationship="viewControllers" id="84l-l2-UYd"/>
                     </connections>
                 </tabBarController>
@@ -595,7 +594,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="breakfastTable" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="TGM-Ju-MWW">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" restorationIdentifier="breakfastTable" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="TGM-Ju-MWW">
                                 <rect key="frame" x="-1" y="92" width="320" height="130"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
