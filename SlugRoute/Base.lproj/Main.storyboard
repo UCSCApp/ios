@@ -610,37 +610,37 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kTi-ha-1ud">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="beef" translatesAutoresizingMaskIntoConstraints="NO" id="kTi-ha-1ud">
                                                     <rect key="frame" x="176" y="0.0" width="25" height="25"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e9K-aN-3Hu">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="pork" translatesAutoresizingMaskIntoConstraints="NO" id="e9K-aN-3Hu">
                                                     <rect key="frame" x="201" y="0.0" width="25" height="25"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wzR-Wv-VU6">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="egg" translatesAutoresizingMaskIntoConstraints="NO" id="wzR-Wv-VU6">
                                                     <rect key="frame" x="227" y="0.0" width="25" height="25"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IwF-cR-TC2">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="fish" translatesAutoresizingMaskIntoConstraints="NO" id="IwF-cR-TC2">
                                                     <rect key="frame" x="251" y="0.0" width="25" height="25"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o0A-uM-YQJ">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="glutten" translatesAutoresizingMaskIntoConstraints="NO" id="o0A-uM-YQJ">
                                                     <rect key="frame" x="276" y="0.0" width="25" height="25"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Icm-xG-EvD">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="milk" translatesAutoresizingMaskIntoConstraints="NO" id="Icm-xG-EvD">
                                                     <rect key="frame" x="176" y="26" width="25" height="25"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eXK-o5-hFI">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="nuts" translatesAutoresizingMaskIntoConstraints="NO" id="eXK-o5-hFI">
                                                     <rect key="frame" x="201" y="26" width="25" height="25"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1iM-lM-wj9">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="soy" translatesAutoresizingMaskIntoConstraints="NO" id="1iM-lM-wj9">
                                                     <rect key="frame" x="227" y="26" width="25" height="25"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="in0-gk-rbj">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="vegan" translatesAutoresizingMaskIntoConstraints="NO" id="in0-gk-rbj">
                                                     <rect key="frame" x="251" y="26" width="25" height="25"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2WX-eO-e14">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="veggie" translatesAutoresizingMaskIntoConstraints="NO" id="2WX-eO-e14">
                                                     <rect key="frame" x="276" y="26" width="25" height="25"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GqC-Bx-rbb">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="allergy" translatesAutoresizingMaskIntoConstraints="NO" id="GqC-Bx-rbb">
                                                     <rect key="frame" x="148" y="15" width="25" height="25"/>
                                                 </imageView>
                                             </subviews>
@@ -651,7 +651,7 @@
                                             <outlet property="breakfastName" destination="JVV-PB-v5B" id="BYB-Op-the"/>
                                             <outlet property="egg" destination="wzR-Wv-VU6" id="CbM-GA-RvH"/>
                                             <outlet property="fish" destination="IwF-cR-TC2" id="O4U-CO-Vr1"/>
-                                            <outlet property="gluten" destination="1iM-lM-wj9" id="WSN-Vj-jFh"/>
+                                            <outlet property="gluten" destination="o0A-uM-YQJ" id="J9s-OV-PJa"/>
                                             <outlet property="milk" destination="Icm-xG-EvD" id="fw8-hQ-nt8"/>
                                             <outlet property="nuts" destination="eXK-o5-hFI" id="mol-nI-Gg2"/>
                                             <outlet property="pork" destination="e9K-aN-3Hu" id="tIH-sB-np6"/>

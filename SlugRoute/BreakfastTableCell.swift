@@ -19,8 +19,8 @@ class BreakfastTableCell: UITableViewCell {
     @IBOutlet weak var soy: UIImageView!
     @IBOutlet weak var milk: UIImageView!
     @IBOutlet weak var nuts: UIImageView!
-    @IBOutlet weak var gluten: UIImageView!
     @IBOutlet weak var vegan: UIImageView!
+    @IBOutlet weak var gluten: UIImageView!
     @IBOutlet weak var veggie: UIImageView!
     
     @IBOutlet weak var breakfastName: UILabel!
@@ -29,6 +29,7 @@ class BreakfastTableCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
     }
     
     override func setSelected(selected: Bool, animated: Bool) {
@@ -36,5 +37,6 @@ class BreakfastTableCell: UITableViewCell {
         
         // Configure the view for the selected state
     }
+    
     
 }
