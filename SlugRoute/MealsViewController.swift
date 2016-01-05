@@ -85,36 +85,69 @@ class MealsViewController: UIViewController{
                 for image: String in cell.attributes{
                     if(image == "eggs"){
                         cell.egg.image = UIImage(named:"ic_egg")
+                        var eggtap = UITapGestureRecognizer(target: self, action: Selector("eggtappedMe"))
+                        cell.egg.addGestureRecognizer(eggtap)
+                        cell.egg.userInteractionEnabled = true
                     }
                     else if(image == "soy"){
                         cell.soy.image = UIImage(named:"ic_soy.png")
+                        var soytap = UITapGestureRecognizer(target: self, action: Selector("soytappedMe"))
+                        cell.soy.addGestureRecognizer(soytap)
+                        cell.soy.userInteractionEnabled = true
                     }
                     else if(image == "veggie"){
                         cell.veggie.image = UIImage(named:"ic_veggie.png")
+                        var veggietap = UITapGestureRecognizer(target: self, action: Selector("veggietappedMe"))
+                        cell.veggie.addGestureRecognizer(veggietap)
+                        cell.veggie.userInteractionEnabled = true
                     }
                     else if(image == "milk"){
                         cell.milk.image = UIImage(named:"ic_milk.png")
+                        var milktap = UITapGestureRecognizer(target: self, action: Selector("milktappedMe"))
+                        cell.milk.addGestureRecognizer(milktap)
+                        cell.milk.userInteractionEnabled = true
                     }
                     else if(image == "gluten"){
-                        cell.gluten.image = UIImage(named:"ic_glutten.png")
+                        cell.gluten.image = UIImage(named:"ic_gluten.png")
+                        var gluttentap = UITapGestureRecognizer(target: self, action: Selector("gluttentappedMe"))
+                        cell.gluten.addGestureRecognizer(gluttentap)
+                        cell.gluten.userInteractionEnabled = true
                     }
                     else if(image == "nuts"){
                         cell.nuts.image = UIImage(named:"ic_nuts.png")
+                        var nutstap = UITapGestureRecognizer(target: self, action: Selector("nutstappedMe"))
+                        cell.nuts.addGestureRecognizer(nutstap)
+                        cell.nuts.userInteractionEnabled = true
                     }
                     else if(image == "fish"){
                         cell.fish.image = UIImage(named:"ic_fish.png")
+                        var fishtap = UITapGestureRecognizer(target: self, action: Selector("fishtappedMe"))
+                        cell.fish.addGestureRecognizer(fishtap)
+                        cell.fish.userInteractionEnabled = true
                     }
                     else if(image == "pork"){
                         cell.pork.image = UIImage(named:"ic_pork.png")
+                        var porktap = UITapGestureRecognizer(target: self, action: Selector("porktappedMe"))
+                        cell.pork.addGestureRecognizer(porktap)
+                        cell.pork.userInteractionEnabled = true
                     }
                     else if(image == "vegan"){
                         cell.vegan.image = UIImage(named:"ic_vegan.png")
+                        var vegantap = UITapGestureRecognizer(target: self, action: Selector("vegantappedMe"))
+                        cell.vegan.addGestureRecognizer(vegantap)
+                        cell.vegan.userInteractionEnabled = true
                     }
                     else if(image == "beef"){
                         cell.beef.image = UIImage(named:"ic_beef.png")
+                        var beeftap = UITapGestureRecognizer(target: self, action: Selector("beeftappedMe"))
+                        cell.beef.addGestureRecognizer(beeftap)
+                        cell.beef.userInteractionEnabled = true
                     }
                     else if(image == "allergy free"){
                         cell.allergy.image = UIImage(named:"ic_allergy_free.png")
+                        var allergytap = UITapGestureRecognizer(target: self, action: Selector("allergytappedMe"))
+                        cell.allergy.addGestureRecognizer(allergytap)
+                        cell.allergy.userInteractionEnabled = true
                     }
                     else{
                         //filler for now
@@ -132,6 +165,162 @@ class MealsViewController: UIViewController{
             return cell
         }
     }
+    
+    func eggtappedMe()
+    {
+        var alert = UIAlertView()
+        alert.title = "Contains:"
+        alert.message = "eggs"
+        alert.show()
+        // Delay the dismissal by 5 seconds
+        let delay = 3.0 * Double(NSEC_PER_SEC)
+        var time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+        dispatch_after(time, dispatch_get_main_queue(), {
+            alert.dismissWithClickedButtonIndex(-1, animated: true)
+        })
+    }
+    
+    
+    func allergytappedMe()
+    {
+        var alert = UIAlertView()
+        alert.title = "Allergy free"
+        alert.message = ""
+        alert.show()
+        // Delay the dismissal by 5 seconds
+        let delay = 3.0 * Double(NSEC_PER_SEC)
+        var time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+        dispatch_after(time, dispatch_get_main_queue(), {
+            alert.dismissWithClickedButtonIndex(-1, animated: true)
+        })
+    }
+    
+    func beeftappedMe()
+    {
+        var alert = UIAlertView()
+        alert.title = "Contains:"
+        alert.message = "beef"
+        alert.show()
+        // Delay the dismissal by 5 seconds
+        let delay = 3.0 * Double(NSEC_PER_SEC)
+        var time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+        dispatch_after(time, dispatch_get_main_queue(), {
+            alert.dismissWithClickedButtonIndex(-1, animated: true)
+        })
+    }
+    
+    func nutstappedMe()
+    {
+        var alert = UIAlertView()
+        alert.title = "Contains:"
+        alert.message = "nuts"
+        alert.show()
+        // Delay the dismissal by 5 seconds
+        let delay = 3.0 * Double(NSEC_PER_SEC)
+        var time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+        dispatch_after(time, dispatch_get_main_queue(), {
+            alert.dismissWithClickedButtonIndex(-1, animated: true)
+        })
+    }
+    
+    func fishtappedMe()
+    {
+        var alert = UIAlertView()
+        alert.title = "Contains:"
+        alert.message = "fish"
+        alert.show()
+        // Delay the dismissal by 5 seconds
+        let delay = 3.0 * Double(NSEC_PER_SEC)
+        var time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+        dispatch_after(time, dispatch_get_main_queue(), {
+            alert.dismissWithClickedButtonIndex(-1, animated: true)
+        })
+    }
+    
+    func soytappedMe()
+    {
+        var alert = UIAlertView()
+        alert.title = "Contains:"
+        alert.message = "soy"
+        alert.show()
+        // Delay the dismissal by 5 seconds
+        let delay = 3.0 * Double(NSEC_PER_SEC)
+        var time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+        dispatch_after(time, dispatch_get_main_queue(), {
+            alert.dismissWithClickedButtonIndex(-1, animated: true)
+        })
+    }
+    
+    func milktappedMe()
+    {
+        var alert = UIAlertView()
+        alert.title = "Contains:"
+        alert.message = "milk"
+        alert.show()
+        // Delay the dismissal by 5 seconds
+        let delay = 3.0 * Double(NSEC_PER_SEC)
+        var time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+        dispatch_after(time, dispatch_get_main_queue(), {
+            alert.dismissWithClickedButtonIndex(-1, animated: true)
+        })
+    }
+    
+    func gluttentappedMe()
+    {
+        var alert = UIAlertView()
+        alert.title = "Contains:"
+        alert.message = "glutten"
+        alert.show()
+        // Delay the dismissal by 5 seconds
+        let delay = 3.0 * Double(NSEC_PER_SEC)
+        var time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+        dispatch_after(time, dispatch_get_main_queue(), {
+            alert.dismissWithClickedButtonIndex(-1, animated: true)
+        })
+    }
+    
+    func veggietappedMe()
+    {
+        var alert = UIAlertView()
+        alert.title = "Contains:"
+        alert.message = "veggie"
+        alert.show()
+        // Delay the dismissal by 5 seconds
+        let delay = 3.0 * Double(NSEC_PER_SEC)
+        var time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+        dispatch_after(time, dispatch_get_main_queue(), {
+            alert.dismissWithClickedButtonIndex(-1, animated: true)
+        })
+    }
+    
+    func vegantappedMe()
+    {
+        var alert = UIAlertView()
+        alert.title = "Contains:"
+        alert.message = "vegan"
+        alert.show()
+        // Delay the dismissal by 5 seconds
+        let delay = 3.0 * Double(NSEC_PER_SEC)
+        var time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+        dispatch_after(time, dispatch_get_main_queue(), {
+            alert.dismissWithClickedButtonIndex(-1, animated: true)
+        })
+    }
+    
+    func porktappedMe()
+    {
+        var alert = UIAlertView()
+        alert.title = "Contains:"
+        alert.message = "pork"
+        alert.show()
+        // Delay the dismissal by 5 seconds
+        let delay = 3.0 * Double(NSEC_PER_SEC)
+        var time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+        dispatch_after(time, dispatch_get_main_queue(), {
+            alert.dismissWithClickedButtonIndex(-1, animated: true)
+        })
+    }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
