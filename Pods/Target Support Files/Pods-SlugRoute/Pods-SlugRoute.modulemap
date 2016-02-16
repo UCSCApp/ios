@@ -1,6 +1,0 @@
-framework module Pods_SlugRoute {
-  umbrella header "Pods-SlugRoute-umbrella.h"
-
-  export *
-  module * { export * }
-}

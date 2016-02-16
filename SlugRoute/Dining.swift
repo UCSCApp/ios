@@ -11,12 +11,12 @@ import Foundation
 class Dining : NSObject
 {
     var name                : String = ""
-    var items               : AnyObject = ""
+    var items               : Dictionary<String,AnyObject>
     
-    init(data : JSON)
+    init(data : AnyObject)
     {
-        name              = data["name"].stringValue
-        items             = data["items"].object
+        name              = (data["name"] as? String)!
+        items             = (data["items"] as? Dictionary<String,AnyObject>)!
         
     }
 }

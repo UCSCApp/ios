@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42C07D62A7DFF48856C27FF9 /* Pods_SlugRoute.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88152EAC8DA08C7A7BFC6E6D /* Pods_SlugRoute.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		64A903C20085C7B4592C5361 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C2CD37949B3FD61EB249C21 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B84152E31B13CAE10075E885 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84152E21B13CAE10075E885 /* AppDelegate.swift */; };
 		B84152EC1B13CAE10075E885 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B84152EB1B13CAE10075E885 /* Images.xcassets */; };
 		B84152FB1B13CAE10075E885 /* SlugRouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84152FA1B13CAE10075E885 /* SlugRouteTests.swift */; };
@@ -55,13 +53,11 @@
 		DA525A8B1BA37A4F0035AEE2 /* ic_vegan.png in Resources */ = {isa = PBXBuildFile; fileRef = DA525A801BA37A4E0035AEE2 /* ic_vegan.png */; };
 		DA525A8C1BA37A4F0035AEE2 /* ic_veggie.png in Resources */ = {isa = PBXBuildFile; fileRef = DA525A811BA37A4F0035AEE2 /* ic_veggie.png */; };
 		DA5EB4511B6CBF4700991145 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5EB4501B6CBF4700991145 /* SocialViewController.swift */; };
-		DA608BBE1B6C23F000B22EF0 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA608BBD1B6C23F000B22EF0 /* SwiftyJSON.swift */; };
 		DA608BC31B6C258600B22EF0 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA608BBF1B6C258600B22EF0 /* Fabric.framework */; };
 		DA608BC41B6C258600B22EF0 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA608BC01B6C258600B22EF0 /* TwitterKit.framework */; };
 		DA608BC51B6C258600B22EF0 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DA608BC11B6C258600B22EF0 /* TwitterKitResources.bundle */; };
 		DA608BC61B6C258600B22EF0 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA608BC21B6C258600B22EF0 /* TwitterCore.framework */; };
 		DA6ADB3D1B6C6E6F00BD3E8B /* TwitterLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6ADB3C1B6C6E6F00BD3E8B /* TwitterLoginViewController.swift */; };
-		DA6ADB451B6C83E900BD3E8B /* InstagramLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6ADB441B6C83E900BD3E8B /* InstagramLoginViewController.swift */; };
 		DA7332031BA2211A00E674C9 /* DiningNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7332021BA2211A00E674C9 /* DiningNavigationController.swift */; };
 		DA7332071BA226AA00E674C9 /* DiningTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7332061BA226AA00E674C9 /* DiningTableViewController.swift */; };
 		DA73320F1BA22D6500E674C9 /* Dining.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73320E1BA22D6500E674C9 /* Dining.swift */; };
@@ -94,8 +90,6 @@
 
 /* Begin PBXFileReference section */
 		6C2CD37949B3FD61EB249C21 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		88152EAC8DA08C7A7BFC6E6D /* Pods_SlugRoute.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlugRoute.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		89E5CA7120861FEA7E143583 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B84152DD1B13CAE10075E885 /* SlugRoute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlugRoute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B84152E11B13CAE10075E885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B84152E21B13CAE10075E885 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,7 +101,6 @@
 		B84152FA1B13CAE10075E885 /* SlugRouteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlugRouteTests.swift; sourceTree = "<group>"; };
 		B84153041B13CE8F0075E885 /* EventsNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsNavigationController.swift; sourceTree = "<group>"; };
 		B841530A1B13D0690075E885 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		C170067B3706402C0175634A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DA3DF0841B92715F00E67952 /* dining_hall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dining_hall.png; path = Images.xcassets/map.imageset/dining_hall.png; sourceTree = "<group>"; };
 		DA3DF0861B9272DD00E67952 /* cafe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cafe.png; path = Images.xcassets/map.imageset/cafe.png; sourceTree = "<group>"; };
 		DA3DF0871B9272DE00E67952 /* classroom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = classroom.png; path = Images.xcassets/map.imageset/classroom.png; sourceTree = "<group>"; };
@@ -149,7 +142,6 @@
 		DA525A801BA37A4E0035AEE2 /* ic_vegan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_vegan.png; path = Images.xcassets/dining.imageset/ic_vegan.png; sourceTree = "<group>"; };
 		DA525A811BA37A4F0035AEE2 /* ic_veggie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_veggie.png; path = Images.xcassets/dining.imageset/ic_veggie.png; sourceTree = "<group>"; };
 		DA5EB4501B6CBF4700991145 /* SocialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
-		DA608BBD1B6C23F000B22EF0 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../SwiftyJSON.swift; sourceTree = "<group>"; };
 		DA608BBF1B6C258600B22EF0 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
 		DA608BC01B6C258600B22EF0 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = SOURCE_ROOT; };
 		DA608BC11B6C258600B22EF0 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = SOURCE_ROOT; };
@@ -195,8 +187,6 @@
 				DA4CA1581B740A4600DA6A94 /* CoreData.framework in Frameworks */,
 				DA4CA1561B740A3C00DA6A94 /* AVFoundation.framework in Frameworks */,
 				DA608BC61B6C258600B22EF0 /* TwitterCore.framework in Frameworks */,
-				64A903C20085C7B4592C5361 /* Pods.framework in Frameworks */,
-				42C07D62A7DFF48856C27FF9 /* Pods_SlugRoute.framework in Frameworks */,
 				DA608BC31B6C258600B22EF0 /* Fabric.framework in Frameworks */,
 				DA608BC41B6C258600B22EF0 /* TwitterKit.framework in Frameworks */,
 			);
@@ -212,22 +202,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		55C4C58E0511A4886C0243F3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				89E5CA7120861FEA7E143583 /* Pods.debug.xcconfig */,
-				C170067B3706402C0175634A /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		B84152D41B13CAE10075E885 = {
 			isa = PBXGroup;
 			children = (
 				B84152DF1B13CAE10075E885 /* SlugRoute */,
 				B84152F71B13CAE10075E885 /* SlugRouteTests */,
 				B84152DE1B13CAE10075E885 /* Products */,
-				55C4C58E0511A4886C0243F3 /* Pods */,
 				C12AA22289C94F4BB48A9C51 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -258,7 +238,6 @@
 				DA608BC01B6C258600B22EF0 /* TwitterKit.framework */,
 				DA608BC11B6C258600B22EF0 /* TwitterKitResources.bundle */,
 				DA608BC21B6C258600B22EF0 /* TwitterCore.framework */,
-				DA608BBD1B6C23F000B22EF0 /* SwiftyJSON.swift */,
 				DA4FD7971B796C5C00F05253 /* GoogleMaps.framework */,
 				DAA5E4AF1B6D73320066BD56 /* TabBarController.swift */,
 				DA4FD7941B79688300F05253 /* SlugRoute-Bridging-Header.h */,
@@ -308,7 +287,6 @@
 				DA4CA1571B740A4600DA6A94 /* CoreData.framework */,
 				DA4CA1551B740A3C00DA6A94 /* AVFoundation.framework */,
 				6C2CD37949B3FD61EB249C21 /* Pods.framework */,
-				88152EAC8DA08C7A7BFC6E6D /* Pods_SlugRoute.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -426,12 +404,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B84152FE1B13CAE10075E885 /* Build configuration list for PBXNativeTarget "SlugRoute" */;
 			buildPhases = (
-				2F67158750078D1D756684C0 /* Check Pods Manifest.lock */,
 				B84152D91B13CAE10075E885 /* Sources */,
 				B84152DA1B13CAE10075E885 /* Frameworks */,
 				B84152DB1B13CAE10075E885 /* Resources */,
-				9C08747108E51E49B8B37A7A /* Embed Pods Frameworks */,
-				A7AD377C68A5ED41137C89D7 /* Copy Pods Resources */,
 				DA608BBC1B6C21B700B22EF0 /* ShellScript */,
 			);
 			buildRules = (
@@ -543,51 +518,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2F67158750078D1D756684C0 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		9C08747108E51E49B8B37A7A /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlugRoute/Pods-SlugRoute-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A7AD377C68A5ED41137C89D7 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlugRoute/Pods-SlugRoute-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		DA608BBC1B6C21B700B22EF0 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -621,9 +551,7 @@
 				DA6ADB3D1B6C6E6F00BD3E8B /* TwitterLoginViewController.swift in Sources */,
 				DA3DF0911B951C8200E67952 /* EventsViewController.swift in Sources */,
 				DA3DF0931B951D3000E67952 /* EventTableCell.swift in Sources */,
-				DA608BBE1B6C23F000B22EF0 /* SwiftyJSON.swift in Sources */,
 				DA5EB4511B6CBF4700991145 /* SocialViewController.swift in Sources */,
-				DA6ADB451B6C83E900BD3E8B /* InstagramLoginViewController.swift in Sources */,
 				B841530B1B13D0690075E885 /* Event.swift in Sources */,
 				DA4688E31B9781D500F11DD0 /* SettingsNavigationController.swift in Sources */,
 				DA9869E01B8458840013E199 /* InstagramPost.swift in Sources */,
@@ -725,7 +653,6 @@
 		};
 		B841530D1B13D37F0075E885 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C170067B3706402C0175634A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -736,12 +663,8 @@
 				);
 				INFOPLIST_FILE = SlugRoute/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					"\"Alamofire\"",
-					"-ObjC",
-				);
+				OTHER_LDFLAGS = "";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/SlugRoute/SlugRoute-Bridging-Header.h";
 			};
@@ -816,7 +739,6 @@
 		};
 		DA4CA14D1B7357BF00DA6A94 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89E5CA7120861FEA7E143583 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -827,12 +749,8 @@
 				);
 				INFOPLIST_FILE = SlugRoute/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					"\"Alamofire\"",
-					"-ObjC",
-				);
+				OTHER_LDFLAGS = "";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/SlugRoute/SlugRoute-Bridging-Header.h";
 			};

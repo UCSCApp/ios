@@ -11,7 +11,7 @@ import UIKit
 
 //an extension for imageview in order to show to the picture in a cell
 extension UIImageView {
-    public func imageFromUrl(urlString: String) {
+    /*public func imageFromUrl(urlString: String) {
         if let url = NSURL(string: urlString) {
             let request = NSURLRequest(URL: url)
             NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) {
@@ -19,7 +19,7 @@ extension UIImageView {
                 self.image = UIImage(data: data)
             }
         }
-    }
+    }*/
 }
 
 class InstagramLoginViewController: UIViewController {
@@ -51,7 +51,7 @@ class InstagramLoginViewController: UIViewController {
     
     func parsePosts()
     {
-        var CLIENT_ID : String = "2eb0b0a219ba482c9b9121c8287cc4aa"
+        var CLIENT_ID : String = "a77b20f514d34a62a9202e719f47ae1a"
         var getUCSC = "https://api.instagram.com/v1/tags/UCSC/media/recent?client_id="+CLIENT_ID
         var theUrl : String = ""
         var theUsername : String = ""
@@ -59,35 +59,39 @@ class InstagramLoginViewController: UIViewController {
         
         let jsonData = NSData(contentsOfURL: NSURL(string: getUCSC)!)
         var jsonErrorOptional: NSError?
-        let jsonOptional: AnyObject! = NSJSONSerialization.JSONObjectWithData(jsonData!, options: NSJSONReadingOptions(0), error: &jsonErrorOptional)
+        do{
+            let jsonOptional: AnyObject! = try NSJSONSerialization.JSONObjectWithData(jsonData!, options: NSJSONReadingOptions(rawValue: 0))
         
-        //parse from JSON
-        if let json = jsonOptional as? Dictionary<String, AnyObject> {
-            if let other = json["data"] as? Array<AnyObject> {
-                for(json : AnyObject) in other{
-                    if let user = json["user"] as?  Dictionary<String,AnyObject>  {
-                        if let userName = user["full_name"] as AnyObject? as? String {
-                            theUsername = userName
-                        }
-                    }
-                    if let images = json["images"] as?  Dictionary<String,AnyObject>  {
-                        if let low = images["low_resolution"] as?  Dictionary<String,AnyObject>  {
-                            if let image = low["url"] as AnyObject? as? String {
-                                theUrl = image
+            //parse from JSON
+            if let json = jsonOptional as? Dictionary<String, AnyObject> {
+                if let other = json["data"] as? Array<AnyObject> {
+                    for json in other{
+                        if let user = json["user"] as?  Dictionary<String,AnyObject>  {
+                            if let userName = user["full_name"] as AnyObject? as? String {
+                                theUsername = userName
                             }
                         }
-                    }
-                    if let caption = json["caption"] as?  Dictionary<String,AnyObject>  {
-                        if let cap = caption["text"] as AnyObject? as? String {
-                            theText = cap
+                        if let images = json["images"] as?  Dictionary<String,AnyObject>  {
+                            if let low = images["low_resolution"] as?  Dictionary<String,AnyObject>  {
+                                if let image = low["url"] as AnyObject? as? String {
+                                    theUrl = image
+                                }
+                            }
                         }
+                        if let caption = json["caption"] as?  Dictionary<String,AnyObject>  {
+                            if let cap = caption["text"] as AnyObject? as? String {
+                                theText = cap
+                            }
+                        }
+                        posts.append(InstagramPost(url: theUrl,username: theUsername,text: theText))
                     }
-                    posts.append(InstagramPost(url: theUrl,username: theUsername,text: theText))
-                }
                 
+                }
             }
         }
-                    
+        catch{
+            print("Error")
+        }
         
         instagramTable.reloadData()
 
@@ -103,7 +107,7 @@ class InstagramLoginViewController: UIViewController {
         var cell = tableView.dequeueReusableCellWithIdentifier("InstagramTableCell", forIndexPath: indexPath) as! InstagramTableCell
         
         cell.userLabel.text           = post.user
-        cell.pictureLabel.imageFromUrl(post.picture)
+        //cell.pictureLabel.imageFromUrl(post.picture)
         cell.descriptionLabel.text    = post.picdescription
         return cell
     }

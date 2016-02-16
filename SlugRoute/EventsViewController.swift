@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import Alamofire
-//import SwiftyJSON
 
 class EventsViewController: UITableViewController {
    
@@ -58,25 +56,26 @@ class EventsViewController: UITableViewController {
     var data: NSData = json.dataUsingEncoding(NSUTF8StringEncoding)!
     var error: NSError?
     
-    // convert NSData to 'AnyObject'
-    let anyObj: AnyObject? = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(0),
-        error: &error)
     
-    // convert 'AnyObject' to Array<Business>
-    var jsonObj = JSON(anyObj!)
-    self.parseEvents(jsonObj)
+    do {
+        // convert 'AnyObject' to Array<Business>
+        let anyObj: AnyObject? = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)
+        if let anyObj = anyObj {
+            if let elems = anyObj as? [[String: AnyObject]] {
+                for item in elems {
+                    if let json = item as? AnyObject {
+                        events.append(Event(data: json))
+                        self.tableView.reloadData()
+                    }
+                }
+            }
+        }
+    } catch {
+            print("json error: \(error)")
+    }
+        
    }
 
-   
-   func parseEvents(data : JSON)
-   {
-      for(key : String, json : JSON) in data
-      {
-         events.append(Event(data: json))
-      }
-    
-      self.tableView.reloadData()
-   }
    
    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
    {
@@ -106,7 +105,7 @@ class EventsViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get Cell Label
-        let indexPath = self.tableView.indexPathForSelectedRow();
+        let indexPath = self.tableView.indexPathForSelectedRow
         let currentCell = self.tableView.cellForRowAtIndexPath(indexPath!) as! EventTableCell;
         nameLabel = currentCell.nameLabel!.text
         dateLabel = currentCell.dateLabel!.text

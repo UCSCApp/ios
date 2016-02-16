@@ -146,8 +146,8 @@ class MealsTableViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get Cell Label
-        let indexPath = self.tableView.indexPathForSelectedRow();
-        let currentCell = self.tableView.cellForRowAtIndexPath(indexPath!) as! MealTableCell;
+        let indexPath = self.tableView.indexPathForSelectedRow!;
+        let currentCell = self.tableView.cellForRowAtIndexPath(indexPath) as! MealTableCell;
         if (segue.identifier == "toMeal") {
             if(currentCell.meal!.text! == "Breakfast"){
                 // initialize new view controller and cast it as your view controller
