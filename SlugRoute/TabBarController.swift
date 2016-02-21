@@ -9,10 +9,10 @@
 import Foundation
 import UIKit
 
-class TabBarController: UITabBarController {
+class TabBarController: UITabBarController, UITabBarControllerDelegate {
     
     override func viewDidLoad() {
-        super.viewDidLoad();
+        self.delegate = self
         let tabItems = self.tabBar.items as! [UITabBarItem]!
         let tabItem0 = tabItems[0] as UITabBarItem
         let tabItem1 = tabItems[1] as UITabBarItem
@@ -25,7 +25,20 @@ class TabBarController: UITabBarController {
         //tabItem3.title = "Settings"
         tabItem2.title = "Dining"
     }
+
+    // UITabBarDelegate
+    override func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem) {
+        var myCustomViewController: MapViewController = MapViewController(nibName: nil, bundle: nil)
+        myCustomViewController.invalidateTimer = true
+        print("Selected item")
+    }
     
+    // UITabBarControllerDelegate
+    func tabBarController(tabBarController: UITabBarController, didSelectViewController viewController: UIViewController) {
+        var myCustomViewController: MapViewController = MapViewController(nibName: nil, bundle: nil)
+        myCustomViewController.invalidateTimer = true
+        print("Selected view controller")
+    }
     
     override func didReceiveMemoryWarning()
     {

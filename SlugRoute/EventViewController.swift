@@ -31,7 +31,7 @@ class EventViewController: UIViewController {
         imageBanner.image = image
         
         //for swipe right to go back to SocialViewController
-        var swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
         swipeRight.direction = UISwipeGestureRecognizerDirection.Right
         self.view.addGestureRecognizer(swipeRight)
         
