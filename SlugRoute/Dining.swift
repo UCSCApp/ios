@@ -10,13 +10,14 @@ import Foundation
 
 class Dining : NSObject
 {
-    var name                : String = ""
-    var items               : Dictionary<String,AnyObject>
-    
-    init(data : AnyObject)
+
+    var collegeNames                 : Array<String> = []
+
+    init(data : Array<String>)
     {
-        name              = (data["name"] as? String)!
-        items             = (data["items"] as? Dictionary<String,AnyObject>)!
+        for college in data {
+            collegeNames.append(college);
+        }
         
     }
 }

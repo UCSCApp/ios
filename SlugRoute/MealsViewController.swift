@@ -85,67 +85,67 @@ class MealsViewController: UIViewController{
                 for image: String in cell.attributes{
                     if(image == "eggs"){
                         cell.egg.image = UIImage(named:"ic_egg")
-                        let eggtap = UITapGestureRecognizer(target: self, action: Selector("eggtappedMe"))
+                        let eggtap = UITapGestureRecognizer(target: self, action: #selector(MealsViewController.eggtappedMe))
                         cell.egg.addGestureRecognizer(eggtap)
                         cell.egg.userInteractionEnabled = true
                     }
                     else if(image == "soy"){
                         cell.soy.image = UIImage(named:"ic_soy.png")
-                        let soytap = UITapGestureRecognizer(target: self, action: Selector("soytappedMe"))
+                        let soytap = UITapGestureRecognizer(target: self, action: #selector(MealsViewController.soytappedMe))
                         cell.soy.addGestureRecognizer(soytap)
                         cell.soy.userInteractionEnabled = true
                     }
                     else if(image == "veggie"){
                         cell.veggie.image = UIImage(named:"ic_veggie.png")
-                        let veggietap = UITapGestureRecognizer(target: self, action: Selector("veggietappedMe"))
+                        let veggietap = UITapGestureRecognizer(target: self, action: #selector(MealsViewController.veggietappedMe))
                         cell.veggie.addGestureRecognizer(veggietap)
                         cell.veggie.userInteractionEnabled = true
                     }
                     else if(image == "milk"){
                         cell.milk.image = UIImage(named:"ic_milk.png")
-                        let milktap = UITapGestureRecognizer(target: self, action: Selector("milktappedMe"))
+                        let milktap = UITapGestureRecognizer(target: self, action: #selector(MealsViewController.milktappedMe))
                         cell.milk.addGestureRecognizer(milktap)
                         cell.milk.userInteractionEnabled = true
                     }
                     else if(image == "gluten"){
                         cell.gluten.image = UIImage(named:"ic_gluten.png")
-                        let gluttentap = UITapGestureRecognizer(target: self, action: Selector("gluttentappedMe"))
+                        let gluttentap = UITapGestureRecognizer(target: self, action: #selector(MealsViewController.gluttentappedMe))
                         cell.gluten.addGestureRecognizer(gluttentap)
                         cell.gluten.userInteractionEnabled = true
                     }
                     else if(image == "nuts"){
                         cell.nuts.image = UIImage(named:"ic_nuts.png")
-                        let nutstap = UITapGestureRecognizer(target: self, action: Selector("nutstappedMe"))
+                        let nutstap = UITapGestureRecognizer(target: self, action: #selector(MealsViewController.nutstappedMe))
                         cell.nuts.addGestureRecognizer(nutstap)
                         cell.nuts.userInteractionEnabled = true
                     }
                     else if(image == "fish"){
                         cell.fish.image = UIImage(named:"ic_fish.png")
-                        let fishtap = UITapGestureRecognizer(target: self, action: Selector("fishtappedMe"))
+                        let fishtap = UITapGestureRecognizer(target: self, action: #selector(MealsViewController.fishtappedMe))
                         cell.fish.addGestureRecognizer(fishtap)
                         cell.fish.userInteractionEnabled = true
                     }
                     else if(image == "pork"){
                         cell.pork.image = UIImage(named:"ic_pork.png")
-                        let porktap = UITapGestureRecognizer(target: self, action: Selector("porktappedMe"))
+                        let porktap = UITapGestureRecognizer(target: self, action: #selector(MealsViewController.porktappedMe))
                         cell.pork.addGestureRecognizer(porktap)
                         cell.pork.userInteractionEnabled = true
                     }
                     else if(image == "vegan"){
                         cell.vegan.image = UIImage(named:"ic_vegan.png")
-                        let vegantap = UITapGestureRecognizer(target: self, action: Selector("vegantappedMe"))
+                        let vegantap = UITapGestureRecognizer(target: self, action: #selector(MealsViewController.vegantappedMe))
                         cell.vegan.addGestureRecognizer(vegantap)
                         cell.vegan.userInteractionEnabled = true
                     }
                     else if(image == "beef"){
                         cell.beef.image = UIImage(named:"ic_beef.png")
-                        let beeftap = UITapGestureRecognizer(target: self, action: Selector("beeftappedMe"))
+                        let beeftap = UITapGestureRecognizer(target: self, action: #selector(MealsViewController.beeftappedMe))
                         cell.beef.addGestureRecognizer(beeftap)
                         cell.beef.userInteractionEnabled = true
                     }
                     else if(image == "allergy free"){
                         cell.allergy.image = UIImage(named:"ic_allergy_free.png")
-                        let allergytap = UITapGestureRecognizer(target: self, action: Selector("allergytappedMe"))
+                        let allergytap = UITapGestureRecognizer(target: self, action: #selector(MealsViewController.allergytappedMe))
                         cell.allergy.addGestureRecognizer(allergytap)
                         cell.allergy.userInteractionEnabled = true
                     }

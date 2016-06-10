@@ -24,7 +24,7 @@ class MapViewController: UIViewController {
         mapView.myLocationEnabled = true
 
         
-        NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: Selector("delayedFunctionWithoutParameter:"), userInfo: nil, repeats: true)
+        NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: #selector(MapViewController.delayedFunctionWithoutParameter(_:)), userInfo: nil, repeats: true)
         
 
         
@@ -83,10 +83,9 @@ class MapViewController: UIViewController {
             // do some task
             // http://bts.ucsc.edu:8081/location/get
             
-            var json = "[{\"id\":\"82\",\"lon\":-122.05301,\"lat\":36.977634,\"type\":\"OUT OF SERVICE/SORRY\"},{\"id\":\"96\",\"lon\":-122.05523,\"lat\":36.998116,\"type\":\"LOOP\"},{\"id\":\"95\",\"lon\":-122.06485,\"lat\":36.99283,\"type\":\"LOOP\"},{\"id\":\"90\",\"lon\":-122.06742,\"lat\":36.989235,\"type\":\"UPPER CAMPUS\"},{\"id\":\"79\",\"lon\":-122.054245,\"lat\":36.991135,\"type\":\"UPPER CAMPUS\"},{\"id\":\"75\",\"lon\":-122.05237,\"lat\":36.981247,\"type\":\"OUT OF SERVICE/SORRY\"},{\"id\":\"93\",\"lon\":-122.055244,\"lat\":36.997868,\"type\":\"LOOP\"}]"
             let request = NSURLRequest(URL: NSURL(string: "http://bts.ucsc.edu:8081/location/get")!)
             var response:NSURLResponse?
-            var error:NSError?
+            let error:NSError? = nil
             var responseData = ""
             let dataGet = try NSURLConnection.sendSynchronousRequest(request, returningResponse: &response)
             if error == nil {
@@ -97,7 +96,7 @@ class MapViewController: UIViewController {
             }
             
             // convert String to NSData
-            var data: NSData = responseData.dataUsingEncoding(NSUTF8StringEncoding)!
+            let data: NSData = responseData.dataUsingEncoding(NSUTF8StringEncoding)!
             // convert 'AnyObject' to Array of maps
             let anyObj: AnyObject? = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)
             if let anyObj = anyObj {
@@ -118,7 +117,7 @@ class MapViewController: UIViewController {
             loopBus.snippet = "UCSC"
             loopBus.appearAnimation = kGMSMarkerAnimationPop
             loopBus.title = bus.id
-            loopBus.icon = UIImage(named: "loop_bus")
+            loopBus.icon = UIImage(named: "loop_bus.png")
             loopBus.map = mapView
             loopBusesMarkers[bus.id]=loopBus
     
@@ -139,13 +138,12 @@ class MapViewController: UIViewController {
         do {
             self.loopBuses.removeAll()
             // do some task
-            let json = "[{\"id\":\"82\",\"lon\":-122.05301,\"lat\":36.977634,\"type\":\"OUT OF SERVICE/SORRY\"},{\"id\":\"96\",\"lon\":-122.05523,\"lat\":36.998116,\"type\":\"LOOP\"},{\"id\":\"95\",\"lon\":-122.06485,\"lat\":36.99283,\"type\":\"LOOP\"},{\"id\":\"90\",\"lon\":-122.06742,\"lat\":36.989235,\"type\":\"UPPER CAMPUS\"},{\"id\":\"79\",\"lon\":-122.054245,\"lat\":36.991135,\"type\":\"UPPER CAMPUS\"},{\"id\":\"75\",\"lon\":-122.05237,\"lat\":36.981247,\"type\":\"OUT OF SERVICE/SORRY\"},{\"id\":\"93\",\"lon\":-122.055244,\"lat\":36.997868,\"type\":\"LOOP\"}]"
             var responseData = ""
             let request = NSURLRequest(URL: NSURL(string: "http://bts.ucsc.edu:8081/location/get")!)
-            var error:NSError?
+            let error:NSError? = nil
             var response:NSURLResponse?
             let getdata = try NSURLConnection.sendSynchronousRequest(request, returningResponse: &response)
-            if error == nil {
+            if (error == nil) {
                 responseData = String(data: getdata, encoding: NSUTF8StringEncoding)!
                 // Parse the data
             } else {
