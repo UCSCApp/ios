@@ -13,8 +13,8 @@
 		B84153051B13CE8F0075E885 /* EventsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84153041B13CE8F0075E885 /* EventsNavigationController.swift */; };
 		B841530B1B13D0690075E885 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B841530A1B13D0690075E885 /* Event.swift */; };
 		DA0295221B7F333A0018FF48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84152E81B13CAE10075E885 /* Main.storyboard */; };
+		DA0443BA1D0FCC1A0011101B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B84152ED1B13CAE10075E885 /* LaunchScreen.xib */; };
 		DA0AF14E1C7818AB002F3033 /* LoopBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0AF14D1C7818AB002F3033 /* LoopBus.swift */; };
-		DA3C2EFC1D09C74800155405 /* bus_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3C2EFB1D09C74800155405 /* bus_icon.png */; };
 		DA3DF0851B92715F00E67952 /* dining_hall.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3DF0841B92715F00E67952 /* dining_hall.png */; };
 		DA3DF08B1B9272DE00E67952 /* cafe.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3DF0861B9272DD00E67952 /* cafe.png */; };
 		DA3DF08C1B9272DE00E67952 /* classroom.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3DF0871B9272DE00E67952 /* classroom.png */; };
@@ -106,7 +106,6 @@
 		B84153041B13CE8F0075E885 /* EventsNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsNavigationController.swift; sourceTree = "<group>"; };
 		B841530A1B13D0690075E885 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		DA0AF14D1C7818AB002F3033 /* LoopBus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoopBus.swift; sourceTree = "<group>"; };
-		DA3C2EFB1D09C74800155405 /* bus_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bus_icon.png; path = Images.xcassets/map.imageset/bus_icon.png; sourceTree = "<group>"; };
 		DA3DF0841B92715F00E67952 /* dining_hall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dining_hall.png; path = Images.xcassets/map.imageset/dining_hall.png; sourceTree = "<group>"; };
 		DA3DF0861B9272DD00E67952 /* cafe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cafe.png; path = Images.xcassets/map.imageset/cafe.png; sourceTree = "<group>"; };
 		DA3DF0871B9272DE00E67952 /* classroom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = classroom.png; path = Images.xcassets/map.imageset/classroom.png; sourceTree = "<group>"; };
@@ -388,7 +387,6 @@
 				DA3DF0841B92715F00E67952 /* dining_hall.png */,
 				DA3DF0861B9272DD00E67952 /* cafe.png */,
 				DA3DF0871B9272DE00E67952 /* classroom.png */,
-				DA3C2EFB1D09C74800155405 /* bus_icon.png */,
 				DA3DF0881B9272DE00E67952 /* computer_lab.png */,
 				DA3DF0891B9272DE00E67952 /* library.png */,
 				DA3DF08A1B9272DE00E67952 /* loop_bus.png */,
@@ -460,6 +458,7 @@
 				TargetAttributes = {
 					B84152DC1B13CAE10075E885 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 8QB6324CV4;
 					};
 					B84152F31B13CAE10075E885 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -496,7 +495,6 @@
 				DAE1570A1BB25AF600DFFFCE /* dining_porter&kresge.png in Resources */,
 				DA525A8A1BA37A4F0035AEE2 /* ic_soy.png in Resources */,
 				DAE1570D1BB25AF600DFFFCE /* dining_college9&10.png in Resources */,
-				DA3C2EFC1D09C74800155405 /* bus_icon.png in Resources */,
 				DA525A8B1BA37A4F0035AEE2 /* ic_vegan.png in Resources */,
 				DA3DF08E1B9272DE00E67952 /* library.png in Resources */,
 				DA3DF08F1B9272DE00E67952 /* loop_bus.png in Resources */,
@@ -516,6 +514,7 @@
 				DAE1570E1BB25AF600DFFFCE /* dining_college8&oakes.png in Resources */,
 				DA525A861BA37A4F0035AEE2 /* ic_gluten.png in Resources */,
 				DA525A8C1BA37A4F0035AEE2 /* ic_veggie.png in Resources */,
+				DA0443BA1D0FCC1A0011101B /* LaunchScreen.xib in Resources */,
 				DAE1570B1BB25AF600DFFFCE /* dining_merill&crown.png in Resources */,
 				DA4FD79C1B79702D00F05253 /* GoogleMaps.bundle in Resources */,
 				DA525A841BA37A4F0035AEE2 /* ic_egg.png in Resources */,
@@ -672,6 +671,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -679,9 +681,11 @@
 					"$(PROJECT_DIR)/SlugRoute/GoogleMaps.framework/Versions",
 				);
 				INFOPLIST_FILE = SlugRoute/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = ios.com.SlugApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/SlugRoute/SlugRoute-Bridging-Header.h";
 			};
@@ -755,6 +759,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -762,9 +769,11 @@
 					"$(PROJECT_DIR)/SlugRoute/GoogleMaps.framework/Versions",
 				);
 				INFOPLIST_FILE = SlugRoute/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = ios.com.SlugApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/SlugRoute/SlugRoute-Bridging-Header.h";
 			};
