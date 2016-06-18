@@ -30,11 +30,11 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         let tabItems = self.tabBar.items as [UITabBarItem]!
         let tabItem0 = tabItems[0] as UITabBarItem
         let tabItem1 = tabItems[1] as UITabBarItem
-        //let tabItem2 = tabItems[2] as UITabBarItem
+        let tabItem2 = tabItems[2] as UITabBarItem
         //let tabItem3 = tabItems[3] as UITabBarItem
         //let tabItem4 = tabItems[4] as UITabBarItem
         //tabItem0.title = "Events"
-        //tabItem1.title = "Social"
+        tabItem2.title = "Social"
         tabItem0.title = "Map"
         //tabItem3.title = "Settings"
         tabItem1.title = "Dining"

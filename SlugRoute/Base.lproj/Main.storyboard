@@ -27,6 +27,7 @@
                     <connections>
                         <segue destination="dVP-ei-kRe" kind="relationship" relationship="viewControllers" id="FeO-jr-y0N"/>
                         <segue destination="m97-e7-l1x" kind="relationship" relationship="viewControllers" id="84l-l2-UYd"/>
+                        <segue destination="nIh-qK-fjT" kind="relationship" relationship="viewControllers" id="4Kk-XU-mqD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -151,7 +152,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9d-N1-rZi">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9d-N1-rZi">
                                 <rect key="frame" x="123" y="158" width="74" height="56"/>
                                 <state key="normal" title="Instagram">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -162,7 +163,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdC-M8-NIQ">
-                                <rect key="frame" x="137" y="285" width="46" height="30"/>
+                                <rect key="frame" x="122" y="285" width="75" height="30"/>
                                 <state key="normal" title="Twitter">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
