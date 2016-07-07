@@ -19,8 +19,8 @@ class Event : NSObject
    {
       name              = (data["name"] as? String)!
       date              = (data["date"] as? String)!
-      descriptionText   = (data["description"] as? String)!
-      url               = (data["url"] as? String)!
+      descriptionText   = (data["summary"] as? String)!
+      url               = (data["image"] as? String)!
 
    }
 }

@@ -116,7 +116,7 @@ class MapViewController: UIViewController {
             loopBus.position = CLLocationCoordinate2DMake(bus.lat, bus.lon)
             loopBus.snippet = "UCSC"
             loopBus.appearAnimation = kGMSMarkerAnimationPop
-            loopBus.title = bus.id
+            loopBus.title = bus.type
             loopBus.icon = UIImage(named: "loop_bus.png")
             loopBus.map = mapView
             loopBusesMarkers[bus.id]=loopBus

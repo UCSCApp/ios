@@ -33,8 +33,8 @@ class EventsViewController: UITableViewController {
     
    func getEvents()
    {
-    /*
-     let request = NSURLRequest(URL: NSURL(string: "http://bts.ucsc.edu:8081/location/get")!)
+    
+     let request = NSURLRequest(URL: NSURL(string: "http://ec2-52-10-36-144.us-west-2.compute.amazonaws.com:8080/event")!)
      var response:NSURLResponse?
      let error:NSError? = nil
      var responseData = ""
@@ -50,9 +50,7 @@ class EventsViewController: UITableViewController {
      } catch {
      print("json error: \(error)")
      }
-     */
-    let responseData =
-    "[{\"name\":\"Edge of Eden\",\"date\":\"July 18th 10pm 2am\",\"description\":\"Musical festival with a finale by Squidward Tortellini\",\"url\":\"http://tmcdigitalmedia.com/wp-content/uploads/2013/03/2_27_13-FSNA_Flyer_web_versionF.jpeg\"},{\"name\":\"Holi Festival\",\"date\":\"May 25th 10am 12pm\",\"description\":\"This event is super fun and super great!\",\"url\":\"https://uh.collegiatelink.net/images/W460xL600/0/noshadow/Event/c40dcb200abb430c9c20c632473b959f.jpg\"},{\"name\":\"Meeting\",\"date\":\"May 31st 2pm 4pm\",\"description\":\"Simba is asking you to go to this super boring meeting thing again\",\"url\":\"http://img01.deviantart.net/d568/i/2012/062/a/1/steam_event_flyer_design_by_danwilko-d4rke4s.jpg\"},{\"name\":\"French Fried\",\"date\":\"January 1st 13am 7pm\",\"description\":\"TBH Im not entirely sure what this is, so please dont come to this event at all, This desciption is purposely awkwardly long to hopefully break all of your apps becase I am a devious motherfucker like that. So I am still writing random shit now to break your apps in my malicious ways. I wonder if anyone will actually handle this case. I sure as hell wouldnt. Who the fuck actually spends the time to write this long a description about a dumb event called French Fried holy fuck. Btw I hope you arent actually reading this when you should be coding the solution to fixing your description box that just broke due to my malicious test script. Unless of course it worked in which case, you should probably stop reading this anyway because holy fuck this is a long motha fucking description. It is called French Fried. Starts at 13am. Be there.\",\"url\":\"http://www.hiddenorchestra.com/wp-content/gallery/flyers-and-posters/soundcrash-daedelus_-a5-flyer-01.jpg\"},{\"name\":\"Short but sweet\",\"date\":\"never\",\"description\":\"meow\",\"url\":\"https://www.designmaz.net/wp-content/uploads/2014/11/psd-event-flyer-templates.jpg\"}]"
+
     
     // convert String to NSData
     let data: NSData = responseData.dataUsingEncoding(NSUTF8StringEncoding)!
@@ -62,12 +60,11 @@ class EventsViewController: UITableViewController {
         // convert 'AnyObject' to Array<Business>
         let anyObj: AnyObject? = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)
         if let anyObj = anyObj {
-            if let elems = anyObj as? [[String: AnyObject]] {
+            if let elems = anyObj as? Array<Dictionary<String,AnyObject>> {
                 for item in elems {
-                    if let json = item as? Array<AnyObject>{
-                        events.append(Event(data: json))
-                        self.tableView.reloadData()
-                    }
+                    events.append(Event(data: item))
+                    self.tableView.reloadData()
+                    
                 }
             }
         }

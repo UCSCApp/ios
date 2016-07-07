@@ -19,7 +19,8 @@ class EventViewController: UIViewController {
     @IBOutlet weak var imageBanner: UIImageView!
     @IBOutlet weak var eventName: UILabel!
     @IBOutlet weak var eventDate: UILabel!
-    @IBOutlet weak var eventDescription: UILabel!
+    @IBOutlet weak var eventDescription: UITextView!
+
     
     override func viewDidLoad()
     {
