@@ -7,7 +7,6 @@
 //
 
 import Foundation
-//import SwiftyJSON
 
 class Event : NSObject
 {
@@ -16,12 +15,12 @@ class Event : NSObject
    var descriptionText     : String = ""
    var url                 : String = ""
    
-   init(data : JSON)
+   init(data : AnyObject)
    {
-      name              = data["name"].stringValue
-      date              = data["date"].stringValue
-      descriptionText   = data["description"].stringValue
-      url               = data["url"].stringValue
+      name              = (data["name"] as? String)!
+      date              = (data["date"] as? String)!
+      descriptionText   = (data["summary"] as? String)!
+      url               = (data["image"] as? String)!
 
    }
 }

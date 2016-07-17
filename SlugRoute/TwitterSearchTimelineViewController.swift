@@ -30,7 +30,7 @@ class TwitterSearchTimelineViewController: TWTRTimelineViewController {
                 let client = Twitter.sharedInstance().APIClient
                 self.dataSource = TWTRSearchTimelineDataSource(searchQuery: "#UCSC", APIClient: client)
             } else {
-                println("error: \(error.localizedDescription)")
+                print("error: \(error.localizedDescription)")
             }
         }
 

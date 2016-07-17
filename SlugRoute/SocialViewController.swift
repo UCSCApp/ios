@@ -12,10 +12,10 @@ import TwitterKit
 
 class SocialViewController: UIViewController {
     
-
+/*
     @IBAction func ToInstagramLogin(sender: UIButton) {
     }
-
+*/
     @IBAction func ToTwitterLogin(sender: UIButton) {
     }
     override func viewDidLoad() {

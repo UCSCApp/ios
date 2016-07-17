@@ -19,9 +19,9 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
-Fabric.app/*
-Fabric.framework/*
-Pods/*
+/Fabric.app/*
+/Fabric.framework/*
+/Pods/*
 
 # CocoaPods
 #

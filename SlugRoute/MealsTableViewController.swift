@@ -56,7 +56,7 @@ class MealsTableViewController: UITableViewController {
         //parsing JSON (type AnyObject) puts college's meals into arrays.
         if let jsonResult = items as? Dictionary<String, AnyObject> {
             for(key, value) in jsonResult{
-                mealCount++;
+                mealCount=mealCount+1
                 if (key == "breakfast"){
                     if let jsonBreakfast = value as? Array<Dictionary<String, AnyObject>> {
                         for food in jsonBreakfast{
@@ -113,6 +113,7 @@ class MealsTableViewController: UITableViewController {
                     
                 }
             }
+            
         }
         // Do any additional setup after loading the view.
     }
@@ -146,12 +147,12 @@ class MealsTableViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get Cell Label
-        let indexPath = self.tableView.indexPathForSelectedRow();
-        let currentCell = self.tableView.cellForRowAtIndexPath(indexPath!) as! MealTableCell;
+        let indexPath = self.tableView.indexPathForSelectedRow!;
+        let currentCell = self.tableView.cellForRowAtIndexPath(indexPath) as! MealTableCell;
         if (segue.identifier == "toMeal") {
             if(currentCell.meal!.text! == "Breakfast"){
                 // initialize new view controller and cast it as your view controller
-                var viewController = segue.destinationViewController as! MealsViewController
+                let viewController = segue.destinationViewController as! MealsViewController
                 // your new view controller should have property that will store passed value
                 viewController.collegeName = self.collegeName
                 viewController.mealName = "Breakfast"
@@ -159,7 +160,7 @@ class MealsTableViewController: UITableViewController {
             }
             else if(currentCell.meal!.text! == "Lunch"){
                 // initialize new view controller and cast it as your view controller
-                var viewController = segue.destinationViewController as! MealsViewController
+                let viewController = segue.destinationViewController as! MealsViewController
                 // your new view controller should have property that will store passed value
                 viewController.collegeName = self.collegeName
                 viewController.mealName = "Lunch"
@@ -167,7 +168,7 @@ class MealsTableViewController: UITableViewController {
             }
             else if(currentCell.meal!.text! == "Dinner"){
                 // initialize new view controller and cast it as your view controller
-                var viewController = segue.destinationViewController as! MealsViewController
+                let viewController = segue.destinationViewController as! MealsViewController
                 // your new view controller should have property that will store passed value
                 viewController.collegeName = self.collegeName
                 viewController.mealName = "Dinner"
@@ -175,7 +176,7 @@ class MealsTableViewController: UITableViewController {
             }
             else{
                 // initialize new view controller and cast it as your view controller
-                var viewController = segue.destinationViewController as! MealsViewController
+                let viewController = segue.destinationViewController as! MealsViewController
                 // your new view controller should have property that will store passed value
                 viewController.collegeName = self.collegeName
                 viewController.dinnerItems = self.dinnerItems

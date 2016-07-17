@@ -19,7 +19,8 @@ class EventViewController: UIViewController {
     @IBOutlet weak var imageBanner: UIImageView!
     @IBOutlet weak var eventName: UILabel!
     @IBOutlet weak var eventDate: UILabel!
-    @IBOutlet weak var eventDescription: UILabel!
+    @IBOutlet weak var eventDescription: UITextView!
+
     
     override func viewDidLoad()
     {
@@ -31,7 +32,7 @@ class EventViewController: UIViewController {
         imageBanner.image = image
         
         //for swipe right to go back to SocialViewController
-        var swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(EventViewController.respondToSwipeGesture(_:)))
         swipeRight.direction = UISwipeGestureRecognizerDirection.Right
         self.view.addGestureRecognizer(swipeRight)
         
@@ -51,9 +52,9 @@ class EventViewController: UIViewController {
             //swipe right
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.Right:
-                println("Swiped right")
+                print("Swiped right")
                 let storyboard : UIStoryboard = UIStoryboard(name:"Main", bundle: nil)
-                let vc : EventsViewController = storyboard.instantiateViewControllerWithIdentifier("eventsView") as! EventsViewController
+                let vc : EventsTableViewController = storyboard.instantiateViewControllerWithIdentifier("eventsView") as! EventsTableViewController
                 
                 self.presentViewController(vc, animated: true, completion: nil)
             default:
