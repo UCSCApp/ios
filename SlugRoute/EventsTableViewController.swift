@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EventsViewController: UITableViewController {
+class EventsTableViewController: UITableViewController {
    
     var events : [Event] = []
     var nameLabel:String!

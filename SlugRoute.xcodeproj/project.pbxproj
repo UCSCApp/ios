@@ -21,7 +21,7 @@
 		DA3DF08D1B9272DE00E67952 /* computer_lab.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3DF0881B9272DE00E67952 /* computer_lab.png */; };
 		DA3DF08E1B9272DE00E67952 /* library.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3DF0891B9272DE00E67952 /* library.png */; };
 		DA3DF08F1B9272DE00E67952 /* loop_bus.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3DF08A1B9272DE00E67952 /* loop_bus.png */; };
-		DA3DF0911B951C8200E67952 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3DF0901B951C8200E67952 /* EventsViewController.swift */; };
+		DA3DF0911B951C8200E67952 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3DF0901B951C8200E67952 /* EventsTableViewController.swift */; };
 		DA3DF0931B951D3000E67952 /* EventTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3DF0921B951D3000E67952 /* EventTableCell.swift */; };
 		DA3DF0951B9561F000E67952 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3DF0941B9561F000E67952 /* EventViewController.swift */; };
 		DA4688E31B9781D500F11DD0 /* SettingsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4688E21B9781D500F11DD0 /* SettingsNavigationController.swift */; };
@@ -63,6 +63,10 @@
 		DA7332031BA2211A00E674C9 /* DiningNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7332021BA2211A00E674C9 /* DiningNavigationController.swift */; };
 		DA7332071BA226AA00E674C9 /* DiningTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7332061BA226AA00E674C9 /* DiningTableViewController.swift */; };
 		DA73320F1BA22D6500E674C9 /* Dining.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73320E1BA22D6500E674C9 /* Dining.swift */; };
+		DA77CFAD1D3AC6B70046472B /* IconsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77CFAC1D3AC6B70046472B /* IconsTableViewController.swift */; };
+		DA77CFAF1D3AD42C0046472B /* Facility.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77CFAE1D3AD42C0046472B /* Facility.swift */; };
+		DA77CFB11D3AD4510046472B /* FacilityTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77CFB01D3AD4510046472B /* FacilityTableCell.swift */; };
+		DA77CFB71D3B6F730046472B /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77CFB61D3B6F730046472B /* SearchTableViewController.swift */; };
 		DA9869E01B8458840013E199 /* InstagramPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9869DF1B8458840013E199 /* InstagramPost.swift */; };
 		DA9869E21B845BF60013E199 /* InstagramTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9869E11B845BF60013E199 /* InstagramTableCell.swift */; };
 		DA9B84ED1B7DBEDA00246191 /* TwitterSearchTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B84EC1B7DBEDA00246191 /* TwitterSearchTimelineViewController.swift */; };
@@ -112,7 +116,7 @@
 		DA3DF0881B9272DE00E67952 /* computer_lab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = computer_lab.png; path = Images.xcassets/map.imageset/computer_lab.png; sourceTree = "<group>"; };
 		DA3DF0891B9272DE00E67952 /* library.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = library.png; path = Images.xcassets/map.imageset/library.png; sourceTree = "<group>"; };
 		DA3DF08A1B9272DE00E67952 /* loop_bus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loop_bus.png; path = Images.xcassets/map.imageset/loop_bus.png; sourceTree = "<group>"; };
-		DA3DF0901B951C8200E67952 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		DA3DF0901B951C8200E67952 /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 		DA3DF0921B951D3000E67952 /* EventTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableCell.swift; sourceTree = "<group>"; };
 		DA3DF0941B9561F000E67952 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		DA4688E21B9781D500F11DD0 /* SettingsNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsNavigationController.swift; sourceTree = "<group>"; };
@@ -156,6 +160,10 @@
 		DA7332021BA2211A00E674C9 /* DiningNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningNavigationController.swift; sourceTree = "<group>"; };
 		DA7332061BA226AA00E674C9 /* DiningTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningTableViewController.swift; sourceTree = "<group>"; };
 		DA73320E1BA22D6500E674C9 /* Dining.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dining.swift; sourceTree = "<group>"; };
+		DA77CFAC1D3AC6B70046472B /* IconsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconsTableViewController.swift; sourceTree = "<group>"; };
+		DA77CFAE1D3AD42C0046472B /* Facility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Facility.swift; sourceTree = "<group>"; };
+		DA77CFB01D3AD4510046472B /* FacilityTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacilityTableCell.swift; sourceTree = "<group>"; };
+		DA77CFB61D3B6F730046472B /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		DA9869DF1B8458840013E199 /* InstagramPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramPost.swift; sourceTree = "<group>"; };
 		DA9869E11B845BF60013E199 /* InstagramTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramTableCell.swift; sourceTree = "<group>"; };
 		DA9B84EC1B7DBEDA00246191 /* TwitterSearchTimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterSearchTimelineViewController.swift; sourceTree = "<group>"; };
@@ -303,7 +311,7 @@
 			children = (
 				DA3DF0941B9561F000E67952 /* EventViewController.swift */,
 				DA3DF0921B951D3000E67952 /* EventTableCell.swift */,
-				DA3DF0901B951C8200E67952 /* EventsViewController.swift */,
+				DA3DF0901B951C8200E67952 /* EventsTableViewController.swift */,
 				B84153041B13CE8F0075E885 /* EventsNavigationController.swift */,
 				B841530A1B13D0690075E885 /* Event.swift */,
 			);
@@ -343,8 +351,12 @@
 			children = (
 				DAE156F91BAA9CE100DFFFCE /* icons */,
 				DA4CA12D1B73458900DA6A94 /* MapNavigationController.swift */,
+				DA77CFAC1D3AC6B70046472B /* IconsTableViewController.swift */,
 				DA4CA12F1B73462600DA6A94 /* MapViewController.swift */,
 				DA0AF14D1C7818AB002F3033 /* LoopBus.swift */,
+				DA77CFAE1D3AD42C0046472B /* Facility.swift */,
+				DA77CFB01D3AD4510046472B /* FacilityTableCell.swift */,
+				DA77CFB61D3B6F730046472B /* SearchTableViewController.swift */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -556,6 +568,7 @@
 				DA9869E21B845BF60013E199 /* InstagramTableCell.swift in Sources */,
 				DA4688EB1B978D1000F11DD0 /* SettingsViewController.swift in Sources */,
 				B84153051B13CE8F0075E885 /* EventsNavigationController.swift in Sources */,
+				DA77CFB11D3AD4510046472B /* FacilityTableCell.swift in Sources */,
 				DA4CA12E1B73458900DA6A94 /* MapNavigationController.swift in Sources */,
 				DAA5E4B01B6D73320066BD56 /* TabBarController.swift in Sources */,
 				DAA682551D08DDEC00CD4531 /* DiningMenu.swift in Sources */,
@@ -563,14 +576,17 @@
 				B84152E31B13CAE10075E885 /* AppDelegate.swift in Sources */,
 				DA4CA1301B73462600DA6A94 /* MapViewController.swift in Sources */,
 				DA6ADB3D1B6C6E6F00BD3E8B /* TwitterLoginViewController.swift in Sources */,
-				DA3DF0911B951C8200E67952 /* EventsViewController.swift in Sources */,
+				DA77CFAF1D3AD42C0046472B /* Facility.swift in Sources */,
+				DA3DF0911B951C8200E67952 /* EventsTableViewController.swift in Sources */,
 				DA3DF0931B951D3000E67952 /* EventTableCell.swift in Sources */,
 				DA5EB4511B6CBF4700991145 /* SocialViewController.swift in Sources */,
 				DA0AF14E1C7818AB002F3033 /* LoopBus.swift in Sources */,
 				B841530B1B13D0690075E885 /* Event.swift in Sources */,
+				DA77CFB71D3B6F730046472B /* SearchTableViewController.swift in Sources */,
 				DA4688E31B9781D500F11DD0 /* SettingsNavigationController.swift in Sources */,
 				DA9869E01B8458840013E199 /* InstagramPost.swift in Sources */,
 				DA7332031BA2211A00E674C9 /* DiningNavigationController.swift in Sources */,
+				DA77CFAD1D3AC6B70046472B /* IconsTableViewController.swift in Sources */,
 				DA9B84ED1B7DBEDA00246191 /* TwitterSearchTimelineViewController.swift in Sources */,
 				DA73320F1BA22D6500E674C9 /* Dining.swift in Sources */,
 				DAC86AE71BA23FA000DD7668 /* MealsViewController.swift in Sources */,
