@@ -26,7 +26,7 @@ class TwitterSearchTimelineViewController: TWTRTimelineViewController {
         */
         
         Twitter.sharedInstance().logInGuestWithCompletion { session, error in
-            if let validSession = session {
+            if ((session) != nil) {
                 let client = Twitter.sharedInstance().APIClient
                 self.dataSource = TWTRSearchTimelineDataSource(searchQuery: "#UCSC", APIClient: client)
             } else {

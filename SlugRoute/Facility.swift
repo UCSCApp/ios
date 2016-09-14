@@ -14,13 +14,17 @@ class Facility : NSObject
     var latitude      : String = ""
     var longitude     : String = ""
     var type          : String = ""
-    
+    var descriptionInfo   : String = ""
+    var id            : Int = 0
+
     init(data : AnyObject)
     {
+        id          = (data["id"] as? Int)!
         name        = (data["name"] as? String)!
         latitude    = (data["latitude"] as? String)!
         longitude   = (data["longitude"] as? String)!
         type        = (data["type"] as? String)!
+        descriptionInfo = (data["description"] as? String)!
         
     }
 }

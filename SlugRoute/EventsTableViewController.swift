@@ -34,21 +34,25 @@ class EventsTableViewController: UITableViewController {
    func getEvents()
    {
     
-     let request = NSURLRequest(URL: NSURL(string: "http://ec2-52-10-36-144.us-west-2.compute.amazonaws.com:8080/event")!)
+     let request = NSMutableURLRequest()
+     request.URL = NSURL(string: "http://www.triton.cloud:8081/events/getEvents")!
+     request.HTTPMethod = "GET"
+     request.setValue("8e942960-1c0b-48be-a4cc-c50582f142d3", forHTTPHeaderField: "X-Triton-App")
      var response:NSURLResponse?
      let error:NSError? = nil
      var responseData = ""
      do{
-     let dataGet = try NSURLConnection.sendSynchronousRequest(request, returningResponse: &response)
-     if (error == nil) {
-     responseData = String(data: dataGet, encoding: NSUTF8StringEncoding)!
-     // Parse the data
-     } else {
-     // Handle error
-     }
+        let dataGet = try NSURLConnection.sendSynchronousRequest(request, returningResponse: &response)
+        if (error == nil) {
+            responseData = String(data: dataGet, encoding: NSUTF8StringEncoding)!
+            // Parse the data
+        } else {
+            // Handle error
+            print("synchronous request error: \(error)")
+        }
      
      } catch {
-     print("json error: \(error)")
+        print("json error: \(error)")
      }
 
     
@@ -64,7 +68,6 @@ class EventsTableViewController: UITableViewController {
                 for item in elems {
                     events.append(Event(data: item))
                     self.tableView.reloadData()
-                    
                 }
             }
         }

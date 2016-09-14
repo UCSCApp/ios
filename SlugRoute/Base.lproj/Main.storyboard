@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -10,7 +10,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" customClass="TabBarController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="49e-Tb-3d3" customClass="TabBarController" customModule="Slug_Life" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="JCG-iL-fEk"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
@@ -39,7 +39,7 @@
         <!--Instagram Login View Controller-->
         <scene sceneID="2Au-Bn-TFd">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="FqH-Dq-hXr" customClass="InstagramLoginViewController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="FqH-Dq-hXr" customClass="InstagramLoginViewController" customModule="Slug_Life" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="h9Z-Ih-nvu"/>
                         <viewControllerLayoutGuide type="bottom" id="uZA-Ab-mbg"/>
@@ -55,7 +55,7 @@
                                     <constraint firstAttribute="width" constant="320" id="SqQ-yD-bnG"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="InstagramTableCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="InstagramTableCell" rowHeight="346" id="nlO-Ac-8xD" customClass="InstagramTableCell" customModule="SlugRoute" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="InstagramTableCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="InstagramTableCell" rowHeight="346" id="nlO-Ac-8xD" customClass="InstagramTableCell" customModule="Slug_Life" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="22" width="320" height="346"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nlO-Ac-8xD" id="0Tw-k6-Xl4">
@@ -145,7 +145,7 @@
         <!--Social View Controller-->
         <scene sceneID="2Ya-FD-4ar">
             <objects>
-                <viewController storyboardIdentifier="socialView" title="Social View Controller" id="HFf-KR-bHr" customClass="SocialViewController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="socialView" title="Social View Controller" id="HFf-KR-bHr" customClass="SocialViewController" customModule="Slug_Life" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xSV-Qd-T6w"/>
                         <viewControllerLayoutGuide type="bottom" id="Gku-0O-r0n"/>
@@ -187,7 +187,7 @@
         <!--Twitter-->
         <scene sceneID="kyU-Cm-f8Z">
             <objects>
-                <viewController title="Twitter" id="VQC-43-S8I" customClass="TwitterSearchTimelineViewController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Twitter" id="VQC-43-S8I" customClass="TwitterSearchTimelineViewController" customModule="Slug_Life" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ppB-yK-MPq"/>
                         <viewControllerLayoutGuide type="bottom" id="lcv-Ui-aa1"/>
@@ -209,7 +209,7 @@
         <!--Events-->
         <scene sceneID="6Tz-eY-vXp">
             <objects>
-                <navigationController title="Events" id="DbG-wH-6Nh" customClass="EventsNavigationController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController title="Events" id="DbG-wH-6Nh" customClass="EventsNavigationController" customModule="Slug_Life" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" id="syK-Ud-yRu"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0SD-BI-Z13">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -226,13 +226,13 @@
         <!--Events Table View Controller-->
         <scene sceneID="zjz-uW-1Yi">
             <objects>
-                <tableViewController id="Ukl-pg-e8K" customClass="EventsTableViewController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Ukl-pg-e8K" customClass="EventsTableViewController" customModule="Slug_Life" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="146" sectionHeaderHeight="22" sectionFooterHeight="22" id="w8S-dO-OOX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="EventTableCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventTableCell" rowHeight="146" id="iXv-XJ-elQ" customClass="EventTableCell" customModule="SlugRoute" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="EventTableCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventTableCell" rowHeight="146" id="iXv-XJ-elQ" customClass="EventTableCell" customModule="Slug_Life" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="86" width="320" height="146"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iXv-XJ-elQ" id="0BV-Hw-iFw">
@@ -292,7 +292,7 @@
         <!--Map-->
         <scene sceneID="BtD-Eh-giP">
             <objects>
-                <navigationController title="Map" id="dVP-ei-kRe" customClass="MapNavigationController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController title="Map" id="dVP-ei-kRe" customClass="MapNavigationController" customModule="Slug_Life" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="uiL-SO-Ojs"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Ix-kY-Kam">
@@ -310,7 +310,7 @@
         <!--Map View Controller-->
         <scene sceneID="RFW-lz-hd7">
             <objects>
-                <viewController title="Map View Controller" id="zmO-06-NVk" customClass="MapViewController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Map View Controller" id="zmO-06-NVk" customClass="MapViewController" customModule="Slug_Life" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="54a-6J-pxK"/>
                         <viewControllerLayoutGuide type="bottom" id="F9G-u8-tIR"/>
@@ -351,22 +351,21 @@
         <!--Icons Table View Controller-->
         <scene sceneID="sfY-BX-dwY">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CCl-wt-TtI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="Tsx-n8-Z9B" customClass="IconsTableViewController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Tsx-n8-Z9B" customClass="IconsTableViewController" customModule="Slug_Life" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="q7d-D8-2s6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FacilityTableCell" id="L3n-9Q-CX4" customClass="FacilityTableCell" customModule="SlugRoute" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FacilityTableCell" id="L3n-9Q-CX4" customClass="FacilityTableCell" customModule="Slug_Life" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="L3n-9Q-CX4" id="jS7-o4-MKZ">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEN-fK-BwU">
-                                            <rect key="frame" x="18" y="11" width="141" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEN-fK-BwU">
+                                            <rect key="frame" x="18" y="12" width="141" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="141" id="gkb-7c-Yhs"/>
                                             </constraints>
@@ -398,13 +397,14 @@
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CCl-wt-TtI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1699" y="692"/>
         </scene>
         <!--Settings-->
         <scene sceneID="gDM-sB-Vik">
             <objects>
-                <navigationController title="Settings" id="asj-g4-MB0" customClass="SettingsNavigationController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController title="Settings" id="asj-g4-MB0" customClass="SettingsNavigationController" customModule="Slug_Life" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Ed1-kt-L4D"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wc5-dC-ip9">
@@ -422,7 +422,7 @@
         <!--Dining-->
         <scene sceneID="tWT-qY-wmh">
             <objects>
-                <navigationController title="Dining" id="m97-e7-l1x" customClass="DiningNavigationController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController title="Dining" id="m97-e7-l1x" customClass="DiningNavigationController" customModule="Slug_Life" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="fa7-0C-5RV"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cr3-ct-vtf">
@@ -440,13 +440,13 @@
         <!--Dining Table View Controller-->
         <scene sceneID="EhC-7k-8vu">
             <objects>
-                <tableViewController id="rlg-0q-SKP" customClass="DiningTableViewController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="rlg-0q-SKP" customClass="DiningTableViewController" customModule="Slug_Life" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="o6z-pG-gIA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiningTableCell" id="KYF-l4-t5V" customClass="DiningTableCell" customModule="SlugRoute" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiningTableCell" id="KYF-l4-t5V" customClass="DiningTableCell" customModule="Slug_Life" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KYF-l4-t5V" id="8mH-23-iAs">
@@ -494,17 +494,21 @@
         <!--Search Table View Controller-->
         <scene sceneID="IoK-d7-KwW">
             <objects>
-                <tableViewController id="hqn-ZD-hnX" customClass="SearchTableViewController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="hqn-ZD-hnX" customClass="SearchTableViewController" customModule="Slug_Life" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="GRm-PE-LHf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchCell" textLabel="Am6-eW-agk" style="IBUITableViewCellStyleDefault" id="7Mk-Uo-IDy">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Mk-Uo-IDy" id="3VK-ww-jvZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Am6-eW-agk">
+                                            <rect key="frame" x="15" y="0.0" width="290" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -531,13 +535,13 @@
         <!--Meals Table View Controller-->
         <scene sceneID="vXn-cL-Dhb">
             <objects>
-                <tableViewController storyboardIdentifier="mealsView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="veu-ud-6tK" customClass="MealsTableViewController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="mealsView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="veu-ud-6tK" customClass="MealsTableViewController" customModule="Slug_Life" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ygS-Uo-Ayi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MealTableCell" id="bUr-5T-a2b" customClass="MealTableCell" customModule="SlugRoute" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MealTableCell" id="bUr-5T-a2b" customClass="MealTableCell" customModule="Slug_Life" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bUr-5T-a2b" id="1nH-tH-wdj">
@@ -585,7 +589,7 @@
         <!--Item-->
         <scene sceneID="R92-62-yqh">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="G17-63-5a5" customClass="MealsViewController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="G17-63-5a5" customClass="MealsViewController" customModule="Slug_Life" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ioj-Sf-TQo"/>
                         <viewControllerLayoutGuide type="bottom" id="PCi-Xm-RfT"/>
@@ -598,7 +602,7 @@
                                 <rect key="frame" x="-1" y="92" width="320" height="130"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="breakfastCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="breakfastCell" rowHeight="60" id="9pv-oB-MJr" customClass="BreakfastTableCell" customModule="SlugRoute" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="breakfastCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="breakfastCell" rowHeight="60" id="9pv-oB-MJr" customClass="BreakfastTableCell" customModule="Slug_Life" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="22" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9pv-oB-MJr" id="4ew-aH-b1y">
@@ -717,7 +721,7 @@
         <!--Settings View Controller-->
         <scene sceneID="DLy-rS-Ig3">
             <objects>
-                <viewController title="Settings View Controller" id="E7a-8r-qRS" customClass="SettingsViewController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Settings View Controller" id="E7a-8r-qRS" customClass="SettingsViewController" customModule="Slug_Life" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zlQ-7B-ujF"/>
                         <viewControllerLayoutGuide type="bottom" id="cf1-Pg-QZA"/>
@@ -736,7 +740,7 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="225"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="SettingsTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsTableViewCell" rowHeight="50" id="620-u7-xJy" customClass="SettingsTableViewCell" customModule="SlugRoute" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="SettingsTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsTableViewCell" rowHeight="50" id="620-u7-xJy" customClass="SettingsTableViewCell" customModule="Slug_Life" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="22" width="320" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="620-u7-xJy" id="xvS-vT-qK4">
@@ -784,7 +788,7 @@
         <!--Event View Controller-->
         <scene sceneID="0gQ-me-clC">
             <objects>
-                <viewController id="M20-Pa-bhq" customClass="EventViewController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="M20-Pa-bhq" customClass="EventViewController" customModule="Slug_Life" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qJT-6B-dx3"/>
                         <viewControllerLayoutGuide type="bottom" id="GYR-3d-P1d"/>
@@ -842,7 +846,7 @@
         <!--Social-->
         <scene sceneID="7FR-5y-gRT">
             <objects>
-                <navigationController title="Social" automaticallyAdjustsScrollViewInsets="NO" id="nIh-qK-fjT" customClass="SocialNavigationController" customModule="SlugRoute" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController title="Social" automaticallyAdjustsScrollViewInsets="NO" id="nIh-qK-fjT" customClass="SocialNavigationController" customModule="Slug_Life" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="eiw-kM-0ZM"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -861,6 +865,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Yww-Vi-HiR"/>
+        <segue reference="J8X-gO-H8A"/>
     </inferredMetricsTieBreakers>
 </document>

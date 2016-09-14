@@ -14,12 +14,14 @@ class Event : NSObject
    var date                : String = ""
    var descriptionText     : String = ""
    var url                 : String = ""
+   var id                  : Int    = 0
    
    init(data : AnyObject)
    {
+      id                = (data["id"] as? Int)!
       name              = (data["name"] as? String)!
       date              = (data["date"] as? String)!
-      descriptionText   = (data["summary"] as? String)!
+      descriptionText   = (data["description"] as? String)!
       url               = (data["image"] as? String)!
 
    }

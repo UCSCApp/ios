@@ -18,7 +18,7 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.preferredContentSize = CGSizeMake(300, 300)
+        self.preferredContentSize = self.tableView.contentSize
         self.resultSearchController = UISearchController(searchResultsController: nil)
         self.resultSearchController.searchResultsUpdater = self
         

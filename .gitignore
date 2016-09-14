@@ -22,6 +22,7 @@ DerivedData
 Fabric.app/*
 Fabric.framework/*
 Pods/*
+*.DS_Store*
 
 # CocoaPods
 #

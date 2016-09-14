@@ -98,13 +98,13 @@
 
 /* Begin PBXFileReference section */
 		6C2CD37949B3FD61EB249C21 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B84152DD1B13CAE10075E885 /* SlugRoute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlugRoute.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B84152DD1B13CAE10075E885 /* Slug Life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Slug Life.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B84152E11B13CAE10075E885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B84152E21B13CAE10075E885 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B84152E91B13CAE10075E885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B84152EB1B13CAE10075E885 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B84152EE1B13CAE10075E885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		B84152F41B13CAE10075E885 /* SlugRouteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlugRouteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B84152F41B13CAE10075E885 /* Slug Life.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Slug Life.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B84152F91B13CAE10075E885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B84152FA1B13CAE10075E885 /* SlugRouteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlugRouteTests.swift; sourceTree = "<group>"; };
 		B84153041B13CE8F0075E885 /* EventsNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsNavigationController.swift; sourceTree = "<group>"; };
@@ -230,8 +230,8 @@
 		B84152DE1B13CAE10075E885 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B84152DD1B13CAE10075E885 /* SlugRoute.app */,
-				B84152F41B13CAE10075E885 /* SlugRouteTests.xctest */,
+				B84152DD1B13CAE10075E885 /* Slug Life.app */,
+				B84152F41B13CAE10075E885 /* Slug Life.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -239,8 +239,8 @@
 		B84152DF1B13CAE10075E885 /* SlugRoute */ = {
 			isa = PBXGroup;
 			children = (
-				DAE156F71BAA9BE900DFFFCE /* Social */,
 				DAE156F61BAA9BE200DFFFCE /* Map */,
+				DAE156F71BAA9BE900DFFFCE /* Social */,
 				DAE156F51BAA9BD700DFFFCE /* Settings */,
 				DAE156F41BAA9BCF00DFFFCE /* Dining */,
 				DAE156F31BAA9BC000DFFFCE /* Events */,
@@ -422,9 +422,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B84152DC1B13CAE10075E885 /* SlugRoute */ = {
+		B84152DC1B13CAE10075E885 /* Slug Life */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B84152FE1B13CAE10075E885 /* Build configuration list for PBXNativeTarget "SlugRoute" */;
+			buildConfigurationList = B84152FE1B13CAE10075E885 /* Build configuration list for PBXNativeTarget "Slug Life" */;
 			buildPhases = (
 				B84152D91B13CAE10075E885 /* Sources */,
 				B84152DA1B13CAE10075E885 /* Frameworks */,
@@ -435,14 +435,14 @@
 			);
 			dependencies = (
 			);
-			name = SlugRoute;
+			name = "Slug Life";
 			productName = SlugRoute;
-			productReference = B84152DD1B13CAE10075E885 /* SlugRoute.app */;
+			productReference = B84152DD1B13CAE10075E885 /* Slug Life.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B84152F31B13CAE10075E885 /* SlugRouteTests */ = {
+		B84152F31B13CAE10075E885 /* Slug LifeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B84153011B13CAE10075E885 /* Build configuration list for PBXNativeTarget "SlugRouteTests" */;
+			buildConfigurationList = B84153011B13CAE10075E885 /* Build configuration list for PBXNativeTarget "Slug LifeTests" */;
 			buildPhases = (
 				B84152F01B13CAE10075E885 /* Sources */,
 				B84152F11B13CAE10075E885 /* Frameworks */,
@@ -453,9 +453,9 @@
 			dependencies = (
 				B84152F61B13CAE10075E885 /* PBXTargetDependency */,
 			);
-			name = SlugRouteTests;
+			name = "Slug LifeTests";
 			productName = SlugRouteTests;
-			productReference = B84152F41B13CAE10075E885 /* SlugRouteTests.xctest */;
+			productReference = B84152F41B13CAE10075E885 /* Slug Life.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -478,7 +478,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B84152D81B13CAE10075E885 /* Build configuration list for PBXProject "SlugRoute" */;
+			buildConfigurationList = B84152D81B13CAE10075E885 /* Build configuration list for PBXProject "Slug Life" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -491,8 +491,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B84152DC1B13CAE10075E885 /* SlugRoute */,
-				B84152F31B13CAE10075E885 /* SlugRouteTests */,
+				B84152DC1B13CAE10075E885 /* Slug Life */,
+				B84152F31B13CAE10075E885 /* Slug LifeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -611,7 +611,7 @@
 /* Begin PBXTargetDependency section */
 		B84152F61B13CAE10075E885 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B84152DC1B13CAE10075E885 /* SlugRoute */;
+			target = B84152DC1B13CAE10075E885 /* Slug Life */;
 			targetProxy = B84152F51B13CAE10075E885 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -702,7 +702,7 @@
 				OTHER_LDFLAGS = "";
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = ios.com.SlugApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Slug Life";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/SlugRoute/SlugRoute-Bridging-Header.h";
 			};
 			name = Release;
@@ -718,9 +718,9 @@
 				);
 				INFOPLIST_FILE = SlugRouteTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Slug Life";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlugRoute.app/SlugRoute";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Slug Life.app/Slug Life";
 			};
 			name = Release;
 		};
@@ -790,7 +790,7 @@
 				OTHER_LDFLAGS = "";
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = ios.com.SlugApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Slug Life";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/SlugRoute/SlugRoute-Bridging-Header.h";
 			};
 			name = Debug;
@@ -806,16 +806,16 @@
 				);
 				INFOPLIST_FILE = SlugRouteTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Slug Life";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlugRoute.app/SlugRoute";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Slug Life.app/Slug Life";
 			};
 			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B84152D81B13CAE10075E885 /* Build configuration list for PBXProject "SlugRoute" */ = {
+		B84152D81B13CAE10075E885 /* Build configuration list for PBXProject "Slug Life" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B841530C1B13D37F0075E885 /* Release */,
@@ -824,7 +824,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B84152FE1B13CAE10075E885 /* Build configuration list for PBXNativeTarget "SlugRoute" */ = {
+		B84152FE1B13CAE10075E885 /* Build configuration list for PBXNativeTarget "Slug Life" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B841530D1B13D37F0075E885 /* Release */,
@@ -833,7 +833,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B84153011B13CAE10075E885 /* Build configuration list for PBXNativeTarget "SlugRouteTests" */ = {
+		B84153011B13CAE10075E885 /* Build configuration list for PBXNativeTarget "Slug LifeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B841530E1B13D37F0075E885 /* Release */,

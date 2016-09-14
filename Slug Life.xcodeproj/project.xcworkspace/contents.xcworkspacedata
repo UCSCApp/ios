@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SlugRoute.xcodeproj">
+      location = "self:/Users/karoljosefbustamante/Slug Life/ios/Slug Life.xcodeproj">
    </FileRef>
 </Workspace>

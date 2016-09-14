@@ -62,14 +62,14 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
         self.myLongitude = locValue.longitude
         self.myLatitude = locValue.latitude
-        print("locations = \(locValue.latitude) \(locValue.longitude)")
+        //print("locations = \(locValue.latitude) \(locValue.longitude)")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Map"
-        let camera = GMSCameraPosition.cameraWithLatitude(36.99578157522153,
-            longitude: -122.058908423001, zoom: 14)
+        let camera = GMSCameraPosition.cameraWithLatitude(36.99578157522153, longitude:
+            -122.058908423001, zoom: 0)
         let mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
         
         mapView.myLocationEnabled = true
@@ -94,56 +94,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         self.view = mapView
         
         
-        getFacilityLocations()
+        getFacilityLocations(mapView)
         
-        let McHenrymarker = GMSMarker()
-        McHenrymarker.position = CLLocationCoordinate2DMake(36.99578157522153, -122.058908423001)
-        McHenrymarker.title = "McHenry Library"
-        McHenrymarker.icon = UIImage(named: "library")
-        McHenrymarker.snippet = "UCSC"
-        McHenrymarker.map = mapView
-        let SciEngmarker = GMSMarker()
-        SciEngmarker.position = CLLocationCoordinate2DMake(36.99904411574191,-122.06070818525006)
-        SciEngmarker.title = "S&E Library"
-        SciEngmarker.icon = UIImage(named: "library")
-        SciEngmarker.snippet = "UCSC"
-        SciEngmarker.map = mapView
-        let c8andOakesDiningHall = GMSMarker()
-        c8andOakesDiningHall.snippet = "UCSC"
-        c8andOakesDiningHall.position = CLLocationCoordinate2DMake(36.991655, -122.065103)
-        c8andOakesDiningHall.title = "College 8 & Oakes Dining Hall"
-        c8andOakesDiningHall.appearAnimation = kGMSMarkerAnimationPop
-        c8andOakesDiningHall.icon = UIImage(named: "dining_hall")
-        c8andOakesDiningHall.map = mapView
-        let diningPorterKresge = GMSMarker()
-        diningPorterKresge.position = CLLocationCoordinate2DMake(36.994341, -122.066066)
-        diningPorterKresge.snippet = "UCSC"
-        diningPorterKresge.title = "Porter & Kresge Dining Hall"
-        diningPorterKresge.appearAnimation = kGMSMarkerAnimationPop
-        diningPorterKresge.icon = UIImage(named: "dining_hall")
-        diningPorterKresge.map = mapView
-        let diningnineandten = GMSMarker()
-        diningnineandten.position = CLLocationCoordinate2DMake(37.001096, -122.058031)
-        diningnineandten.snippet = "UCSC"
-        diningnineandten.title = "College Nine and Ten Dining Hall"
-        diningnineandten.appearAnimation = kGMSMarkerAnimationPop
-        diningnineandten.icon = UIImage(named: "dining_hall")
-        diningnineandten.map = mapView
-        let diningcrownandmerrill = GMSMarker()
-        diningcrownandmerrill.position = CLLocationCoordinate2DMake(36.999971, -122.054448)
-        diningcrownandmerrill.snippet = "UCSC"
-        diningcrownandmerrill.title = "Crown and Merrill Dining Hall"
-        diningcrownandmerrill.appearAnimation = kGMSMarkerAnimationPop
-        diningcrownandmerrill.icon = UIImage(named: "dining_hall")
-        diningcrownandmerrill.map = mapView
-        let diningcowellandstevenson = GMSMarker()
-        diningcowellandstevenson.position = CLLocationCoordinate2DMake(36.997157, -122.053150)
-        diningcowellandstevenson.snippet = "UCSC"
-        diningcowellandstevenson.title = "Cowell and Stevenson Dining Hall"
-        diningcowellandstevenson.appearAnimation = kGMSMarkerAnimationPop
-        diningcowellandstevenson.icon = UIImage(named: "dining_hall")
-        diningcowellandstevenson.map = mapView
-
         getBusLocations()
 
         //setBusLocations
@@ -165,7 +117,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         me.snippet = "UCSC"
         me.appearAnimation = kGMSMarkerAnimationPop
         me.title = "Me"
-        me.icon = UIImage(named: "cafe.png")
         me.map = mapView
         self.me = me
 
@@ -207,13 +158,17 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         }
     }
     
-    func getFacilityLocations()
+    func getFacilityLocations(mapView: GMSMapView)
     {
-        
-        let request = NSURLRequest(URL: NSURL(string: "http://ec2-52-10-36-144.us-west-2.compute.amazonaws.com:8080/map")!)
+        //HTTP request GET for all the location data for each facility
+        let request = NSMutableURLRequest()
+        request.URL = NSURL(string: "http://www.triton.cloud:8081/map/getLocations")!
+        //request.HTTPMethod = "GET"
+        request.setValue("8e942960-1c0b-48be-a4cc-c50582f142d3", forHTTPHeaderField: "X-Triton-App")
         var response:NSURLResponse?
         let error:NSError? = nil
         var responseData = ""
+
         do{
             let dataGet = try NSURLConnection.sendSynchronousRequest(request, returningResponse: &response)
             if (error == nil) {
@@ -221,6 +176,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
                 // Parse the data
             } else {
                 // Handle error
+                print("synchronous request error: \(error)")
             }
             
         } catch {
@@ -232,27 +188,36 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         let data: NSData = responseData.dataUsingEncoding(NSUTF8StringEncoding)!
         
         
+        
         do {
-            // convert 'AnyObject' to Array<Business>
             let anyObj: AnyObject? = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)
             if let anyObj = anyObj {
                 if let elems = anyObj as? Array<Dictionary<String,AnyObject>> {
                     for item in elems {
-                        let aBuilding = Facility(data: item)
-                        if allFacilities[aBuilding.type] == nil {
+                        let aFacility = Facility(data: item)
+                        
+                        if allFacilities[aFacility.type] == nil {
                             var newArrayOfFacilities : Array<Facility> = []
-                            newArrayOfFacilities.append(aBuilding)
-                            self.allFacilities[aBuilding.type] = newArrayOfFacilities
+                            newArrayOfFacilities.append(aFacility)
+                            self.allFacilities[aFacility.type] = newArrayOfFacilities
                         } else {
-                            allFacilities[aBuilding.type]!.append(aBuilding)
+                            allFacilities[aFacility.type]!.append(aFacility)
                         }
-   
+ 
+                        let aMarkerForNewFacility = GMSMarker()
+                        aMarkerForNewFacility.position = CLLocationCoordinate2DMake(Double(aFacility.longitude)!, Double(aFacility.latitude)!)
+                        aMarkerForNewFacility.snippet = "UCSC"
+                        aMarkerForNewFacility.title = aFacility.name
+                        aMarkerForNewFacility.appearAnimation = kGMSMarkerAnimationPop
+                        aMarkerForNewFacility.icon = UIImage(named: "dining_hall")
+                        aMarkerForNewFacility.map = mapView
                     }
                 }
             }
         } catch {
             print("json error: \(error)")
         }
+        print("test done done")
         
     }
     
