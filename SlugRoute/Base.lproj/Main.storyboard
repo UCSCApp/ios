@@ -51,9 +51,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="346" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Yhp-yc-Sni">
                                 <rect key="frame" x="0.0" y="64" width="320" height="431"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="SqQ-yD-bnG"/>
-                                </constraints>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" restorationIdentifier="InstagramTableCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="InstagramTableCell" rowHeight="346" id="nlO-Ac-8xD" customClass="InstagramTableCell" customModule="Slug_Life" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="22" width="320" height="346"/>
@@ -92,16 +89,6 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="SqQ-yD-bnG"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="SqQ-yD-bnG"/>
-                                    </mask>
-                                </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="FqH-Dq-hXr" id="8Ur-aC-gW8"/>
                                 </connections>
@@ -364,11 +351,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEN-fK-BwU">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEN-fK-BwU">
                                             <rect key="frame" x="18" y="12" width="141" height="21"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="141" id="gkb-7c-Yhs"/>
-                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -380,10 +364,6 @@
                                             </variation>
                                         </label>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstItem="tEN-fK-BwU" firstAttribute="leading" secondItem="jS7-o4-MKZ" secondAttribute="leadingMargin" constant="10" id="EYG-Da-HNn"/>
-                                        <constraint firstItem="tEN-fK-BwU" firstAttribute="centerY" secondItem="jS7-o4-MKZ" secondAttribute="centerY" id="gvE-FS-Dhx"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="tEN-fK-BwU" id="A1Q-GZ-S5a"/>

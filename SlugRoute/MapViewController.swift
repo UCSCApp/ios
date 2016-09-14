@@ -205,11 +205,17 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
                         }
  
                         let aMarkerForNewFacility = GMSMarker()
-                        aMarkerForNewFacility.position = CLLocationCoordinate2DMake(Double(aFacility.longitude)!, Double(aFacility.latitude)!)
+                        aMarkerForNewFacility.position = CLLocationCoordinate2DMake(Double(aFacility.latitude)!, Double(aFacility.longitude)!)
                         aMarkerForNewFacility.snippet = "UCSC"
                         aMarkerForNewFacility.title = aFacility.name
                         aMarkerForNewFacility.appearAnimation = kGMSMarkerAnimationPop
-                        aMarkerForNewFacility.icon = UIImage(named: "dining_hall")
+                        if (aFacility.type == "library") {
+                            aMarkerForNewFacility.icon = UIImage(named: "library")
+                        } else if (aFacility.type == "diningHall") {
+                            aMarkerForNewFacility.icon = UIImage(named: "dining_hall")
+                        } else if (aFacility.type == "cafe") {
+                            aMarkerForNewFacility.icon = UIImage(named: "cafe")
+                        }
                         aMarkerForNewFacility.map = mapView
                     }
                 }
