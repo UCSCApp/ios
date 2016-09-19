@@ -46,12 +46,27 @@ class DiningTableViewController: UITableViewController{
         //get college names
         parseNamesResponseData(collegeNamesRequest)
         //get a college's menus
-        self.collegeCrownItems = parseResponseData(collegeCrownRequest) as! Dictionary<String, AnyObject>
-        self.college8Items = parseResponseData(collegeEightRequest) as! Dictionary<String, AnyObject>
-        self.college9Items = parseResponseData(collegeNineRequest) as! Dictionary<String, AnyObject>
-        self.collegePorterItems = parseResponseData(collegePorterRequest) as! Dictionary<String, AnyObject>
-        self.collegeCowellItems = parseResponseData(collegeCowellRequest) as! Dictionary<String, AnyObject>
-
+        let parseCollegeCrownRequest = parseResponseData(collegeCrownRequest) as! Dictionary<String, AnyObject>
+        if (!parseCollegeCrownRequest.isEmpty) {
+            self.collegeCrownItems = parseCollegeCrownRequest
+        }
+        
+        let parseCollegeEightRequest = parseResponseData(collegeEightRequest) as! Dictionary<String, AnyObject>
+        if (!parseCollegeEightRequest.isEmpty) {
+            self.college8Items = parseCollegeCrownRequest
+        }
+        let parseCollegeNineRequest  = parseResponseData(collegeNineRequest) as! Dictionary<String, AnyObject>
+        if (!parseCollegeNineRequest.isEmpty) {
+            self.college9Items = parseCollegeCrownRequest
+        }
+        let parsePorterRequest  = parseResponseData(collegePorterRequest) as! Dictionary<String, AnyObject>
+        if (!parsePorterRequest.isEmpty) {
+            self.collegePorterItems = parseCollegeCrownRequest
+        }
+        let parseCollegeCowellRequest  = parseResponseData(collegeCowellRequest) as! Dictionary<String, AnyObject>
+        if (!parseCollegeCowellRequest.isEmpty) {
+            self.collegeCowellItems = parseCollegeCrownRequest
+        }
         
 
     }
@@ -121,7 +136,7 @@ class DiningTableViewController: UITableViewController{
         catch{
             //error handling
         }
-        return ""
+        return [:]
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

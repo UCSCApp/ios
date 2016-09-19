@@ -72,41 +72,72 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
     
     func updateFacilitiesInMapFromSharedPreferences(mapView : GMSMapView) {
         for (_,val) in self.facilitiesMarkers {
-            let theChecked = userDefaults.objectForKey(val.snippet) as! Int
-            if theChecked == 0 {
-                val.map = nil
-            } else {
-                val.map = mapView
+            let theChecked = userDefaults.objectForKey(val.snippet)
+            if theChecked != nil {
+                let theCheckedInt = userDefaults.objectForKey(val.snippet) as! Int
+                if theCheckedInt == 0 {
+                    val.map = nil
+                } else {
+                    val.map = mapView
+                }
             }
+
         }
     }
     
     func popoverPresentationControllerDidDismissPopover(popoverPresentationController: UIPopoverPresentationController) {
-        
-        let controller = popoverPresentationController.presentedViewController as! IconsTableViewController
-        self.userDefaults = controller.userDefaults
-        let mapView = controller.mapView
-        self.view = mapView
+
+        var mapView = GMSMapView()
+        if let controller = popoverPresentationController.presentedViewController as? IconsTableViewController {
+            
+            self.userDefaults = controller.userDefaults
+            mapView = controller.mapView
+            self.view = mapView
+            
+        } else if let controller = popoverPresentationController.presentedViewController as? SearchTableViewController {
+            
+            self.userDefaults = controller.userDefaults
+            mapView = controller.mapView
+            self.view = mapView
+            
+        }
         
         //non shared preferences way (passing data between VC
         /*
-        let checkedMarks = controller.checked
-        for (key,val) in self.facilitiesMarkers {
-            print("key: " + key + " | values: " + val.snippet)
-            if (checkedMarks.indexOf(val.snippet) == nil) {
-                print("not checked")
-                self.facilitiesMarkers[key]?.map = nil
-            } else {
-                print("checked")
-                self.facilitiesMarkers[key]?.map = mapView
-            }
+         let checkedMarks = controller.checked
+         for (key,val) in self.facilitiesMarkers {
+         print("key: " + key + " | values: " + val.snippet)
+         if (checkedMarks.indexOf(val.snippet) == nil) {
+         print("not checked")
+         self.facilitiesMarkers[key]?.map = nil
+         } else {
+         print("checked")
+         self.facilitiesMarkers[key]?.map = mapView
+         }
+         }
+         */
+        // Ask for Authorisation from the User.
+        self.locationManager.requestAlwaysAuthorization()
+        
+        // For use in foreground
+        self.locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.requestAlwaysAuthorization()
+            locationManager.startUpdatingLocation()
         }
-        */
+        
+        //set bus location refresh every 2 seconds
+        NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: #selector(MapViewController.delayedFunctionWithoutParameter(_:)), userInfo: nil, repeats: true)
         
         //shared preferences way
         updateFacilitiesInMapFromSharedPreferences(mapView)
         
-        // Fetch data from the presented controller
+        getBusLocations()
+        
+        setBusLocations(mapView)
         
         
     }

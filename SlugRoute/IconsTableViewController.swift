@@ -47,11 +47,14 @@ class IconsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("FacilityTableCell", forIndexPath: indexPath) as! FacilityTableCell
         
         let index = self.allFacilities.startIndex.advancedBy(indexPath.row)
-        let theChecked = userDefaults.objectForKey(self.allFacilities.keys[index]) as! Int
-        if theChecked == 0 {
-            cell.accessoryType = .None
-        } else {
-            cell.accessoryType = .Checkmark
+        let theChecked = userDefaults.objectForKey(self.allFacilities.keys[index])
+        if theChecked != nil {
+            let theCheckedInt = userDefaults.objectForKey(self.allFacilities.keys[index]) as! Int
+            if theCheckedInt == 0 {
+                cell.accessoryType = .None
+            } else {
+                cell.accessoryType = .Checkmark
+            }
         }
 
         cell.nameLabel.text           = self.allFacilities.keys[index]

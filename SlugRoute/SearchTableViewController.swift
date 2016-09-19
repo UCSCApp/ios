@@ -15,9 +15,18 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating{
     var namesOfAllFacilities : Array<String> = []
     var resultSearchController = UISearchController()
     var filteredFacilities = [String]()
+    var mapView = GMSMapView()
+    let userDefaults = NSUserDefaults.standardUserDefaults() // variable for shared preferences
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.preferredContentSize = CGSizeMake(300, 300)
+        let camera = GMSCameraPosition.cameraWithLatitude(36.99578157522153, longitude:
+            -122.058908423001, zoom: 14)
+        self.mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
+        
+        mapView.myLocationEnabled = true
+
         self.preferredContentSize = self.tableView.contentSize
         self.resultSearchController = UISearchController(searchResultsController: nil)
         self.resultSearchController.searchResultsUpdater = self
