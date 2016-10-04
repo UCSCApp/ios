@@ -705,6 +705,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ios.com.SlugApp;
 				PRODUCT_NAME = "Slug Life";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/SlugRoute/SlugRoute-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -796,6 +797,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ios.com.SlugApp;
 				PRODUCT_NAME = "Slug Life";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/SlugRoute/SlugRoute-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
