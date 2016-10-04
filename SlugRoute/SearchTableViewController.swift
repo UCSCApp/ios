@@ -72,10 +72,38 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating{
         } else {
             cell!.textLabel?.text = self.namesOfAllFacilities[indexPath.row]
         }
-        
+        let theChecked = userDefaults.objectForKey((cell!.textLabel?.text)!)
+        if theChecked != nil {
+            let theCheckedInt = userDefaults.objectForKey((cell!.textLabel?.text)!) as! Int
+            if theCheckedInt == 0 {
+                cell!.accessoryType = .None
+            } else {
+                cell!.accessoryType = .Checkmark
+            }
+        } else {
+            cell!.accessoryType = .Checkmark
+        }
         return cell!
     }
     
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if let cell = tableView.cellForRowAtIndexPath(indexPath) {
+            //if the type was checked uncheck it and vice versa. then save it in preferences
+            //self.checked.filter()... is for non shared preferences way
+            if cell.accessoryType == .Checkmark {
+                cell.accessoryType = .None
+                userDefaults.setObject(0, forKey: (cell.textLabel?.text)!)
+                userDefaults.synchronize()
+                //self.checked.filter() {$0 != (cell.textLabel?.text)!}
+            } else {
+                cell.accessoryType = .Checkmark
+                userDefaults.setObject(1, forKey: (cell.textLabel?.text)!)
+                userDefaults.synchronize()
+                //self.checked.append((cell.textLabel?.text)!);
+            }
+            
+        }
+    }
     
     func updateSearchResultsForSearchController(searchController: UISearchController) {
         self.filteredFacilities.removeAll(keepCapacity: false)

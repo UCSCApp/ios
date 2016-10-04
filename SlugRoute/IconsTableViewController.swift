@@ -27,7 +27,7 @@ class IconsTableViewController: UITableViewController {
         self.mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
         
         mapView.myLocationEnabled = true
-
+        self.allFacilities["loop"] = [];
     }
     
     override func didReceiveMemoryWarning()
@@ -55,6 +55,8 @@ class IconsTableViewController: UITableViewController {
             } else {
                 cell.accessoryType = .Checkmark
             }
+        } else {
+            cell.accessoryType = .Checkmark
         }
 
         cell.nameLabel.text           = self.allFacilities.keys[index]
@@ -72,11 +74,17 @@ class IconsTableViewController: UITableViewController {
             //self.checked.filter()... is for non shared preferences way
             if cell.accessoryType == .Checkmark {
                 cell.accessoryType = .None
+                if(cell.textLabel!.text == "loop") {
+                    userDefaults.setObject(0, forKey: "loop")
+                }
                 userDefaults.setObject(0, forKey: (cell.textLabel?.text)!)
                 userDefaults.synchronize()
                 //self.checked.filter() {$0 != (cell.textLabel?.text)!}
             } else {
                 cell.accessoryType = .Checkmark
+                if(cell.textLabel!.text == "loop") {
+                    userDefaults.setObject(1, forKey: "loop")
+                }
                 userDefaults.setObject(1, forKey: (cell.textLabel?.text)!)
                 userDefaults.synchronize()
                 //self.checked.append((cell.textLabel?.text)!);

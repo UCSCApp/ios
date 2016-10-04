@@ -70,19 +70,34 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         //print("locations = \(locValue.latitude) \(locValue.longitude)")
     }
     
-    func updateFacilitiesInMapFromSharedPreferences(mapView : GMSMapView) {
-        for (_,val) in self.facilitiesMarkers {
-            let theChecked = userDefaults.objectForKey(val.snippet)
-            if theChecked != nil {
-                let theCheckedInt = userDefaults.objectForKey(val.snippet) as! Int
-                if theCheckedInt == 0 {
-                    val.map = nil
-                } else {
-                    val.map = mapView
+    func updateFacilitiesInMapFromSharedPreferences(mapView : GMSMapView, page : String) {
+        
+        if(page == "" || page == "iconTableView") {
+            for (_,val) in self.facilitiesMarkers {
+                let theChecked = userDefaults.objectForKey(val.snippet)
+                if theChecked != nil {
+                    let theCheckedInt = userDefaults.objectForKey(val.snippet) as! Int
+                    if theCheckedInt == 0 {
+                        val.map = nil
+                    } else {
+                        val.map = mapView
+                    }
                 }
             }
-
+        } else if(page == "searchTableView") {
+            for (_,val) in self.facilitiesMarkers {
+                let theChecked = userDefaults.objectForKey(val.title)
+                if theChecked != nil {
+                    let theCheckedInt = userDefaults.objectForKey(val.title) as! Int
+                    if theCheckedInt == 0 {
+                        val.map = nil
+                    } else {
+                        val.map = mapView
+                    }
+                }
+            }
         }
+        
     }
     
     func popoverPresentationControllerDidDismissPopover(popoverPresentationController: UIPopoverPresentationController) {
@@ -94,11 +109,63 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
             mapView = controller.mapView
             self.view = mapView
             
+            // Ask for Authorisation from the User.
+            self.locationManager.requestAlwaysAuthorization()
+            
+            // For use in foreground
+            self.locationManager.requestWhenInUseAuthorization()
+            
+            if CLLocationManager.locationServicesEnabled() {
+                locationManager.delegate = self
+                locationManager.desiredAccuracy = kCLLocationAccuracyBest
+                locationManager.requestAlwaysAuthorization()
+                locationManager.startUpdatingLocation()
+            }
+            
+            //set bus location refresh every 2 seconds
+            NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: #selector(MapViewController.delayedFunctionWithoutParameter(_:)), userInfo: nil, repeats: true)
+            
+            //shared preferences way
+            updateFacilitiesInMapFromSharedPreferences(mapView, page: "iconTableView")
+            if(self.userDefaults.objectForKey("loop") != nil) {
+                let isLoopOn = self.userDefaults.objectForKey("loop") as! Int
+                if(isLoopOn == 1) {
+                    getBusLocations()
+                    setBusLocations(mapView)
+                }
+            }
+            
         } else if let controller = popoverPresentationController.presentedViewController as? SearchTableViewController {
             
             self.userDefaults = controller.userDefaults
             mapView = controller.mapView
             self.view = mapView
+            
+            // Ask for Authorisation from the User.
+            self.locationManager.requestAlwaysAuthorization()
+            
+            // For use in foreground
+            self.locationManager.requestWhenInUseAuthorization()
+            
+            if CLLocationManager.locationServicesEnabled() {
+                locationManager.delegate = self
+                locationManager.desiredAccuracy = kCLLocationAccuracyBest
+                locationManager.requestAlwaysAuthorization()
+                locationManager.startUpdatingLocation()
+            }
+            
+            //set bus location refresh every 2 seconds
+            NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: #selector(MapViewController.delayedFunctionWithoutParameter(_:)), userInfo: nil, repeats: true)
+            
+            //shared preferences way
+            updateFacilitiesInMapFromSharedPreferences(mapView, page: "searchTableView")
+            if(self.userDefaults.objectForKey("loop") != nil) {
+                let isLoopOn = self.userDefaults.objectForKey("loop") as! Int
+                if(isLoopOn == 1) {
+                    getBusLocations()
+                    setBusLocations(mapView)
+                }
+            }
             
         }
         
@@ -116,28 +183,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
          }
          }
          */
-        // Ask for Authorisation from the User.
-        self.locationManager.requestAlwaysAuthorization()
-        
-        // For use in foreground
-        self.locationManager.requestWhenInUseAuthorization()
-        
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyBest
-            locationManager.requestAlwaysAuthorization()
-            locationManager.startUpdatingLocation()
-        }
-        
-        //set bus location refresh every 2 seconds
-        NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: #selector(MapViewController.delayedFunctionWithoutParameter(_:)), userInfo: nil, repeats: true)
-        
-        //shared preferences way
-        updateFacilitiesInMapFromSharedPreferences(mapView)
-        
-        getBusLocations()
-        
-        setBusLocations(mapView)
         
         
     }
@@ -172,6 +217,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
     func getBusLocations()
     {
         do {
+            loopBuses = []
             // do some task
             // http://bts.ucsc.edu:8081/location/get
             
@@ -351,7 +397,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         setMyLocation(mapView)
         
         //shared preferences way
-        updateFacilitiesInMapFromSharedPreferences(mapView)
+        updateFacilitiesInMapFromSharedPreferences(mapView, page: "")
  
     }
 
