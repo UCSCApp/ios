@@ -63,21 +63,21 @@ class MealsViewController: UIViewController{
             if(mealName == "Breakfast"){
                 let breakfast = breakfastItems[indexPath.row] as BreakfastItem
                 
-                cell.breakfastName.text                = breakfast.name
+                cell.textLabel!.text                = breakfast.name
                 cell.attributes                        = breakfast.attributes
                 
             }
             else if(mealName == "Lunch"){
                 let lunch = lunchItems[indexPath.row] as LunchItem
                 
-                cell.breakfastName.text                = lunch.name
+                cell.textLabel!.text                = lunch.name
                 cell.attributes                        = lunch.attributes
                 
             }
             else{
                 let dinner = dinnerItems[indexPath.row] as DinnerItem
                 
-                cell.breakfastName.text                = dinner.name
+                cell.textLabel!.text                = dinner.name
                 cell.attributes                        = dinner.attributes
                 
             }

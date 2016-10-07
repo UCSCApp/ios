@@ -23,7 +23,6 @@ class BreakfastTableCell: UITableViewCell {
     @IBOutlet weak var gluten: UIImageView!
     @IBOutlet weak var veggie: UIImageView!
     
-    @IBOutlet weak var breakfastName: UILabel!
     var attributes: Array<String> = []
     
     override func awakeFromNib() {

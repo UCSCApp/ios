@@ -44,27 +44,25 @@ class IconsTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("FacilityTableCell", forIndexPath: indexPath) as! FacilityTableCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("iconCell", forIndexPath: indexPath) as UITableViewCell?
         
         let index = self.allFacilities.startIndex.advancedBy(indexPath.row)
         let theChecked = userDefaults.objectForKey(self.allFacilities.keys[index])
         if theChecked != nil {
             let theCheckedInt = userDefaults.objectForKey(self.allFacilities.keys[index]) as! Int
             if theCheckedInt == 0 {
-                cell.accessoryType = .None
+                cell!.accessoryType = .None
             } else {
-                cell.accessoryType = .Checkmark
+                cell!.accessoryType = .Checkmark
             }
         } else {
-            cell.accessoryType = .Checkmark
+            cell!.accessoryType = .Checkmark
         }
 
-        cell.nameLabel.text           = self.allFacilities.keys[index]
-        cell.textLabel!.text          = self.allFacilities.keys[index]
-        cell.textLabel!.hidden        = true
+        cell!.textLabel!.text          = self.allFacilities.keys[index]
         
         
-        return cell
+        return cell!
     }
 
     

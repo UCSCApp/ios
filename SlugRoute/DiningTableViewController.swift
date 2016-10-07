@@ -141,21 +141,21 @@ class DiningTableViewController: UITableViewController{
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let indexPath = self.tableView.indexPathForSelectedRow
-        let currentCell = self.tableView.cellForRowAtIndexPath(indexPath!) as! DiningTableCell;
+        let currentCell = self.tableView.cellForRowAtIndexPath(indexPath!) as UITableViewCell?
         let yourNextViewController = (segue.destinationViewController as! MealsTableViewController)
-        if (currentCell.college.text == "College Eight & Oakes") {
+        if (currentCell!.textLabel!.text == "College Eight & Oakes") {
             yourNextViewController.items = college8Items
             yourNextViewController.collegeName = "College Eight & Oakes"
-        } else if(currentCell.college.text == "College Nine & College Ten"){
+        } else if(currentCell!.textLabel!.text == "College Nine & College Ten"){
             yourNextViewController.items = college9Items
             yourNextViewController.collegeName = "College Nine & College Ten"
-        } else if(currentCell.college.text == "Porter & Kresge"){
+        } else if(currentCell!.textLabel!.text == "Porter & Kresge"){
             yourNextViewController.items = collegePorterItems
             yourNextViewController.collegeName = "Porter & Kresge"
-        } else if(currentCell.college.text == "Cowell & Stevenson"){
+        } else if(currentCell!.textLabel!.text == "Cowell & Stevenson"){
             yourNextViewController.items = collegeCowellItems
             yourNextViewController.collegeName = "Cowell & Stevenson"
-        } else if(currentCell.college.text == "Crown & Merill") {
+        } else if(currentCell!.textLabel!.text == "Crown & Merill") {
             yourNextViewController.items = collegeCrownItems
             yourNextViewController.collegeName = "Crown & Merill"
         }
@@ -169,12 +169,12 @@ class DiningTableViewController: UITableViewController{
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let diningHall = diningHallNames[indexPath.row]
-        let cell = tableView.dequeueReusableCellWithIdentifier("DiningTableCell", forIndexPath: indexPath) as! DiningTableCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("DiningTableCell", forIndexPath: indexPath) as UITableViewCell?
         
-        cell.college.text = diningHall
+        cell!.textLabel!.text = diningHall
 
         
-        return cell
+        return cell!
     }
     
     

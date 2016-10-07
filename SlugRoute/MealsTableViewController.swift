@@ -130,27 +130,26 @@ class MealsTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("MealTableCell", forIndexPath: indexPath) as! MealTableCell
-        
+        let cell = tableView.dequeueReusableCellWithIdentifier("MealTableCell", forIndexPath: indexPath) as UITableViewCell?
         if(indexPath.row == 0){
-            cell.meal.text             = "Breakfast"
+            cell!.textLabel!.text                 = "Breakfast"
         }
         else if(indexPath.row == 1){
-            cell.meal.text             = "Lunch"
+            cell!.textLabel!.text                = "Lunch"
         }
         else{
-            cell.meal.text             = "Dinner"
+            cell!.textLabel!.text                = "Dinner"
         }
         
-        return cell
+        return cell!
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get Cell Label
         let indexPath = self.tableView.indexPathForSelectedRow!;
-        let currentCell = self.tableView.cellForRowAtIndexPath(indexPath) as! MealTableCell;
+        let currentCell = self.tableView.cellForRowAtIndexPath(indexPath) ;
         if (segue.identifier == "toMeal") {
-            if(currentCell.meal!.text! == "Breakfast"){
+            if(currentCell!.textLabel!.text! == "Breakfast"){
                 // initialize new view controller and cast it as your view controller
                 let viewController = segue.destinationViewController as! MealsViewController
                 // your new view controller should have property that will store passed value
@@ -158,7 +157,7 @@ class MealsTableViewController: UITableViewController {
                 viewController.mealName = "Breakfast"
                 viewController.breakfastItems = self.breakfastItems
             }
-            else if(currentCell.meal!.text! == "Lunch"){
+            else if(currentCell!.textLabel!.text! == "Lunch"){
                 // initialize new view controller and cast it as your view controller
                 let viewController = segue.destinationViewController as! MealsViewController
                 // your new view controller should have property that will store passed value
@@ -166,7 +165,7 @@ class MealsTableViewController: UITableViewController {
                 viewController.mealName = "Lunch"
                 viewController.lunchItems = self.lunchItems
             }
-            else if(currentCell.meal!.text! == "Dinner"){
+            else if(currentCell!.textLabel!.text! == "Dinner"){
                 // initialize new view controller and cast it as your view controller
                 let viewController = segue.destinationViewController as! MealsViewController
                 // your new view controller should have property that will store passed value

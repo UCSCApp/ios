@@ -265,7 +265,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
                 aMarkerForNewFacility.icon = UIImage(named: "dining_hall")
                 aMarkerForNewFacility.snippet = "diningHall"
             } else if (aFacility.type == "cafe") {
-                aMarkerForNewFacility.icon = UIImage(named: "cafe")
+                aMarkerForNewFacility.icon = UIImage(named: "ic_cafe")
                 aMarkerForNewFacility.snippet = "cafe"
             }
             aMarkerForNewFacility.map = mapView
