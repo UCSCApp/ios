@@ -57,6 +57,7 @@ class IconsTableViewController: UITableViewController {
             }
         } else {
             cell!.accessoryType = .Checkmark
+            userDefaults.setObject(1, forKey: self.allFacilities.keys[index])
         }
 
         cell!.textLabel!.text          = self.allFacilities.keys[index]

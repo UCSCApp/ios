@@ -81,7 +81,8 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating{
                 cell!.accessoryType = .Checkmark
             }
         } else {
-            cell!.accessoryType = .Checkmark
+            cell!.accessoryType = .None
+            userDefaults.setObject(0, forKey: cell!.textLabel!.text!)
         }
         return cell!
     }
