@@ -25,7 +25,7 @@ class EventViewController: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        self.title  = "Event"
+        self.navigationItem.title = nameLabel;
         eventName.text = nameLabel
         eventDate.text = dateLabel
         eventDescription.text = descriptionLabel
@@ -52,7 +52,6 @@ class EventViewController: UIViewController {
             //swipe right
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.Right:
-                print("Swiped right")
                 let storyboard : UIStoryboard = UIStoryboard(name:"Main", bundle: nil)
                 let vc : EventsTableViewController = storyboard.instantiateViewControllerWithIdentifier("eventsView") as! EventsTableViewController
                 

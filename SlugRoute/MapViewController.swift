@@ -67,7 +67,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
         self.myLongitude = locValue.longitude
         self.myLatitude = locValue.latitude
-        //print("locations = \(locValue.latitude) \(locValue.longitude)")
     }
     
     func updateFacilitiesInMapFromSharedPreferences(mapView : GMSMapView, page : String) {
@@ -101,7 +100,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
     }
     
     func popoverPresentationControllerDidDismissPopover(popoverPresentationController: UIPopoverPresentationController) {
-
+        
         var mapView = GMSMapView()
         if let controller = popoverPresentationController.presentedViewController as? IconsTableViewController {
             
@@ -173,7 +172,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         /*
          let checkedMarks = controller.checked
          for (key,val) in self.facilitiesMarkers {
-         print("key: " + key + " | values: " + val.snippet)
          if (checkedMarks.indexOf(val.snippet) == nil) {
          print("not checked")
          self.facilitiesMarkers[key]?.map = nil
@@ -360,7 +358,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Map"
+        self.navigationItem.title = "Map"
         let camera = GMSCameraPosition.cameraWithLatitude(36.99578157522153, longitude:
             -122.058908423001, zoom: 14)
         let mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)

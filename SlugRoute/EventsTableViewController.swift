@@ -20,8 +20,7 @@ class EventsTableViewController: UITableViewController {
     override func viewDidLoad()
     {
       super.viewDidLoad()
-      self.title  = "Events"
-      
+      self.navigationItem.title = "Events";
       getEvents()
     }
 

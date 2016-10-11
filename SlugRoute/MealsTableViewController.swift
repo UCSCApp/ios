@@ -130,7 +130,7 @@ class MealsTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("MealTableCell", forIndexPath: indexPath) as UITableViewCell?
+        let cell = tableView.dequeueReusableCellWithIdentifier("mealCell", forIndexPath: indexPath) as UITableViewCell?
         if(indexPath.row == 0){
             cell!.textLabel!.text                 = "Breakfast"
         }
@@ -148,40 +148,30 @@ class MealsTableViewController: UITableViewController {
         // Get Cell Label
         let indexPath = self.tableView.indexPathForSelectedRow!;
         let currentCell = self.tableView.cellForRowAtIndexPath(indexPath) ;
-        if (segue.identifier == "toMeal") {
-            if(currentCell!.textLabel!.text! == "Breakfast"){
-                // initialize new view controller and cast it as your view controller
-                let viewController = segue.destinationViewController as! MealsViewController
-                // your new view controller should have property that will store passed value
-                viewController.collegeName = self.collegeName
-                viewController.mealName = "Breakfast"
-                viewController.breakfastItems = self.breakfastItems
-            }
-            else if(currentCell!.textLabel!.text! == "Lunch"){
-                // initialize new view controller and cast it as your view controller
-                let viewController = segue.destinationViewController as! MealsViewController
-                // your new view controller should have property that will store passed value
-                viewController.collegeName = self.collegeName
-                viewController.mealName = "Lunch"
-                viewController.lunchItems = self.lunchItems
-            }
-            else if(currentCell!.textLabel!.text! == "Dinner"){
-                // initialize new view controller and cast it as your view controller
-                let viewController = segue.destinationViewController as! MealsViewController
-                // your new view controller should have property that will store passed value
-                viewController.collegeName = self.collegeName
-                viewController.mealName = "Dinner"
-                viewController.dinnerItems = self.dinnerItems
-            }
-            else{
-                // initialize new view controller and cast it as your view controller
-                let viewController = segue.destinationViewController as! MealsViewController
-                // your new view controller should have property that will store passed value
-                viewController.collegeName = self.collegeName
-                viewController.dinnerItems = self.dinnerItems
-            }
+        let tableViewController = segue.destinationViewController as! UITableViewController
+        let viewController = tableViewController as! MealTableViewController
+        if(currentCell!.textLabel!.text! == "Breakfast"){
             
+            // your new view controller should have property that will store passed value
+            viewController.collegeName = self.collegeName
+            viewController.mealName = "Breakfast"
+            viewController.breakfastItems = self.breakfastItems
         }
+        else if(currentCell!.textLabel!.text! == "Lunch"){
+
+            // your new view controller should have property that will store passed value
+            viewController.collegeName = self.collegeName
+            viewController.mealName = "Lunch"
+            viewController.lunchItems = self.lunchItems
+        }
+        else if(currentCell!.textLabel!.text! == "Dinner"){
+            // your new view controller should have property that will store passed value
+            viewController.collegeName = self.collegeName
+            viewController.mealName = "Dinner"
+            viewController.dinnerItems = self.dinnerItems
+        }
+            
+        
         
     }
     

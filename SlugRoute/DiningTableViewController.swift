@@ -22,7 +22,7 @@ class DiningTableViewController: UITableViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title  = "Dining"
+        self.navigationItem.title = "Dining";
         
         getDining()
         // Do any additional setup after loading the view.
@@ -143,6 +143,7 @@ class DiningTableViewController: UITableViewController{
         let indexPath = self.tableView.indexPathForSelectedRow
         let currentCell = self.tableView.cellForRowAtIndexPath(indexPath!) as UITableViewCell?
         let yourNextViewController = (segue.destinationViewController as! MealsTableViewController)
+        print(currentCell!.textLabel!.text)
         if (currentCell!.textLabel!.text == "College Eight & Oakes") {
             yourNextViewController.items = college8Items
             yourNextViewController.collegeName = "College Eight & Oakes"
@@ -155,9 +156,9 @@ class DiningTableViewController: UITableViewController{
         } else if(currentCell!.textLabel!.text == "Cowell & Stevenson"){
             yourNextViewController.items = collegeCowellItems
             yourNextViewController.collegeName = "Cowell & Stevenson"
-        } else if(currentCell!.textLabel!.text == "Crown & Merill") {
+        } else if(currentCell!.textLabel!.text == "Crown & Merrill") {
             yourNextViewController.items = collegeCrownItems
-            yourNextViewController.collegeName = "Crown & Merill"
+            yourNextViewController.collegeName = "Crown & Merrill"
         }
         
         

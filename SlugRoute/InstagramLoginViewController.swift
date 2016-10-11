@@ -119,7 +119,6 @@ class InstagramLoginViewController: UIViewController {
             
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.Right:
-                println("Swiped right")
                 let storyboard : UIStoryboard = UIStoryboard(name:"Main", bundle: nil)
                 let vc : SocialViewController = storyboard.instantiateViewControllerWithIdentifier("socialView") as! SocialViewController
                 

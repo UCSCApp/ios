@@ -15,9 +15,7 @@ class TwitterSearchTimelineViewController: TWTRTimelineViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.title = "Twitter"
-        
+        self.navigationItem.title = "Twitter"
         /*
         //for swipe right to go back to SocialViewController
         var swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
@@ -25,16 +23,12 @@ class TwitterSearchTimelineViewController: TWTRTimelineViewController {
         self.view.addGestureRecognizer(swipeRight)
         */
         
-        Twitter.sharedInstance().logInGuestWithCompletion { session, error in
-            if ((session) != nil) {
-                let client = Twitter.sharedInstance().APIClient
-                self.dataSource = TWTRSearchTimelineDataSource(searchQuery: "#UCSC", APIClient: client)
-            } else {
-                print("error: \(error.localizedDescription)")
-            }
-        }
+        let client = TWTRAPIClient()
+        self.dataSource = TWTRSearchTimelineDataSource(searchQuery: "#UCSC", APIClient: client)
+
 
     }
+
     
     /*
     //function for swipe gestures
