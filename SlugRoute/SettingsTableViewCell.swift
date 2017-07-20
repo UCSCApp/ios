@@ -15,7 +15,7 @@ class SettingsTableViewCell: UITableViewCell {
     
     @IBOutlet weak var settingSwitch: UISwitch!
 
-    @IBAction func handledSettingSwitch(sender: UISwitch) {
+    @IBAction func handledSettingSwitch(_ sender: UISwitch) {
     }
 
     @IBOutlet weak var notification: UILabel!
@@ -27,7 +27,7 @@ class SettingsTableViewCell: UITableViewCell {
 
     }
     
-    override func setSelected(selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
         // Configure the view for the selected state

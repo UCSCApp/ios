@@ -1,8 +1,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+platform :ios, '10.0'
 use_frameworks!
 
-pod 'Alamofire', '~> 1.2'
 target 'SlugRoute' do
-   pod 'SwiftyJSON', '~> 2.2.0'
+   pod 'Alamofire', '~> 4.4'
 end

@@ -10,13 +10,13 @@ import Foundation
 
 class Dining : NSObject
 {
-    var name                : String = ""
-    var items               : AnyObject = ""
+    var name: String = ""
+    var items: AnyObject = "" as AnyObject
     
-    init(data : JSON)
+    init(data : [String: Any])
     {
-        name              = data["name"].stringValue
-        items             = data["items"].object
+        name = data["name"] as! String
+        items = data["items"] as AnyObject
         
     }
 }

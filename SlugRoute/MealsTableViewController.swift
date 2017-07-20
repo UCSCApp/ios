@@ -45,7 +45,7 @@ class MealsTableViewController: UITableViewController {
     var dinnerItems : Array<DinnerItem> = []
     var collegeName : String = ""
     var mealName : String = ""
-    var items : AnyObject = ""
+    var items : AnyObject = "" as AnyObject
     var mealCount : Int = 0
     
     override func viewDidLoad() {
@@ -56,7 +56,7 @@ class MealsTableViewController: UITableViewController {
         //parsing JSON (type AnyObject) puts college's meals into arrays.
         if let jsonResult = items as? Dictionary<String, AnyObject> {
             for(key, value) in jsonResult{
-                mealCount++;
+                mealCount += 1;
                 if (key == "breakfast"){
                     if let jsonBreakfast = value as? Array<Dictionary<String, AnyObject>> {
                         for food in jsonBreakfast{
@@ -67,7 +67,7 @@ class MealsTableViewController: UITableViewController {
                                     name = value as! String
                                 }
                                 else{
-                                    attr = value as! NSArray
+                                    attr = (value as! NSArray) as! [Any]
                                 }
                             }
                             self.breakfastItems.append(BreakfastItem(name: name, attr: attr as? Array<String>))
@@ -84,7 +84,7 @@ class MealsTableViewController: UITableViewController {
                                     name = value as! String
                                 }
                                 else{
-                                    attr = value as! NSArray
+                                    attr = (value as! NSArray) as! [Any]
                                 }
                             }
                             self.lunchItems.append(LunchItem(name: name, attr: attr as? Array<String>))
@@ -101,7 +101,7 @@ class MealsTableViewController: UITableViewController {
                                     name = value as! String
                                 }
                                 else{
-                                    attr = value as! NSArray
+                                    attr = (value as! NSArray) as! [Any]
                                 }
                             }
                             self.dinnerItems.append(DinnerItem(name: name, attr: attr as? Array<String>))
@@ -123,13 +123,13 @@ class MealsTableViewController: UITableViewController {
     }
     
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return 3
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("MealTableCell", forIndexPath: indexPath) as! MealTableCell
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MealTableCell", for: indexPath as IndexPath) as! MealTableCell
         
         if(indexPath.row == 0){
             cell.meal.text             = "Breakfast"
@@ -144,14 +144,15 @@ class MealsTableViewController: UITableViewController {
         return cell
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    
+    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get Cell Label
-        let indexPath = self.tableView.indexPathForSelectedRow();
-        let currentCell = self.tableView.cellForRowAtIndexPath(indexPath!) as! MealTableCell;
+        let indexPath = self.tableView.indexPathForSelectedRow;
+        let currentCell = self.tableView.cellForRow(at: indexPath!) as! MealTableCell;
         if (segue.identifier == "toMeal") {
             if(currentCell.meal!.text! == "Breakfast"){
                 // initialize new view controller and cast it as your view controller
-                var viewController = segue.destinationViewController as! MealsViewController
+                let viewController = segue.destination as! MealsViewController
                 // your new view controller should have property that will store passed value
                 viewController.collegeName = self.collegeName
                 viewController.mealName = "Breakfast"
@@ -159,7 +160,7 @@ class MealsTableViewController: UITableViewController {
             }
             else if(currentCell.meal!.text! == "Lunch"){
                 // initialize new view controller and cast it as your view controller
-                var viewController = segue.destinationViewController as! MealsViewController
+                let viewController = segue.destination as! MealsViewController
                 // your new view controller should have property that will store passed value
                 viewController.collegeName = self.collegeName
                 viewController.mealName = "Lunch"
@@ -167,7 +168,7 @@ class MealsTableViewController: UITableViewController {
             }
             else if(currentCell.meal!.text! == "Dinner"){
                 // initialize new view controller and cast it as your view controller
-                var viewController = segue.destinationViewController as! MealsViewController
+                let viewController = segue.destination as! MealsViewController
                 // your new view controller should have property that will store passed value
                 viewController.collegeName = self.collegeName
                 viewController.mealName = "Dinner"
@@ -175,7 +176,7 @@ class MealsTableViewController: UITableViewController {
             }
             else{
                 // initialize new view controller and cast it as your view controller
-                var viewController = segue.destinationViewController as! MealsViewController
+                let viewController = segue.destination as! MealsViewController
                 // your new view controller should have property that will store passed value
                 viewController.collegeName = self.collegeName
                 viewController.dinnerItems = self.dinnerItems

@@ -37,7 +37,7 @@ class MealsViewController: UIViewController{
     
     // --- UITableViewDataSource protocol ---
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         if(mealName == "Breakfast"){
             return breakfastItems.count
@@ -55,10 +55,10 @@ class MealsViewController: UIViewController{
 
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
 
         if(tableView == breakfastTable){
-            let cell = tableView.dequeueReusableCellWithIdentifier("breakfastCell", forIndexPath: indexPath) as! BreakfastTableCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "breakfastCell", for: indexPath) as! BreakfastTableCell
             
             if(mealName == "Breakfast"){
                 let breakfast = breakfastItems[indexPath.row] as BreakfastItem
@@ -128,7 +128,7 @@ class MealsViewController: UIViewController{
         }
         else{
             //filler for now 
-            let cell = tableView.dequeueReusableCellWithIdentifier("breakfastCell", forIndexPath: indexPath) as! BreakfastTableCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "breakfastCell", for: indexPath) as! BreakfastTableCell
             return cell
         }
     }

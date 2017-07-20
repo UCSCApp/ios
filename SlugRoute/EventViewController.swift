@@ -31,8 +31,8 @@ class EventViewController: UIViewController {
         imageBanner.image = image
         
         //for swipe right to go back to SocialViewController
-        var swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
-        swipeRight.direction = UISwipeGestureRecognizerDirection.Right
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(EventViewController.respondToSwipeGesture(_:)))
+        swipeRight.direction = UISwipeGestureRecognizerDirection.right
         self.view.addGestureRecognizer(swipeRight)
         
     }
@@ -44,18 +44,18 @@ class EventViewController: UIViewController {
     }
     
     //function for swipe gestures
-    func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+    func respondToSwipeGesture(_ gesture: UIGestureRecognizer) {
         
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             
             //swipe right
             switch swipeGesture.direction {
-            case UISwipeGestureRecognizerDirection.Right:
+            case UISwipeGestureRecognizerDirection.right:
                 println("Swiped right")
                 let storyboard : UIStoryboard = UIStoryboard(name:"Main", bundle: nil)
-                let vc : EventsViewController = storyboard.instantiateViewControllerWithIdentifier("eventsView") as! EventsViewController
+                let vc : EventsViewController = storyboard.instantiateViewController(withIdentifier: "eventsView") as! EventsViewController
                 
-                self.presentViewController(vc, animated: true, completion: nil)
+                self.present(vc, animated: true, completion: nil)
             default:
                 break
             }

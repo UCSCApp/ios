@@ -47,17 +47,17 @@ class SettingsViewController: UIViewController {
         SettingItem(settingName: "Setting 2", switchState: true)
     ]
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return 2
     }
     
-    func tableView(_tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("SettingsTableViewCell") as! SettingsTableViewCell
+    func tableView(_ _tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsTableViewCell") as! SettingsTableViewCell
         
         let settingItem = settings[indexPath.row]
         cell.notification.text = settingItem.settingName
-        cell.settingSwitch.enabled = settingItem.switchState!
+        cell.settingSwitch.isEnabled = settingItem.switchState!
         
         return cell
     }

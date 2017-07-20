@@ -25,12 +25,12 @@ class TwitterSearchTimelineViewController: TWTRTimelineViewController {
         self.view.addGestureRecognizer(swipeRight)
         */
         
-        Twitter.sharedInstance().logInGuestWithCompletion { session, error in
-            if let validSession = session {
-                let client = Twitter.sharedInstance().APIClient
-                self.dataSource = TWTRSearchTimelineDataSource(searchQuery: "#UCSC", APIClient: client)
+        Twitter.sharedInstance().logInGuest { session, error in
+            if session != nil {
+                let client = Twitter.sharedInstance().apiClient
+                self.dataSource = TWTRSearchTimelineDataSource(searchQuery: "#UCSC", apiClient: client!)
             } else {
-                println("error: \(error.localizedDescription)")
+                //print("error: \(error.localizedDescription)")
             }
         }
 

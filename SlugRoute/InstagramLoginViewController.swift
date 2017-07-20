@@ -11,14 +11,23 @@ import UIKit
 
 //an extension for imageview in order to show to the picture in a cell
 extension UIImageView {
-    public func imageFromUrl(urlString: String) {
-        if let url = NSURL(string: urlString) {
-            let request = NSURLRequest(URL: url)
-            NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) {
-                (response: NSURLResponse!, data: NSData!, error: NSError!) -> Void in
-                self.image = UIImage(data: data)
+    func imageFromUrl(url: URL, contentMode mode: UIViewContentMode = .scaleAspectFit) {
+        contentMode = mode
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            guard
+                let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
+                let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
+                let data = data, error == nil,
+                let image = UIImage(data: data)
+                else { return }
+            DispatchQueue.main.async() { () -> Void in
+                self.image = image
             }
-        }
+            }.resume()
+    }
+    func imageFromUrl(link: String, contentMode mode: UIViewContentMode = .scaleAspectFit) {
+        guard let url = URL(string: link) else { return }
+        imageFromUrl(url: url, contentMode: mode)
     }
 }
 
@@ -51,20 +60,19 @@ class InstagramLoginViewController: UIViewController {
     
     func parsePosts()
     {
-        var CLIENT_ID : String = "2eb0b0a219ba482c9b9121c8287cc4aa"
-        var getUCSC = "https://api.instagram.com/v1/tags/UCSC/media/recent?client_id="+CLIENT_ID
+        let CLIENT_ID : String = "2eb0b0a219ba482c9b9121c8287cc4aa"
+        let getUCSC = "https://api.instagram.com/v1/tags/UCSC/media/recent?client_id="+CLIENT_ID
         var theUrl : String = ""
         var theUsername : String = ""
         var theText : String = ""
         
-        let jsonData = NSData(contentsOfURL: NSURL(string: getUCSC)!)
-        var jsonErrorOptional: NSError?
-        let jsonOptional: AnyObject! = NSJSONSerialization.JSONObjectWithData(jsonData!, options: NSJSONReadingOptions(0), error: &jsonErrorOptional)
+        let jsonData = try? Data(contentsOf: URL(string: getUCSC)!)
+        let jsonOptional: AnyObject! = JSONSerialization.jsonObject(with: jsonData!, options:.allowFragments)
         
         //parse from JSON
         if let json = jsonOptional as? Dictionary<String, AnyObject> {
             if let other = json["data"] as? Array<AnyObject> {
-                for(json : AnyObject) in other{
+                for(json : _) in other{
                     if let user = json["user"] as?  Dictionary<String,AnyObject>  {
                         if let userName = user["full_name"] as AnyObject? as? String {
                             theUsername = userName
@@ -93,38 +101,19 @@ class InstagramLoginViewController: UIViewController {
 
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return posts.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
         let post = posts[indexPath.row] as InstagramPost
-        var cell = tableView.dequeueReusableCellWithIdentifier("InstagramTableCell", forIndexPath: indexPath) as! InstagramTableCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "InstagramTableCell", for: indexPath) as! InstagramTableCell
         
         cell.userLabel.text           = post.user
         cell.pictureLabel.imageFromUrl(post.picture)
         cell.descriptionLabel.text    = post.picdescription
         return cell
     }
-    
-    /*
-    func respondToSwipeGesture(gesture: UIGestureRecognizer) {
-        
-        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
-            
-            switch swipeGesture.direction {
-            case UISwipeGestureRecognizerDirection.Right:
-                println("Swiped right")
-                let storyboard : UIStoryboard = UIStoryboard(name:"Main", bundle: nil)
-                let vc : SocialViewController = storyboard.instantiateViewControllerWithIdentifier("socialView") as! SocialViewController
-                
-                self.presentViewController(vc, animated: true, completion: nil)
-            default:
-                break
-            }
-        }
-    }
-    */
     
 }
