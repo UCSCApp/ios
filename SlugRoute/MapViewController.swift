@@ -277,7 +277,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         let request = NSMutableURLRequest()
         request.URL = NSURL(string: "http://www.triton.cloud:8081/map/getLocations")!
         //request.HTTPMethod = "GET"
-        request.setValue("8e942960-1c0b-48be-a4cc-c50582f142d3", forHTTPHeaderField: "X-Triton-App")
         var response:NSURLResponse?
         let error:NSError? = nil
         var responseData = ""
@@ -384,9 +383,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         
         self.view = mapView
         
-        getFacilityLocations()
-        
-        setFacilityLocations(mapView)
+        // not working: these facilities are fetched from the server and are hard coded
+        // in the server db
+        //getFacilityLocations()
+        //setFacilityLocations(mapView)
         
         getBusLocations()
         

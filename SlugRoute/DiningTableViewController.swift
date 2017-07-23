@@ -24,7 +24,7 @@ class DiningTableViewController: UITableViewController{
         
         self.navigationItem.title = "Dining";
         
-        getDining()
+        //getDining()
         // Do any additional setup after loading the view.
     }
     

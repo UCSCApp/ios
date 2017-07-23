@@ -21,7 +21,7 @@ class EventsTableViewController: UITableViewController {
     {
       super.viewDidLoad()
       self.navigationItem.title = "Events";
-      getEvents()
+      //getEvents()
     }
 
     override func didReceiveMemoryWarning()
