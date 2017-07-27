@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15F06BFA5223AE211D141B26 /* Pods_Slug_Life.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D9B7D374CCA90FB8A42C6C /* Pods_Slug_Life.framework */; };
+		421C313A1F29909600EAA22A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 421C31391F29909600EAA22A /* GoogleService-Info.plist */; };
 		B84152E31B13CAE10075E885 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84152E21B13CAE10075E885 /* AppDelegate.swift */; };
 		B84152EC1B13CAE10075E885 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B84152EB1B13CAE10075E885 /* Images.xcassets */; };
 		B84152FB1B13CAE10075E885 /* SlugRouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84152FA1B13CAE10075E885 /* SlugRouteTests.swift */; };
@@ -100,6 +102,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		421C31391F29909600EAA22A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		48D9B7D374CCA90FB8A42C6C /* Pods_Slug_Life.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Slug_Life.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		675220B3DD71B9F47205FF12 /* Pods-Slug Life.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Slug Life.release.xcconfig"; path = "Pods/Target Support Files/Pods-Slug Life/Pods-Slug Life.release.xcconfig"; sourceTree = "<group>"; };
 		6C2CD37949B3FD61EB249C21 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B84152DD1B13CAE10075E885 /* Slug Life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Slug Life.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B84152E11B13CAE10075E885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -187,6 +192,7 @@
 		DAE157081BB25AF600DFFFCE /* dining_college9&10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dining_college9&10.png"; sourceTree = "<group>"; };
 		DAE157091BB25AF600DFFFCE /* dining_college8&oakes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dining_college8&oakes.png"; sourceTree = "<group>"; };
 		DAE1570F1BB2603400DFFFCE /* dining_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dining_default.png; sourceTree = "<group>"; };
+		F99C2F1FB458A2A5B43132B0 /* Pods-Slug Life.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Slug Life.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Slug Life/Pods-Slug Life.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +216,7 @@
 				DA608BC61B6C258600B22EF0 /* TwitterCore.framework in Frameworks */,
 				DA608BC31B6C258600B22EF0 /* Fabric.framework in Frameworks */,
 				DA608BC41B6C258600B22EF0 /* TwitterKit.framework in Frameworks */,
+				15F06BFA5223AE211D141B26 /* Pods_Slug_Life.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +230,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		421C313B1F2990F600EAA22A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA608BBF1B6C258600B22EF0 /* Fabric.framework */,
+				DA608BC01B6C258600B22EF0 /* TwitterKit.framework */,
+				DA608BC11B6C258600B22EF0 /* TwitterKitResources.bundle */,
+				DA608BC21B6C258600B22EF0 /* TwitterCore.framework */,
+				DA4FD7971B796C5C00F05253 /* GoogleMaps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F108EE3C5370A07DFBD1BD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				675220B3DD71B9F47205FF12 /* Pods-Slug Life.release.xcconfig */,
+				F99C2F1FB458A2A5B43132B0 /* Pods-Slug Life.debug.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B84152D41B13CAE10075E885 = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +258,7 @@
 				B84152F71B13CAE10075E885 /* SlugRouteTests */,
 				B84152DE1B13CAE10075E885 /* Products */,
 				C12AA22289C94F4BB48A9C51 /* Frameworks */,
+				8F108EE3C5370A07DFBD1BD3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -245,21 +274,17 @@
 		B84152DF1B13CAE10075E885 /* SlugRoute */ = {
 			isa = PBXGroup;
 			children = (
+				421C313B1F2990F600EAA22A /* Frameworks */,
 				DAE156F61BAA9BE200DFFFCE /* Map */,
 				DAE156F71BAA9BE900DFFFCE /* Social */,
 				DAE156F51BAA9BD700DFFFCE /* Settings */,
 				DAE156F41BAA9BCF00DFFFCE /* Dining */,
 				DAE156F31BAA9BC000DFFFCE /* Events */,
+				B84152E01B13CAE10075E885 /* Supporting Files */,
 				B84152E21B13CAE10075E885 /* AppDelegate.swift */,
 				B84152E81B13CAE10075E885 /* Main.storyboard */,
 				B84152EB1B13CAE10075E885 /* Images.xcassets */,
 				B84152ED1B13CAE10075E885 /* LaunchScreen.xib */,
-				B84152E01B13CAE10075E885 /* Supporting Files */,
-				DA608BBF1B6C258600B22EF0 /* Fabric.framework */,
-				DA608BC01B6C258600B22EF0 /* TwitterKit.framework */,
-				DA608BC11B6C258600B22EF0 /* TwitterKitResources.bundle */,
-				DA608BC21B6C258600B22EF0 /* TwitterCore.framework */,
-				DA4FD7971B796C5C00F05253 /* GoogleMaps.framework */,
 				DAA5E4AF1B6D73320066BD56 /* TabBarController.swift */,
 				DA4FD7941B79688300F05253 /* SlugRoute-Bridging-Header.h */,
 			);
@@ -269,6 +294,7 @@
 		B84152E01B13CAE10075E885 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				421C31391F29909600EAA22A /* GoogleService-Info.plist */,
 				B84152E11B13CAE10075E885 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -308,6 +334,7 @@
 				DA4CA1571B740A4600DA6A94 /* CoreData.framework */,
 				DA4CA1551B740A3C00DA6A94 /* AVFoundation.framework */,
 				6C2CD37949B3FD61EB249C21 /* Pods.framework */,
+				48D9B7D374CCA90FB8A42C6C /* Pods_Slug_Life.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -435,10 +462,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B84152FE1B13CAE10075E885 /* Build configuration list for PBXNativeTarget "Slug Life" */;
 			buildPhases = (
+				18A98BCAD049FA0F0A90EBC1 /* [CP] Check Pods Manifest.lock */,
 				B84152D91B13CAE10075E885 /* Sources */,
 				B84152DA1B13CAE10075E885 /* Frameworks */,
 				B84152DB1B13CAE10075E885 /* Resources */,
 				DA608BBC1B6C21B700B22EF0 /* ShellScript */,
+				52156784F1F115AB59551E25 /* [CP] Embed Pods Frameworks */,
+				31FC52BE0CA1691D4B2A2498 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -538,6 +568,7 @@
 				DA3C80801DAC98AD00F157E2 /* ic_halal.png in Resources */,
 				DAE1570E1BB25AF600DFFFCE /* dining_college8&oakes.png in Resources */,
 				DA525A861BA37A4F0035AEE2 /* ic_gluten.png in Resources */,
+				421C313A1F29909600EAA22A /* GoogleService-Info.plist in Resources */,
 				DA6157B31DA8BA9100009112 /* cafe.png in Resources */,
 				DA525A8C1BA37A4F0035AEE2 /* ic_veggie.png in Resources */,
 				DA0443BA1D0FCC1A0011101B /* LaunchScreen.xib in Resources */,
@@ -558,6 +589,51 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		18A98BCAD049FA0F0A90EBC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		31FC52BE0CA1691D4B2A2498 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Slug Life/Pods-Slug Life-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52156784F1F115AB59551E25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Slug Life/Pods-Slug Life-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DA608BBC1B6C21B700B22EF0 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -698,6 +774,7 @@
 		};
 		B841530D1B13D37F0075E885 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 675220B3DD71B9F47205FF12 /* Pods-Slug Life.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -790,6 +867,7 @@
 		};
 		DA4CA14D1B7357BF00DA6A94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F99C2F1FB458A2A5B43132B0 /* Pods-Slug Life.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

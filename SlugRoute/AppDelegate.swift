@@ -9,6 +9,7 @@
 import UIKit
 import Fabric
 import TwitterKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,7 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        GMSServices.provideAPIKey("AIzaSyBi02b15JpoXfGo-WnbcyDD_2TWkFB1O4g")
        // Override point for customization after application launch.
        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
-
+       FirebaseApp.configure()
+    
        return true
    }
 
